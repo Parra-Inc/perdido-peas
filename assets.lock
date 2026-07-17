@@ -251,15 +251,71 @@
     },
     "pages/00-cover": {
       "print": {
-        "sourceChecksum": "sha256:77706b5e99f2c9a5f127556bf370aec99e307e496b087be218cb11048b5b253f",
+        "sourceChecksum": "sha256:6e518b3af8b6742e6de38b95f16fbfffcbfd5a43d5b96dbab1e3e2717f5f9e79",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/00-cover.png",
-        "exportedAt": "2026-07-17T04:23:45.246Z",
+        "exportedAt": "2026-07-17T04:41:32.069Z",
         "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
       },
       "web": {
-        "sourceChecksum": "sha256:77706b5e99f2c9a5f127556bf370aec99e307e496b087be218cb11048b5b253f",
+        "sourceChecksum": "sha256:6e518b3af8b6742e6de38b95f16fbfffcbfd5a43d5b96dbab1e3e2717f5f9e79",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/00-cover.png",
-        "exportedAt": "2026-07-17T04:23:47.189Z",
+        "exportedAt": "2026-07-17T04:41:33.927Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/01-dedication": {
+      "print": {
+        "sourceChecksum": "sha256:9c78fae9278aeb1998eff34d5bb7b4d4ef15f9ea700d62f65aed07474e471d35",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/01-dedication.png",
+        "exportedAt": "2026-07-17T04:45:00.088Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:9c78fae9278aeb1998eff34d5bb7b4d4ef15f9ea700d62f65aed07474e471d35",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/01-dedication.png",
+        "exportedAt": "2026-07-17T04:45:02.061Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/05-page-04": {
+      "print": {
+        "sourceChecksum": "sha256:bd41b6550ffc362727fe6a9f76837c708e082d50c00512dee50e214afb63f63f",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/05-page-04.png",
+        "exportedAt": "2026-07-17T04:46:03.145Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:bd41b6550ffc362727fe6a9f76837c708e082d50c00512dee50e214afb63f63f",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/05-page-04.png",
+        "exportedAt": "2026-07-17T04:46:04.994Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/06-page-05": {
+      "print": {
+        "sourceChecksum": "sha256:fd0a21ab087f915bcb0d843cb4db094d2dedf4c80ff09ebfc9047ff76597cad6",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/06-page-05.png",
+        "exportedAt": "2026-07-17T04:46:23.648Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:fd0a21ab087f915bcb0d843cb4db094d2dedf4c80ff09ebfc9047ff76597cad6",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/06-page-05.png",
+        "exportedAt": "2026-07-17T04:46:25.083Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/02-page-01": {
+      "print": {
+        "sourceChecksum": "sha256:215765141beb5aa2d32d93526df5b846fe07d06106f340168876991391515f6d",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/02-page-01.png",
+        "exportedAt": "2026-07-17T04:46:35.372Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:215765141beb5aa2d32d93526df5b846fe07d06106f340168876991391515f6d",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/02-page-01.png",
+        "exportedAt": "2026-07-17T04:46:37.235Z",
         "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
       }
     }

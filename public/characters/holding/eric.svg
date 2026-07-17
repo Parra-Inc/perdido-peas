@@ -31,7 +31,7 @@
   <ellipse cx="414" cy="601" rx="23" ry="26" transform="rotate(-8 414 601)" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
 
   <!-- left arm (viewer left), mirror of the right -->
-  <g transform="rotate(40.7 220 490)"><path d="M 228 484
+  <g transform="rotate(30.1 220 490)"><path d="M 228 484
            Q 202 492 191 520
            Q 180 548 178 570
            Q 177 588 188 592
