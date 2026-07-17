@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .friend { position: absolute; height: 707px; width: auto; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2380px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: sunset sky, water, sand, stage + band, lights ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#a9d0e8"/>
+        <stop offset="0.42" stop-color="#ffd9a6"/>
+        <stop offset="0.75" stop-color="#ff9e7c"/>
+        <stop offset="1" stop-color="#f0808a"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#57d0c4"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1420" fill="url(#sky)"/>
+
+    <!-- low setting sun near the horizon -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+      <circle cx="2050" cy="1300" r="150" fill="#ffb703"/>
+      <path d="M 2050 1080 L 2050 1030 M 2050 1520 L 2050 1570 M 1810 1300 L 1760 1300 M 2290 1300 L 2340 1300
+               M 1880 1130 L 1845 1095 M 2220 1130 L 2255 1095 M 1880 1470 L 1845 1505 M 2220 1470 L 2255 1505" fill="none"/>
+    </g>
+
+    <!-- soft sunset clouds -->
+    <g fill="#ffe0d0" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.9">
+      <path d="M 360 820 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+      <path d="M 1580 640 q 22 -44 70 -38 q 20 -36 64 -28 q 44 6 50 43 q 40 6 37 40 q -3 30 -44 31 l -158 0 q -37 -6 -19 -47 Z"/>
+    </g>
+
+    <!-- gull overhead -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(760 760) scale(0.85)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#e7d7c9"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1400" width="2550" height="180" fill="url(#gulf)"/>
+    <path d="M 0 1400 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1460 L 0 1460 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 240 1500 q 45 -14 90 0 M 760 1520 q 45 -14 90 0 M 1980 1500 q 45 -14 90 0 M 2360 1520 q 45 -14 90 0"/>
+    </g>
+    <g stroke="#ffd0a8" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.75">
+      <path d="M 1720 1512 q 45 -14 90 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1560 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 q 70 -22 140 0 q 70 22 140 0 L 2550 1560 L 2550 1590 L 0 1590 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand, warmed by the sunset -->
+    <rect x="0" y="1578" width="2550" height="972" fill="#fdf1de"/>
+    <g stroke="#efe0c0" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 300 1840 q 90 -22 180 0 M 1150 1900 q 90 -22 180 0 M 2160 1860 q 90 -22 180 0 M 640 2360 q 90 -22 180 0 M 1980 2380 q 90 -22 180 0"/>
+    </g>
+
+    <!-- ===================== the small stage + band ===================== -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+
+      <!-- stage platform legs -->
+      <g fill="#7d6248" stroke-width="9">
+        <rect x="930" y="1665" width="30" height="86" rx="8"/>
+        <rect x="1620" y="1665" width="30" height="86" rx="8"/>
+      </g>
+      <!-- platform front + deck -->
+      <rect x="885" y="1565" width="810" height="105" rx="12" fill="#a98c69" stroke-width="12"/>
+      <g stroke="#8a6f52" stroke-width="6" opacity="0.8">
+        <path d="M 1010 1568 L 1010 1666 M 1140 1568 L 1140 1666 M 1290 1568 L 1290 1666 M 1440 1568 L 1440 1666 M 1570 1568 L 1570 1666"/>
+      </g>
+      <rect x="865" y="1540" width="850" height="34" rx="10" fill="#b79975" stroke-width="12"/>
+
+      <!-- band member 1: guitar player (maroon tee) -->
+      <g>
+        <!-- legs -->
+        <rect x="1015" y="1470" width="26" height="80" rx="12" fill="#3f4a63" stroke="#3b2a21" stroke-width="8"/>
+        <rect x="1063" y="1470" width="26" height="80" rx="12" fill="#3f4a63" stroke="#3b2a21" stroke-width="8"/>
+        <!-- torso -->
+        <path d="M 1052 1300 Q 1010 1306 998 1352 Q 992 1420 1000 1470 L 1104 1470 Q 1112 1420 1106 1352 Q 1094 1306 1052 1300 Z" fill="#a24b52" stroke="#3b2a21" stroke-width="9"/>
+        <!-- head -->
+        <circle cx="1052" cy="1256" r="56" fill="#e8ae83" stroke="#3b2a21" stroke-width="9"/>
+        <path d="M 1004 1240 Q 1010 1198 1052 1194 Q 1094 1198 1100 1240 Q 1076 1226 1052 1226 Q 1028 1226 1004 1240 Z" fill="#3b2c22" stroke="#3b2a21" stroke-width="7"/>
+        <circle cx="1036" cy="1258" r="6" fill="#3b2a21"/>
+        <circle cx="1068" cy="1258" r="6" fill="#3b2a21"/>
+        <path d="M 1038 1282 Q 1052 1290 1066 1282" fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round"/>
+        <!-- strumming arm -->
+        <path d="M 1096 1356 Q 1140 1372 1156 1420 Q 1160 1440 1146 1444 Q 1132 1446 1126 1430 Q 1112 1396 1084 1382 Z" fill="#a24b52" stroke="#3b2a21" stroke-width="9"/>
+        <!-- guitar -->
+        <g transform="rotate(-24 1150 1440)">
+          <ellipse cx="1150" cy="1450" rx="70" ry="52" fill="#e0a24b" stroke="#3b2a21" stroke-width="10"/>
+          <circle cx="1150" cy="1450" r="20" fill="#7d6248" stroke="#3b2a21" stroke-width="7"/>
+          <rect x="1138" y="1300" width="24" height="150" rx="8" fill="#7d6248" stroke="#3b2a21" stroke-width="9"/>
+          <rect x="1132" y="1276" width="36" height="34" rx="6" fill="#5a442f" stroke="#3b2a21" stroke-width="8"/>
+          <path d="M 1150 1320 L 1150 1440" stroke="#f2ede0" stroke-width="4"/>
+        </g>
+        <!-- neck-side arm -->
+        <path d="M 1010 1356 Q 980 1372 1076 1300 Z" fill="none"/>
+      </g>
+
+      <!-- band member 2: cocktail drum player (teal tank) -->
+      <g>
+        <!-- head + torso peeking behind the drum -->
+        <path d="M 1300 1300 Q 1262 1306 1252 1348 Q 1246 1410 1254 1462 L 1350 1462 Q 1358 1410 1352 1348 Q 1342 1306 1300 1300 Z" fill="#3f9d92" stroke="#3b2a21" stroke-width="9"/>
+        <circle cx="1300" cy="1256" r="54" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+        <path d="M 1252 1250 Q 1250 1204 1300 1198 Q 1350 1204 1348 1250 Q 1324 1224 1300 1224 Q 1276 1224 1252 1250 Z" fill="#4e3826" stroke="#3b2a21" stroke-width="7"/>
+        <circle cx="1284" cy="1258" r="6" fill="#3b2a21"/>
+        <circle cx="1316" cy="1258" r="6" fill="#3b2a21"/>
+        <path d="M 1286 1282 Q 1300 1290 1314 1282" fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round"/>
+        <!-- drumming arms -->
+        <path d="M 1256 1352 Q 1226 1380 1236 1436 Q 1240 1452 1256 1450 Q 1268 1446 1266 1430 Q 1262 1394 1290 1372 Z" fill="#3f9d92" stroke="#3b2a21" stroke-width="9"/>
+        <path d="M 1344 1352 Q 1374 1380 1364 1436 Q 1360 1452 1344 1450 Q 1332 1446 1334 1430 Q 1338 1394 1310 1372 Z" fill="#3f9d92" stroke="#3b2a21" stroke-width="9"/>
+        <!-- cocktail drum -->
+        <rect x="1258" y="1436" width="86" height="114" rx="14" fill="#c85f4a" stroke="#3b2a21" stroke-width="10"/>
+        <ellipse cx="1301" cy="1436" rx="45" ry="15" fill="#f2ede0" stroke="#3b2a21" stroke-width="9"/>
+        <path d="M 1258 1470 L 1344 1470 M 1258 1508 L 1344 1508" stroke="#3b2a21" stroke-width="5" opacity="0.6"/>
+      </g>
+
+      <!-- band member 3: singer at the mic (mustard tee) -->
+      <g>
+        <!-- legs -->
+        <rect x="1500" y="1470" width="26" height="80" rx="12" fill="#3f4a63" stroke="#3b2a21" stroke-width="8"/>
+        <rect x="1548" y="1470" width="26" height="80" rx="12" fill="#3f4a63" stroke="#3b2a21" stroke-width="8"/>
+        <!-- torso -->
+        <path d="M 1537 1300 Q 1495 1306 1483 1352 Q 1477 1420 1485 1470 L 1589 1470 Q 1597 1420 1591 1352 Q 1579 1306 1537 1300 Z" fill="#e0a53b" stroke="#3b2a21" stroke-width="9"/>
+        <!-- raised free arm -->
+        <path d="M 1585 1352 Q 1618 1330 1626 1288 Q 1628 1270 1614 1268 Q 1602 1268 1598 1284 Q 1592 1318 1566 1338 Z" fill="#e0a53b" stroke="#3b2a21" stroke-width="9"/>
+        <!-- head -->
+        <circle cx="1537" cy="1256" r="56" fill="#f7dcc0" stroke="#3b2a21" stroke-width="9"/>
+        <path d="M 1489 1244 Q 1493 1200 1537 1196 Q 1581 1200 1585 1244 Q 1561 1224 1537 1224 Q 1513 1224 1489 1244 Z" fill="#8a6a44" stroke="#3b2a21" stroke-width="7"/>
+        <circle cx="1521" cy="1258" r="6" fill="#3b2a21"/>
+        <circle cx="1553" cy="1258" r="6" fill="#3b2a21"/>
+        <path d="M 1520 1284 Q 1537 1298 1554 1284 Q 1548 1294 1537 1294 Q 1526 1294 1520 1284 Z" fill="#4a2b22" stroke="#3b2a21" stroke-width="5" stroke-linejoin="round"/>
+        <!-- mic hand + mic -->
+        <path d="M 1490 1352 Q 1462 1332 1456 1300 Q 1454 1284 1468 1284 Q 1478 1286 1480 1300 Q 1484 1322 1506 1338 Z" fill="#e0a53b" stroke="#3b2a21" stroke-width="9"/>
+        <line x1="1452" y1="1560" x2="1452" y2="1300" stroke="#3b2a21" stroke-width="10" stroke-linecap="round"/>
+        <ellipse cx="1452" cy="1560" rx="46" ry="14" fill="#3b3f45" stroke="#3b2a21" stroke-width="9"/>
+        <circle cx="1452" cy="1286" r="22" fill="#3b3f45" stroke="#3b2a21" stroke-width="9"/>
+        <path d="M 1440 1280 Q 1452 1274 1464 1280 M 1440 1288 Q 1452 1282 1464 1288" fill="none" stroke="#7d8792" stroke-width="4"/>
+      </g>
+    </g>
+
+    <!-- ===================== string lights across the top, warm glow ===================== -->
+    <g fill="none" stroke="#3b2a21" stroke-width="7">
+      <path d="M 120 540 Q 690 720 1275 632 Q 1860 720 2430 540"/>
+    </g>
+    <g stroke="none">
+      <g fill="#ffe6a6" opacity="0.55">
+        <circle cx="200" cy="562" r="34"/><circle cx="380" cy="600" r="34"/><circle cx="560" cy="628" r="34"/>
+        <circle cx="740" cy="646" r="34"/><circle cx="920" cy="652" r="34"/><circle cx="1100" cy="648" r="34"/>
+        <circle cx="1275" cy="636" r="34"/><circle cx="1450" cy="648" r="34"/><circle cx="1630" cy="652" r="34"/>
+        <circle cx="1810" cy="646" r="34"/><circle cx="1990" cy="628" r="34"/><circle cx="2170" cy="600" r="34"/><circle cx="2350" cy="562" r="34"/>
+      </g>
+    </g>
+    <g fill="#ffd94a" stroke="#3b2a21" stroke-width="5">
+      <circle cx="200" cy="562" r="15"/><circle cx="380" cy="600" r="15"/><circle cx="560" cy="628" r="15"/>
+      <circle cx="740" cy="646" r="15"/><circle cx="920" cy="652" r="15"/><circle cx="1100" cy="648" r="15"/>
+      <circle cx="1275" cy="636" r="15"/><circle cx="1450" cy="648" r="15"/><circle cx="1630" cy="652" r="15"/>
+      <circle cx="1810" cy="646" r="15"/><circle cx="1990" cy="628" r="15"/><circle cx="2170" cy="600" r="15"/><circle cx="2350" cy="562" r="15"/>
+    </g>
+
+    <!-- ===================== music notes swirling ===================== -->
+    <g fill="#3b2a21" stroke="#3b2a21" stroke-width="8">
+      <g transform="translate(560 900) rotate(-12)">
+        <ellipse cx="0" cy="34" rx="18" ry="13"/>
+        <path d="M 16 32 L 16 -34 Q 40 -30 52 -12" fill="none"/>
+      </g>
+      <g transform="translate(770 1120) rotate(10) scale(0.9)">
+        <ellipse cx="0" cy="34" rx="18" ry="13"/>
+        <ellipse cx="60" cy="24" rx="18" ry="13"/>
+        <path d="M 16 32 L 16 -30 L 76 -40 L 76 22" fill="none"/>
+      </g>
+      <g transform="translate(1760 980) rotate(-8)">
+        <ellipse cx="0" cy="34" rx="18" ry="13"/>
+        <path d="M 16 32 L 16 -34 Q 40 -30 52 -12" fill="none"/>
+      </g>
+      <g transform="translate(2000 1180) rotate(12) scale(0.85)">
+        <ellipse cx="0" cy="34" rx="18" ry="13"/>
+        <path d="M 16 32 L 16 -34 Q 40 -30 52 -12" fill="none"/>
+      </g>
+      <g transform="translate(380 1240) rotate(-14) scale(0.8)">
+        <ellipse cx="0" cy="34" rx="18" ry="13"/>
+        <path d="M 16 32 L 16 -34 Q 40 -30 52 -12" fill="none"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== the peas, arm in arm, swaying and singing with drinks raised ===================== -->
+  <img class="friend" src="../../public/characters/pages/15-page-14/ian.svg"   alt="Ian"   style="left: 250px;  bottom: 90px;">
+  <img class="friend" src="../../public/characters/pages/15-page-14/katie.svg" alt="Katie" style="left: 532px;  bottom: 90px;">
+  <img class="friend" src="../../public/characters/pages/15-page-14/chris.svg" alt="Chris" style="left: 814px;  bottom: 90px;">
+  <img class="friend" src="../../public/characters/pages/15-page-14/grace.svg" alt="Grace" style="left: 1096px; bottom: 90px;">
+  <img class="friend" src="../../public/characters/pages/15-page-14/ben.svg"   alt="Ben"   style="left: 1378px; bottom: 90px;">
+  <img class="friend" src="../../public/characters/pages/15-page-14/sarah.svg" alt="Sarah" style="left: 1660px; bottom: 90px;">
+  <img class="friend" src="../../public/characters/pages/15-page-14/eric.svg"  alt="Eric"  style="left: 1942px; bottom: 90px; height: 757px;">
+
+  <!-- ===================== speaker with the crab conducting on top ===================== -->
+  <svg style="position: absolute; left: 40px; bottom: 90px; width: 300px; height: 560px;" viewBox="0 0 300 560" xmlns="http://www.w3.org/2000/svg">
+    <rect x="18" y="18" width="264" height="524" rx="26" fill="#3a3f45" stroke="#3b2a21" stroke-width="12"/>
+    <rect x="44" y="44" width="212" height="472" rx="16" fill="#4a5058" stroke="#3b2a21" stroke-width="8"/>
+    <circle cx="150" cy="366" r="94" fill="#2b2f34" stroke="#3b2a21" stroke-width="10"/>
+    <circle cx="150" cy="366" r="48" fill="#3a3f45" stroke="#3b2a21" stroke-width="8"/>
+    <circle cx="150" cy="366" r="15" fill="#20242a"/>
+    <circle cx="150" cy="150" r="42" fill="#2b2f34" stroke="#3b2a21" stroke-width="10"/>
+    <circle cx="150" cy="150" r="15" fill="#20242a"/>
+  </svg>
+
+  <!-- crab conducting with a swizzle stick, standing on the speaker -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 118px; bottom: 636px; height: 150px; width: auto;">
+  <svg style="position: absolute; left: 232px; bottom: 690px; width: 120px; height: 150px;" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
+    <line x1="18" y1="128" x2="86" y2="20" stroke="#3b2a21" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="90" cy="16" r="15" fill="#ffb703" stroke="#3b2a21" stroke-width="8"/>
+  </svg>
+
+  <!-- ===================== story text ===================== -->
+  <div class="text-band top"><p>The band played a song about friends in low places.<br>They sang with their drinks and with smiles on their faces.</p></div>
+
+</body>
+</html>

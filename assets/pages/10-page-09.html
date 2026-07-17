@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: warming sky, gulf, dunes and sea oats ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8fd3ef"/>
+        <stop offset="1" stop-color="#cdeef8"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+      <!-- golden light spilling in from off-page right, where the music comes from -->
+      <linearGradient id="warmwash" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#ffb703" stop-opacity="0"/>
+        <stop offset="0.55" stop-color="#ffb703" stop-opacity="0"/>
+        <stop offset="0.8" stop-color="#ffc23a" stop-opacity="0.14"/>
+        <stop offset="1" stop-color="#ffb703" stop-opacity="0.32"/>
+      </linearGradient>
+      <radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="2620" cy="1150" r="1250">
+        <stop offset="0" stop-color="#ffd94a" stop-opacity="0.55"/>
+        <stop offset="0.55" stop-color="#ffd056" stop-opacity="0.26"/>
+        <stop offset="1" stop-color="#ffd94a" stop-opacity="0"/>
+      </radialGradient>
+
+      <!-- music-note glyphs, reused from the cover -->
+      <g id="note">
+        <ellipse cx="0" cy="30" rx="16" ry="12"/>
+        <path d="M 14 28 L 14 -30 Q 34 -26 44 -10" fill="none"/>
+      </g>
+      <g id="note2">
+        <ellipse cx="0" cy="34" rx="16" ry="12"/>
+        <ellipse cx="66" cy="24" rx="16" ry="12"/>
+        <path d="M 14 32 L 14 -34 M 80 22 L 80 -44" fill="none"/>
+        <path d="M 14 -34 L 80 -44" fill="none" stroke-width="16"/>
+      </g>
+
+      <!-- one clump of sea oats: bases at the origin, stems reaching up, seed heads drooping -->
+      <g id="oats">
+        <g fill="none" stroke="#3b2a21" stroke-width="7" stroke-linecap="round">
+          <path d="M 0 0 Q -8 -78 -30 -138"/>
+          <path d="M 12 0 Q 18 -92 44 -158"/>
+          <path d="M -14 0 Q -28 -66 -58 -104"/>
+          <path d="M 24 0 Q 36 -58 66 -92"/>
+        </g>
+        <g fill="#e9c883" stroke="#3b2a21" stroke-width="4.5">
+          <ellipse cx="-36" cy="-146" rx="9" ry="5.5" transform="rotate(-52 -36 -146)"/>
+          <ellipse cx="-45" cy="-157" rx="9" ry="5.5" transform="rotate(-55 -45 -157)"/>
+          <ellipse cx="-53" cy="-169" rx="8" ry="5" transform="rotate(-60 -53 -169)"/>
+          <ellipse cx="-59" cy="-181" rx="7" ry="4.5" transform="rotate(-65 -59 -181)"/>
+          <ellipse cx="50" cy="-166" rx="9" ry="5.5" transform="rotate(55 50 -166)"/>
+          <ellipse cx="58" cy="-178" rx="9" ry="5.5" transform="rotate(58 58 -178)"/>
+          <ellipse cx="65" cy="-190" rx="8" ry="5" transform="rotate(62 65 -190)"/>
+          <ellipse cx="71" cy="-201" rx="7" ry="4.5" transform="rotate(66 71 -201)"/>
+          <ellipse cx="-63" cy="-111" rx="8" ry="5" transform="rotate(-48 -63 -111)"/>
+          <ellipse cx="-71" cy="-120" rx="7.5" ry="4.5" transform="rotate(-52 -71 -120)"/>
+          <ellipse cx="-78" cy="-130" rx="7" ry="4" transform="rotate(-56 -78 -130)"/>
+          <ellipse cx="71" cy="-98" rx="8" ry="5" transform="rotate(46 71 -98)"/>
+          <ellipse cx="79" cy="-107" rx="7.5" ry="4.5" transform="rotate(50 79 -107)"/>
+          <ellipse cx="86" cy="-116" rx="7" ry="4" transform="rotate(54 86 -116)"/>
+        </g>
+      </g>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1600" fill="url(#sky)"/>
+
+    <!-- puffy clouds -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <path d="M 480 850 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+    </g>
+    <g fill="#fff3d9" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <path d="M 2020 780 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+    </g>
+
+    <!-- gulls overhead -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(330 1120) scale(0.8)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+      <g transform="translate(1500 900) scale(0.55)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1560" width="2550" height="260" fill="url(#gulf)"/>
+    <path d="M 0 1560 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1620 L 0 1620 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 220 1660 q 45 -14 90 0 M 680 1700 q 45 -14 90 0 M 1180 1650 q 45 -14 90 0 M 1700 1698 q 45 -14 90 0"/>
+    </g>
+    <!-- golden sparkle on the water toward the music -->
+    <g stroke="#ffd94a" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.85">
+      <path d="M 2060 1652 q 45 -14 90 0 M 2300 1712 q 45 -14 90 0 M 2430 1642 q 40 -12 80 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1790 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1790 L 2550 1820 L 0 1820 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand -->
+    <rect x="0" y="1810" width="2550" height="740" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 1150 2010 q 90 -22 180 0 M 1500 1930 q 80 -20 160 0 M 1250 2320 q 90 -22 180 0 M 1420 2470 q 90 -22 180 0"/>
+    </g>
+
+    <!-- flip-flop prints trailing in from behind the left dune: he walked for a while -->
+    <g fill="#ead9ae" opacity="0.9">
+      <ellipse cx="816" cy="2058" rx="24" ry="13" transform="rotate(24 816 2058)"/>
+      <ellipse cx="872" cy="2090" rx="24" ry="13" transform="rotate(26 872 2090)"/>
+      <ellipse cx="910" cy="2116" rx="24" ry="13" transform="rotate(24 910 2116)"/>
+      <ellipse cx="952" cy="2142" rx="24" ry="13" transform="rotate(26 952 2142)"/>
+    </g>
+
+    <!-- dune, left: mound tucked into the corner, sea oats on the crest -->
+    <path d="M -30 2100 Q 120 2010 350 1990 Q 620 1974 780 2180 Q 870 2300 900 2550 L -30 2550 Z" fill="#f7ecd2"/>
+    <path d="M -30 2100 Q 120 2010 350 1990 Q 620 1974 780 2180 Q 870 2300 900 2550" fill="none" stroke="#3b2a21" stroke-width="10" stroke-linecap="round"/>
+    <g stroke="#e0cfa4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 180 2210 q 80 -20 160 0 M 380 2380 q 80 -20 160 0 M 90 2440 q 70 -18 140 0"/>
+    </g>
+    <use href="#oats" transform="translate(330 1998) scale(1.5)"/>
+    <use href="#oats" transform="translate(580 2032) scale(-1.15 1.15)"/>
+    <use href="#oats" transform="translate(120 2072) scale(1.0)"/>
+
+    <!-- dune, right: the crab's dance stage -->
+    <path d="M 1500 2550 Q 1560 2380 1720 2260 Q 1890 2132 2100 2148 Q 2340 2166 2570 2320 L 2570 2550 Z" fill="#f7ecd2"/>
+    <path d="M 1500 2550 Q 1560 2380 1720 2260 Q 1890 2132 2100 2148 Q 2340 2166 2570 2320" fill="none" stroke="#3b2a21" stroke-width="10" stroke-linecap="round"/>
+    <g stroke="#e0cfa4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 1850 2400 q 80 -20 160 0 M 2230 2440 q 80 -20 160 0 M 2020 2280 q 60 -16 120 0"/>
+    </g>
+    <use href="#oats" transform="translate(1790 2262) scale(1.35)"/>
+    <use href="#oats" transform="translate(2440 2286) scale(-1.5 1.5)"/>
+
+    <!-- warm golden light washing in from the right -->
+    <rect x="0" y="0" width="2550" height="2550" fill="url(#warmwash)"/>
+    <rect x="1300" y="0" width="1250" height="2550" fill="url(#glow)"/>
+
+    <!-- sweet music floating in from off-page right -->
+    <g fill="#ffb703" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+      <use href="#note" transform="translate(2440 950) rotate(16) scale(2.0)"/>
+      <use href="#note2" transform="translate(2110 1215) rotate(-8) scale(1.5)"/>
+      <use href="#note" transform="translate(1855 1010) rotate(10) scale(1.5)"/>
+      <use href="#note" transform="translate(1610 1300) rotate(-12) scale(1.25)"/>
+      <use href="#note2" transform="translate(1360 1120) rotate(8) scale(1.0)"/>
+      <use href="#note" transform="translate(1290 1345) rotate(-6) scale(0.9)"/>
+    </g>
+
+    <!-- tap tap: little motion ticks by eric's lifted toe -->
+    <g fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round" opacity="0.45">
+      <path d="M 1152 2130 q 18 -18 16 -44 M 1186 2148 q 24 -24 22 -56"/>
+    </g>
+
+    <!-- wiggle ticks around the dancing crab -->
+    <g fill="none" stroke="#3b2a21" stroke-width="5" stroke-linecap="round" opacity="0.45">
+      <path d="M 1988 1992 q -10 -14 -6 -32 M 2222 1996 q 10 -14 6 -32"/>
+    </g>
+  </svg>
+
+  <!-- ===================== eric, mid-step, pulled along by the song ===================== -->
+  <img src="../../public/characters/pages/10-page-09/eric-walking.svg" alt="Eric" style="position: absolute; left: 620px; bottom: 300px; height: 1050px; width: auto;">
+
+  <!-- ===================== crab rocking out on the dune ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 2000px; bottom: 388px; height: 175px; width: auto; transform: rotate(-10deg);">
+
+  <!-- tiny coral ukulele leaning at the crab's side, neck up toward his strumming claw -->
+  <svg style="position: absolute; left: 2155px; bottom: 307px; width: 180px; height: 180px;" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(220 0) scale(-1 1)" stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M 70 138 L 168 52 L 182 66 L 84 152 Z" fill="#7d6248" stroke-width="7"/>
+      <path d="M 168 52 L 190 33 L 205 48 L 182 66 Z" fill="#8a6f52" stroke-width="7"/>
+      <circle cx="192" cy="42" r="4" fill="#ffd94a" stroke-width="4"/>
+      <circle cx="80" cy="148" r="38" fill="#ef6f6c" stroke-width="8"/>
+      <circle cx="92" cy="136" r="12" fill="#3b2a21" stroke-width="6"/>
+      <path d="M 66 164 L 176 62 M 60 156 L 170 54" fill="none" stroke="#f6dec6" stroke-width="3.5"/>
+    </g>
+  </svg>
+
+  <!-- ===================== page text ===================== -->
+  <div class="text-band top"><p>Then... what's that he heard? A guitar! And a song!<br>Sweet music came floating and pulled him along.<br>His toes started tapping. He walked for a while,<br>and step after step, Eric started to SMILE.</p></div>
+
+</body>
+</html>

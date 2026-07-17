@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: muted classroom, door bursting open to the beach ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="doorSky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8fd3ef"/>
+        <stop offset="1" stop-color="#cdeef8"/>
+      </linearGradient>
+      <clipPath id="doorway">
+        <rect x="1630" y="890" width="540" height="960"/>
+      </clipPath>
+    </defs>
+
+    <!-- muted classroom wall + floor -->
+    <rect x="0" y="0" width="2550" height="1850" fill="#dfe6ec"/>
+    <rect x="0" y="1850" width="2550" height="700" fill="#c9d6dd"/>
+    <g stroke="#aebfca" stroke-width="8" fill="none" opacity="0.8">
+      <path d="M 0 2050 L 2550 2050 M 0 2260 L 2550 2260 M 0 2440 L 2550 2440"/>
+      <path d="M 420 1850 L 420 2050 M 1080 2050 L 1080 2260 M 300 2260 L 300 2440 M 2320 1850 L 2320 2050 M 1900 2260 L 1900 2440"/>
+    </g>
+    <rect x="0" y="1826" width="2550" height="30" fill="#cfdae0"/>
+    <path d="M 0 1826 L 2550 1826" stroke="#9db2bd" stroke-width="8"/>
+
+    <!-- warm sunlight spilling through the open door across the floor: color floods back in -->
+    <polygon points="1636,1852 2164,1852 2400,2550 1140,2550" fill="#ffe9b3" opacity="0.8"/>
+    <polygon points="1770,1852 2030,1852 2230,2550 1580,2550" fill="#fff3cf" opacity="0.85"/>
+
+    <!-- chalkboard -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="120" y="780" width="860" height="620" rx="22" fill="#b79975" stroke-width="12"/>
+      <rect x="170" y="830" width="760" height="500" rx="14" fill="#70908a" stroke-width="9"/>
+      <rect x="360" y="1372" width="220" height="34" rx="10" fill="#8a6f52" stroke-width="8"/>
+      <rect x="620" y="1348" width="120" height="44" rx="10" fill="#d98f8a" stroke-width="8"/>
+    </g>
+    <g font-family="'Baloo 2', sans-serif" font-weight="700" text-anchor="middle" transform="rotate(-2 550 1080)">
+      <text x="550" y="1115" font-size="96" fill="#eef4f0" letter-spacing="4">BEACH DAY!</text>
+    </g>
+    <g stroke="#eef4f0" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M 370 1160 q 90 -18 180 0 q 90 18 180 0"/>
+      <circle cx="810" cy="940" r="36"/>
+      <path d="M 810 886 L 810 862 M 810 994 L 810 1018 M 756 940 L 732 940 M 864 940 L 888 940 M 772 902 L 756 886 M 848 902 L 864 886 M 772 978 L 756 994 M 848 978 L 864 994"/>
+    </g>
+
+    <!-- calendar with the big day circled -->
+    <g stroke="#3b2a21" stroke-linejoin="round">
+      <rect x="1180" y="810" width="180" height="230" rx="14" fill="#f2ede0" stroke-width="10"/>
+      <path d="M 1180 878 L 1360 878" stroke-width="8"/>
+      <rect x="1180" y="810" width="180" height="68" rx="14" fill="#d98f8a" stroke-width="10"/>
+      <g stroke="#aebfca" stroke-width="5">
+        <path d="M 1204 916 L 1336 916 M 1204 950 L 1336 950 M 1204 984 L 1336 984 M 1226 892 L 1226 1016 M 1270 892 L 1270 1016 M 1314 892 L 1314 1016"/>
+      </g>
+      <circle cx="1314" cy="984" r="24" fill="none" stroke="#ef6f6c" stroke-width="9"/>
+    </g>
+
+    <!-- wall clock striking three -->
+    <g stroke="#3b2a21" stroke-linecap="round">
+      <circle cx="1478" cy="895" r="82" fill="#f7f3e8" stroke-width="12"/>
+      <path d="M 1478 828 L 1478 842 M 1478 948 L 1478 962 M 1411 895 L 1425 895 M 1531 895 L 1545 895" stroke-width="8"/>
+      <path d="M 1478 895 L 1478 848 M 1478 895 L 1514 895" stroke-width="11"/>
+      <circle cx="1478" cy="895" r="9" fill="#3b2a21"/>
+    </g>
+
+    <!-- doorway: sunshine, gulf and sand waiting outside -->
+    <g clip-path="url(#doorway)">
+      <rect x="1630" y="890" width="540" height="960" fill="url(#doorSky)"/>
+      <g stroke="#3b2a21" stroke-width="9" stroke-linecap="round">
+        <circle cx="2150" cy="940" r="66" fill="#ffb703"/>
+        <path d="M 2150 842 L 2150 816 M 2150 1038 L 2150 1064 M 2052 940 L 2026 940 M 2081 871 L 2062 852 M 2081 1009 L 2062 1028" fill="none"/>
+      </g>
+      <g fill="#ffffff" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" transform="translate(1652 1248) scale(0.55)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="6"/>
+      </g>
+      <rect x="1630" y="1560" width="540" height="100" fill="#2ec4b6"/>
+      <path d="M 1630 1560 q 45 -14 90 0 q 45 14 90 0 q 45 -14 90 0 q 45 14 90 0 q 45 -14 90 0 q 45 14 90 0 L 2170 1600 L 1630 1600 Z" fill="#2ec4b6"/>
+      <path d="M 1690 1610 q 35 -10 70 0 M 1950 1615 q 35 -10 70 0" stroke="#bff0ea" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M 1630 1652 q 55 -20 110 0 q 55 20 110 0 q 55 -20 110 0 q 55 20 110 0 q 55 -20 110 0 L 2170 1652 L 2170 1676 L 1630 1676 Z" fill="#ffffff" opacity="0.95"/>
+      <rect x="1630" y="1670" width="540" height="180" fill="#fdf6e3"/>
+      <path d="M 1700 1760 q 60 -16 120 0 M 1960 1790 q 60 -16 120 0" stroke="#efe3c4" stroke-width="8" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- door frame -->
+    <path d="M 1600 860 L 2200 860 L 2200 1866 L 2170 1866 L 2170 890 L 1630 890 L 1630 1866 L 1600 1866 Z"
+          fill="#b79975" stroke="#3b2a21" stroke-width="10" stroke-linejoin="round"/>
+
+    <!-- door leaf flung open into the room -->
+    <g stroke="#3b2a21" stroke-linejoin="round">
+      <path d="M 2170 890 L 2445 845 L 2445 1915 L 2170 1850 Z" fill="#9fb1bb" stroke-width="12"/>
+      <path d="M 2212 962 L 2405 934 L 2405 1290 L 2212 1302 Z M 2212 1392 L 2405 1392 L 2405 1782 L 2212 1762 Z" fill="none" stroke="#8496a1" stroke-width="7"/>
+      <circle cx="2398" cy="1352" r="17" fill="#ffb703" stroke-width="9"/>
+    </g>
+    <g fill="none" stroke="#3b2a21" stroke-width="9" stroke-linecap="round" opacity="0.4">
+      <path d="M 2480 920 Q 2522 1375 2478 1820"/>
+      <path d="M 2505 1150 Q 2522 1378 2504 1600"/>
+    </g>
+
+    <!-- the school bell, mid RIIIING -->
+    <g stroke="#3b2a21" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="1900" cy="742" r="86" fill="#ffb703" stroke-width="12"/>
+      <circle cx="1900" cy="742" r="52" fill="none" stroke-width="8"/>
+      <circle cx="1900" cy="742" r="15" fill="#3b2a21"/>
+      <path d="M 1836 806 L 1808 830" stroke-width="10"/>
+      <circle cx="1796" cy="841" r="17" fill="#93a3ab" stroke-width="9"/>
+    </g>
+    <g fill="none" stroke="#3b2a21" stroke-width="9" stroke-linecap="round" opacity="0.7">
+      <path d="M 1778 660 Q 1756 742 1778 824 M 1740 690 Q 1723 742 1740 794"/>
+      <path d="M 2022 660 Q 2044 742 2022 824 M 2060 690 Q 2077 742 2060 794"/>
+      <path d="M 1862 632 L 1850 610 M 1938 632 L 1950 610"/>
+      <path d="M 1826 664 L 1778 618 M 1858 634 L 1830 578 M 1798 702 L 1736 672"/>
+    </g>
+
+    <!-- sunshine sparkle pops around the burst-open door -->
+    <g fill="#ffb703" stroke="#3b2a21" stroke-width="6" stroke-linejoin="round">
+      <path d="M 1592 812 L 1598 830 L 1616 836 L 1598 842 L 1592 860 L 1586 842 L 1568 836 L 1586 830 Z"/>
+      <path d="M 2214 796 L 2221 817 L 2242 824 L 2221 831 L 2214 852 L 2207 831 L 2186 824 L 2207 817 Z"/>
+      <path d="M 1560 1220 L 1565 1235 L 1580 1240 L 1565 1245 L 1560 1260 L 1555 1245 L 1540 1240 L 1555 1235 Z"/>
+    </g>
+
+    <!-- teacher's desk, cropped at the left edge -->
+    <g stroke="#3b2a21" stroke-linejoin="round">
+      <rect x="-20" y="1706" width="26" height="262" fill="#93a3ab" stroke-width="9"/>
+      <rect x="272" y="1706" width="26" height="262" fill="#93a3ab" stroke-width="9"/>
+      <rect x="-60" y="1660" width="400" height="48" rx="14" fill="#b9c7d0" stroke-width="12"/>
+      <rect x="130" y="1614" width="130" height="42" rx="10" fill="#d98f8a" stroke-width="9"/>
+    </g>
+
+    <!-- papers flying, behind the kids -->
+    <g stroke="#3b2a21" stroke-linejoin="round">
+      <g transform="translate(640 980) rotate(-18)">
+        <rect x="-52" y="-68" width="104" height="136" rx="10" fill="#ffffff" stroke-width="9"/>
+        <path d="M -30 -34 L 30 -34 M -30 -6 L 30 -6 M -30 22 L 18 22" stroke="#aebfca" stroke-width="6" fill="none"/>
+      </g>
+      <g transform="translate(1010 1240) rotate(14)">
+        <rect x="-52" y="-68" width="104" height="136" rx="10" fill="#ffffff" stroke-width="9"/>
+        <path d="M -30 -34 L 30 -34 M -30 -6 L 30 -6 M -30 22 L 18 22" stroke="#aebfca" stroke-width="6" fill="none"/>
+      </g>
+      <g transform="translate(120 1460) rotate(-15)">
+        <rect x="-52" y="-68" width="104" height="136" rx="10" fill="#ffffff" stroke-width="9"/>
+        <path d="M -30 -34 L 30 -34 M -30 -6 L 30 -6 M -30 22 L 18 22" stroke="#aebfca" stroke-width="6" fill="none"/>
+      </g>
+    </g>
+
+    <!-- ===================== generic classmates cheering ===================== -->
+    <!-- kid A: boy, sage tee -->
+    <g transform="translate(460 2020)" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-38" y="-172" width="26" height="140" rx="13" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+      <rect x="12" y="-172" width="26" height="140" rx="13" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="-25" cy="-16" rx="32" ry="13" fill="#8a6f52" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="25" cy="-16" rx="32" ry="13" fill="#8a6f52" stroke="#3b2a21" stroke-width="9"/>
+      <path d="M -56 -240 L 56 -240 L 58 -172 Q 58 -158 44 -158 L 12 -158 Q 2 -158 0 -166 Q -2 -158 -12 -158 L -44 -158 Q -58 -158 -58 -172 Z" fill="#6f8496" stroke="#3b2a21" stroke-width="10"/>
+      <g transform="rotate(-145 52 -350)">
+        <rect x="37" y="-350" width="30" height="118" rx="15" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+      </g>
+      <g transform="rotate(145 -52 -350)">
+        <rect x="-67" y="-350" width="30" height="118" rx="15" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+      </g>
+      <path d="M 0 -372 Q 34 -370 52 -360 L 62 -228 Q 0 -214 -62 -228 L -52 -360 Q -34 -370 0 -372 Z" fill="#a6c0b4" stroke="#3b2a21" stroke-width="10"/>
+      <circle cx="0" cy="-448" r="76" fill="#f1be96" stroke="#3b2a21" stroke-width="10"/>
+      <path d="M -76 -462 Q -70 -540 0 -540 Q 70 -540 76 -462 Q 30 -496 0 -494 Q -30 -496 -76 -462 Z" fill="#6b4a2f" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="-48" cy="-430" rx="13" ry="8" fill="#f2937b" opacity="0.45"/>
+      <ellipse cx="48" cy="-430" rx="13" ry="8" fill="#f2937b" opacity="0.45"/>
+      <circle cx="-26" cy="-456" r="10" fill="#3b2a21"/>
+      <circle cx="26" cy="-456" r="10" fill="#3b2a21"/>
+      <circle cx="-23" cy="-459" r="3.4" fill="#ffffff"/>
+      <circle cx="29" cy="-459" r="3.4" fill="#ffffff"/>
+      <path d="M -22 -422 Q 0 -414 22 -422 Q 18 -394 0 -392 Q -18 -394 -22 -422 Z" fill="#4a2b22" stroke="#3b2a21" stroke-width="7"/>
+      <path d="M -14 -417 Q 0 -412 14 -417 Q 12 -408 0 -406 Q -12 -408 -14 -417 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- kid B: girl, pigtails, mid-jump -->
+    <g transform="translate(810 1955)" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M -50 40 Q 0 26 50 40 M -30 68 Q 0 58 30 68" fill="none" stroke="#3b2a21" stroke-width="8" opacity="0.4"/>
+      <rect x="-36" y="-166" width="26" height="136" rx="13" fill="#c98a5f" stroke="#3b2a21" stroke-width="9"/>
+      <rect x="10" y="-166" width="26" height="136" rx="13" fill="#c98a5f" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="-23" cy="-16" rx="32" ry="13" fill="#33415e" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="23" cy="-16" rx="32" ry="13" fill="#33415e" stroke="#3b2a21" stroke-width="9"/>
+      <path d="M -54 -238 L 54 -238 L 72 -152 Q 0 -138 -72 -152 Z" fill="#b78da0" stroke="#3b2a21" stroke-width="10"/>
+      <g transform="rotate(-145 52 -350)">
+        <rect x="37" y="-350" width="30" height="118" rx="15" fill="#c98a5f" stroke="#3b2a21" stroke-width="9"/>
+      </g>
+      <g transform="rotate(145 -52 -350)">
+        <rect x="-67" y="-350" width="30" height="118" rx="15" fill="#c98a5f" stroke="#3b2a21" stroke-width="9"/>
+      </g>
+      <path d="M 0 -372 Q 34 -370 52 -360 L 60 -230 Q 0 -216 -60 -230 L -52 -360 Q -34 -370 0 -372 Z" fill="#cfaebc" stroke="#3b2a21" stroke-width="10"/>
+      <circle cx="-92" cy="-484" r="25" fill="#3b2a21" stroke="#3b2a21" stroke-width="9"/>
+      <circle cx="92" cy="-484" r="25" fill="#3b2a21" stroke="#3b2a21" stroke-width="9"/>
+      <circle cx="0" cy="-448" r="76" fill="#c98a5f" stroke="#3b2a21" stroke-width="10"/>
+      <path d="M -76 -466 Q -76 -538 0 -540 Q 76 -538 76 -466 Q 40 -498 0 -496 Q -40 -498 -76 -466 Z" fill="#3b2a21" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="-48" cy="-430" rx="13" ry="8" fill="#b06a4d" opacity="0.55"/>
+      <ellipse cx="48" cy="-430" rx="13" ry="8" fill="#b06a4d" opacity="0.55"/>
+      <circle cx="-26" cy="-456" r="10" fill="#3b2a21"/>
+      <circle cx="26" cy="-456" r="10" fill="#3b2a21"/>
+      <circle cx="-23" cy="-459" r="3.4" fill="#ffffff"/>
+      <circle cx="29" cy="-459" r="3.4" fill="#ffffff"/>
+      <path d="M -22 -422 Q 0 -414 22 -422 Q 18 -394 0 -392 Q -18 -394 -22 -422 Z" fill="#4a2b22" stroke="#3b2a21" stroke-width="7"/>
+      <path d="M -14 -417 Q 0 -412 14 -417 Q 12 -408 0 -406 Q -12 -408 -14 -417 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- kid C: boy, curly blond hair -->
+    <g transform="translate(1140 2020)" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-38" y="-172" width="26" height="140" rx="13" fill="#f6d1a7" stroke="#3b2a21" stroke-width="9"/>
+      <rect x="12" y="-172" width="26" height="140" rx="13" fill="#f6d1a7" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="-25" cy="-16" rx="32" ry="13" fill="#7a5c43" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="25" cy="-16" rx="32" ry="13" fill="#7a5c43" stroke="#3b2a21" stroke-width="9"/>
+      <path d="M -56 -240 L 56 -240 L 58 -172 Q 58 -158 44 -158 L 12 -158 Q 2 -158 0 -166 Q -2 -158 -12 -158 L -44 -158 Q -58 -158 -58 -172 Z" fill="#8a8ba3" stroke="#3b2a21" stroke-width="10"/>
+      <g transform="rotate(-145 52 -350)">
+        <rect x="37" y="-350" width="30" height="118" rx="15" fill="#f6d1a7" stroke="#3b2a21" stroke-width="9"/>
+      </g>
+      <g transform="rotate(145 -52 -350)">
+        <rect x="-67" y="-350" width="30" height="118" rx="15" fill="#f6d1a7" stroke="#3b2a21" stroke-width="9"/>
+      </g>
+      <path d="M 0 -372 Q 34 -370 52 -360 L 62 -228 Q 0 -214 -62 -228 L -52 -360 Q -34 -370 0 -372 Z" fill="#b3a5c9" stroke="#3b2a21" stroke-width="10"/>
+      <circle cx="0" cy="-448" r="76" fill="#f6d1a7" stroke="#3b2a21" stroke-width="10"/>
+      <path d="M -76 -460 Q -84 -512 -40 -516 Q -38 -546 4 -540 Q 46 -546 48 -518 Q 84 -510 76 -460 Q 30 -492 0 -490 Q -30 -492 -76 -460 Z" fill="#d9a441" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="-48" cy="-430" rx="13" ry="8" fill="#f2937b" opacity="0.45"/>
+      <ellipse cx="48" cy="-430" rx="13" ry="8" fill="#f2937b" opacity="0.45"/>
+      <circle cx="-26" cy="-456" r="10" fill="#3b2a21"/>
+      <circle cx="26" cy="-456" r="10" fill="#3b2a21"/>
+      <circle cx="-23" cy="-459" r="3.4" fill="#ffffff"/>
+      <circle cx="29" cy="-459" r="3.4" fill="#ffffff"/>
+      <circle cx="0" cy="-410" r="16" fill="#4a2b22" stroke="#3b2a21" stroke-width="7"/>
+    </g>
+
+    <!-- papers flying, in front of the kids -->
+    <g stroke="#3b2a21" stroke-linejoin="round">
+      <g transform="translate(1330 1330) rotate(-24)">
+        <rect x="-52" y="-68" width="104" height="136" rx="10" fill="#ffffff" stroke-width="9"/>
+        <path d="M -30 -34 L 30 -34 M -30 -6 L 30 -6 M -30 22 L 18 22" stroke="#aebfca" stroke-width="6" fill="none"/>
+      </g>
+      <g transform="translate(700 1560) rotate(22)">
+        <rect x="-52" y="-68" width="104" height="136" rx="10" fill="#ffffff" stroke-width="9"/>
+        <path d="M -30 -34 L 30 -34 M -30 -6 L 30 -6 M -30 22 L 18 22" stroke="#aebfca" stroke-width="6" fill="none"/>
+      </g>
+      <g transform="translate(2320 1120) rotate(16)">
+        <rect x="-52" y="-68" width="104" height="136" rx="10" fill="#ffffff" stroke-width="9"/>
+        <path d="M -30 -34 L 30 -34 M -30 -6 L 30 -6 M -30 22 L 18 22" stroke="#aebfca" stroke-width="6" fill="none"/>
+      </g>
+      <g transform="translate(1560 1010) rotate(-28)">
+        <rect x="-52" y="-68" width="104" height="136" rx="10" fill="#ffffff" stroke-width="9"/>
+        <path d="M -30 -34 L 30 -34 M -30 -6 L 30 -6 M -30 22 L 18 22" stroke="#aebfca" stroke-width="6" fill="none"/>
+      </g>
+    </g>
+
+    <!-- bounce whooshes under eric + joy ticks by his raised fist -->
+    <g fill="none" stroke="#3b2a21" stroke-linecap="round" opacity="0.4">
+      <path d="M 1760 1780 Q 1900 1742 2040 1780" stroke-width="10"/>
+      <path d="M 1800 1830 Q 1920 1798 2040 1830" stroke-width="10"/>
+    </g>
+    <g fill="none" stroke="#3b2a21" stroke-width="9" stroke-linecap="round" opacity="0.55">
+      <path d="M 2076 1158 L 2064 1112 M 2128 1176 L 2160 1140 M 2030 1180 L 1996 1150"/>
+    </g>
+
+    <!-- ===================== RIIIING! radiating from the bell ===================== -->
+    <g font-family="'Baloo 2', sans-serif" font-weight="800" text-anchor="middle" transform="rotate(-6 1060 460)">
+      <g fill="#ef6f6c" stroke="#3b2a21" stroke-width="26" stroke-linejoin="round" paint-order="stroke" transform="translate(12 16)">
+        <text x="1060" y="550" font-size="280" letter-spacing="6"
+              dy="0 22 -24 26 -24 22 -26 12" rotate="-6 5 -5 6 -5 4 -6 5">RIIIING!</text>
+      </g>
+      <g fill="#ffb703" stroke="#3b2a21" stroke-width="16" stroke-linejoin="round" paint-order="stroke">
+        <text x="1060" y="550" font-size="280" letter-spacing="6"
+              dy="0 22 -24 26 -24 22 -26 12" rotate="-6 5 -5 6 -5 4 -6 5">RIIIING!</text>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== duffel bag swinging from eric's hand (drawn behind him) ===================== -->
+  <svg style="position: absolute; left: 1050px; top: 1270px; width: 1000px; height: 650px;" viewBox="0 0 1000 650" xmlns="http://www.w3.org/2000/svg">
+    <!-- towel trailing out of the zipper, flapping down-left -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M 470 400
+               C 400 420 380 462 330 490
+               C 288 513 250 512 218 545
+               L 252 592
+               C 282 556 320 560 362 534
+               C 412 503 442 458 500 445 Z" fill="#f4efe2"/>
+      <path d="M 434 425 C 380 448 362 486 314 512 M 476 442 C 420 462 400 496 352 524" fill="none" stroke="#ef6f6c" stroke-width="13"/>
+    </g>
+
+    <!-- snorkel poking out of the zipper gap -->
+    <path d="M 455 295 Q 420 210 430 150 Q 437 108 478 100" fill="none" stroke="#3b2a21" stroke-width="38" stroke-linecap="round"/>
+    <path d="M 455 295 Q 420 210 430 150 Q 437 108 478 100" fill="none" stroke="#2ec4b6" stroke-width="22" stroke-linecap="round"/>
+    <rect x="468" y="82" width="48" height="34" rx="11" fill="#f07f3c" stroke="#3b2a21" stroke-width="9" transform="rotate(-12 492 99)"/>
+
+    <!-- handles up to his fist -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 560 292 Q 600 200 712 186 M 760 302 Q 752 226 724 190" stroke="#3b2a21" stroke-width="32"/>
+      <path d="M 560 292 Q 600 200 712 186 M 760 302 Q 752 226 724 190" stroke="#33415e" stroke-width="18"/>
+    </g>
+
+    <!-- duffel body -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="430" y="280" width="400" height="210" rx="92" fill="#33415e" stroke-width="12"/>
+      <path d="M 486 292 Q 470 385 486 478 M 774 292 Q 790 385 774 478" fill="none" stroke="#46557f" stroke-width="8"/>
+      <path d="M 500 300 Q 630 272 790 302" fill="none" stroke="#7f93b8" stroke-width="8" stroke-dasharray="2 20"/>
+      <ellipse cx="455" cy="295" rx="36" ry="15" fill="#1f2942" stroke-width="8" transform="rotate(-8 455 295)"/>
+      <circle cx="790" cy="302" r="11" fill="#7f93b8" stroke-width="7"/>
+    </g>
+  </svg>
+
+  <!-- ===================== crab stowaway riding in the duffel pocket ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 1608px; top: 1500px; height: 150px; width: auto;">
+
+  <!-- pocket front panel, tucking the crab in -->
+  <svg style="position: absolute; left: 1596px; top: 1608px; width: 228px; height: 156px;" viewBox="0 0 228 156" xmlns="http://www.w3.org/2000/svg">
+    <rect x="16" y="16" width="196" height="124" rx="26" fill="#ef6f6c" stroke="#3b2a21" stroke-width="10"/>
+    <rect x="34" y="34" width="160" height="88" rx="18" fill="none" stroke="#f9b4b2" stroke-width="6" stroke-dasharray="14 12"/>
+  </svg>
+
+  <!-- ===================== eric, leaping out the door ===================== -->
+  <img src="../../public/characters/pages/04-page-03/eric-leaping.svg" alt="Eric leaping"
+       style="position: absolute; left: 1590px; top: 790px; height: 900px; width: auto;">
+
+  <!-- ===================== page text ===================== -->
+  <div class="text-band bottom"><p>Then RIIIING went the bell! The beach trip was here!<br>He packed up his swim trunks and grinned ear to ear.</p></div>
+
+</body>
+</html>

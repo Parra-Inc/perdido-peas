@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .vignette {
+      position: absolute;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .vignette svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .vignette img { position: absolute; width: auto; display: block; }
+    .cropwrap { position: absolute; overflow: hidden; }
+    .cropwrap img { position: absolute; left: 0; top: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== warm postcard-wall background ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffe9c4"/>
+        <stop offset="1" stop-color="#ffd08f"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="2550" height="2550" fill="url(#warm)"/>
+
+    <!-- soft sand-grain squiggles on the wall -->
+    <g stroke="#f3d8a8" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 320 1320 q 70 -18 140 0 M 2090 1310 q 70 -18 140 0 M 1205 880 q 70 -18 140 0 M 240 2140 q 60 -16 120 0 M 2190 2150 q 60 -16 120 0"/>
+    </g>
+
+    <!-- gull gliding between the postcards -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" transform="translate(1200 220) scale(0.8)">
+      <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+      <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+      <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+    </g>
+
+    <!-- music notes drifting off the dance postcard -->
+    <g fill="#3b2a21" stroke="#3b2a21" stroke-width="7">
+      <g transform="translate(340 1760) rotate(-12) scale(0.9)">
+        <ellipse cx="0" cy="30" rx="16" ry="12"/>
+        <path d="M 14 28 L 14 -30 Q 34 -26 44 -10" fill="none"/>
+      </g>
+      <g transform="translate(2230 1740) rotate(10) scale(0.9)">
+        <ellipse cx="0" cy="30" rx="16" ry="12"/>
+        <path d="M 14 28 L 14 -30 Q 34 -26 44 -10" fill="none"/>
+      </g>
+      <g transform="translate(1268 940) rotate(-8) scale(0.7)">
+        <ellipse cx="0" cy="30" rx="16" ry="12"/>
+        <path d="M 14 28 L 14 -30 Q 34 -26 44 -10" fill="none"/>
+      </g>
+    </g>
+
+    <!-- coral starfish in the bottom corners -->
+    <g fill="#ef6f6c" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round">
+      <path transform="translate(120 2300) rotate(-14) scale(1.5)" d="M 0 -26 L 7 -8 L 26 -8 L 11 4 L 16 22 L 0 12 L -16 22 L -11 4 L -26 -8 L -7 -8 Z"/>
+      <path transform="translate(2435 2290) rotate(18) scale(1.5)" d="M 0 -26 L 7 -8 L 26 -8 L 11 4 L 16 22 L 0 12 L -16 22 L -11 4 L -26 -8 L -7 -8 Z"/>
+    </g>
+  </svg>
+
+  <!-- ===================== vignette 1: floating in inner tubes ===================== -->
+  <div class="vignette" style="left: 120px; top: 150px; width: 1080px; height: 1080px;">
+    <svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyA" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#8fd3ef"/>
+          <stop offset="1" stop-color="#cdeef8"/>
+        </linearGradient>
+        <linearGradient id="gulfA" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2ec4b6"/>
+          <stop offset="1" stop-color="#5fd6c9"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1080" height="340" fill="url(#skyA)"/>
+      <!-- puffy cloud -->
+      <path d="M 480 130 q 18 -36 57 -31 q 15 -29 51 -23 q 36 5 41 35 q 33 5 30 33 q -3 24 -36 25 l -129 0 q -30 -5 -14 -39 Z" fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95"/>
+      <!-- emerald water -->
+      <rect x="0" y="320" width="1080" height="760" fill="url(#gulfA)"/>
+      <path d="M 0 320 q 45 -14 90 0 q 45 14 90 0 q 45 -14 90 0 q 45 14 90 0 q 45 -14 90 0 q 45 14 90 0 q 45 -14 90 0 q 45 14 90 0 q 45 -14 90 0 q 45 14 90 0 q 45 -14 90 0 q 45 14 90 0 L 1080 360 L 0 360 Z" fill="#2ec4b6"/>
+      <g stroke="#bff0ea" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.9">
+        <path d="M 130 430 q 40 -12 80 0 M 660 405 q 40 -12 80 0 M 880 540 q 40 -12 80 0 M 90 640 q 40 -12 80 0 M 500 470 q 40 -12 80 0"/>
+      </g>
+
+      <!-- back row tubes (full donuts, drawn behind the floaters) -->
+      <g stroke="#3b2a21" stroke-width="10">
+        <ellipse cx="320" cy="560" rx="158" ry="50" fill="#f2ede0"/>
+        <ellipse cx="320" cy="560" rx="100" ry="20" fill="#27b2a5"/>
+        <ellipse cx="745" cy="535" rx="158" ry="50" fill="#ef6f6c"/>
+        <ellipse cx="745" cy="535" rx="100" ry="20" fill="#27b2a5"/>
+      </g>
+    </svg>
+
+    <!-- back row floaters, cropped at the waist behind their tubes -->
+    <div class="cropwrap" style="left: 200px; top: 362px; width: 240px; height: 224px;">
+      <img src="../../public/characters/grace.svg" alt="Grace floating" style="height: 320px;">
+    </div>
+    <div class="cropwrap" style="left: 625px; top: 337px; width: 240px; height: 224px;">
+      <img src="../../public/characters/chris.svg" alt="Chris floating" style="height: 320px;">
+    </div>
+
+    <svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <!-- back row tube fronts over the floaters -->
+      <g stroke="#3b2a21" stroke-width="9">
+        <path d="M 162 560 A 158 50 0 0 0 478 560 L 420 560 A 100 20 0 0 1 220 560 Z" fill="#f2ede0"/>
+        <path d="M 587 535 A 158 50 0 0 0 903 535 L 845 535 A 100 20 0 0 1 645 535 Z" fill="#ef6f6c"/>
+      </g>
+      <path d="M 625 549 Q 745 581 865 549" fill="none" stroke="#f5928f" stroke-width="9" stroke-linecap="round"/>
+      <g stroke="#ffffff" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.85">
+        <path d="M 200 622 Q 320 648 440 622 M 625 597 Q 745 623 865 597"/>
+      </g>
+
+      <!-- front row tubes (full donuts, farthest first) -->
+      <g stroke="#3b2a21" stroke-width="10">
+        <ellipse cx="835" cy="795" rx="190" ry="60" fill="#f7ccd4"/>
+        <ellipse cx="835" cy="795" rx="120" ry="26" fill="#27b2a5"/>
+        <ellipse cx="255" cy="800" rx="190" ry="60" fill="#ffb703"/>
+        <ellipse cx="255" cy="800" rx="120" ry="26" fill="#27b2a5"/>
+        <ellipse cx="565" cy="845" rx="200" ry="63" fill="#8ed8ef"/>
+        <ellipse cx="565" cy="845" rx="126" ry="27" fill="#27b2a5"/>
+      </g>
+    </svg>
+
+    <!-- front row floaters -->
+    <div class="cropwrap" style="left: 693px; top: 559px; width: 285px; height: 266px;">
+      <img src="../../public/characters/sarah.svg" alt="Sarah floating" style="height: 380px;">
+    </div>
+    <div class="cropwrap" style="left: 113px; top: 564px; width: 285px; height: 266px;">
+      <img src="../../public/characters/ian.svg" alt="Ian floating" style="height: 380px;">
+    </div>
+    <div class="cropwrap" style="left: 412px; top: 593px; width: 306px; height: 285px;">
+      <img src="../../public/characters/eric.svg" alt="Eric floating" style="height: 407px;">
+    </div>
+
+    <svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <!-- front row tube fronts over the floaters -->
+      <g stroke="#3b2a21" stroke-width="9">
+        <path d="M 645 795 A 190 60 0 0 0 1025 795 L 955 795 A 120 26 0 0 1 715 795 Z" fill="#f7ccd4"/>
+        <path d="M 65 800 A 190 60 0 0 0 445 800 L 375 800 A 120 26 0 0 1 135 800 Z" fill="#ffb703"/>
+        <path d="M 365 845 A 200 63 0 0 0 765 845 L 691 845 A 126 27 0 0 1 439 845 Z" fill="#8ed8ef"/>
+      </g>
+      <g fill="none" stroke-width="10" stroke-linecap="round">
+        <path d="M 690 812 Q 835 852 980 812" stroke="#fce1e6"/>
+        <path d="M 110 817 Q 255 857 400 817" stroke="#ffd166"/>
+        <path d="M 410 863 Q 565 905 720 863" stroke="#b7e7f7"/>
+      </g>
+      <!-- foam and splashes -->
+      <g stroke="#ffffff" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+        <path d="M 110 880 Q 255 908 400 880 M 410 928 Q 565 956 720 928 M 690 875 Q 835 903 980 875"/>
+      </g>
+      <g fill="#ffffff" opacity="0.9">
+        <circle cx="95" cy="730" r="10"/>
+        <circle cx="475" cy="758" r="9"/>
+        <circle cx="770" cy="705" r="10"/>
+        <circle cx="1000" cy="758" r="9"/>
+        <circle cx="520" cy="640" r="8"/>
+      </g>
+      <!-- happy sparkles -->
+      <g stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.9">
+        <path d="M 378 428 L 402 428 M 390 416 L 390 440"/>
+        <path d="M 950 470 L 970 470 M 960 460 L 960 480"/>
+        <path d="M 128 508 L 146 508 M 137 499 L 137 517"/>
+      </g>
+      <!-- postcard ring -->
+      <circle cx="540" cy="540" r="531" fill="none" stroke="#3b2a21" stroke-width="18"/>
+    </svg>
+
+    <!-- crab hitching a ride on the yellow tube -->
+    <img src="../../public/characters/crab.svg" alt="Crab" style="left: 69px; top: 654px; height: 100px;">
+  </div>
+
+  <!-- ===================== vignette 2: bocce on the sand ===================== -->
+  <div class="vignette" style="left: 1350px; top: 150px; width: 1080px; height: 1080px;">
+    <svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyB" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#8fd3ef"/>
+          <stop offset="1" stop-color="#cdeef8"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1080" height="660" fill="url(#skyB)"/>
+      <!-- sun -->
+      <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+        <circle cx="870" cy="160" r="60" fill="#ffb703"/>
+        <path d="M 870 72 L 870 46 M 870 248 L 870 274 M 782 160 L 756 160 M 958 160 L 984 160
+                 M 808 98 L 790 80 M 932 98 L 950 80 M 808 222 L 790 240 M 932 222 L 950 240" fill="none"/>
+      </g>
+      <!-- puffy cloud -->
+      <path d="M 160 170 q 18 -36 57 -31 q 15 -29 51 -23 q 36 5 41 35 q 33 5 30 33 q -3 24 -36 25 l -129 0 q -30 -5 -14 -39 Z" fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95"/>
+      <!-- gulf strip on the horizon -->
+      <rect x="0" y="600" width="1080" height="70" fill="#2ec4b6"/>
+      <path d="M 0 600 q 45 -12 90 0 q 45 12 90 0 q 45 -12 90 0 q 45 12 90 0 q 45 -12 90 0 q 45 12 90 0 q 45 -12 90 0 q 45 12 90 0 q 45 -12 90 0 q 45 12 90 0 q 45 -12 90 0 q 45 12 90 0 L 1080 635 L 0 635 Z" fill="#2ec4b6"/>
+      <g stroke="#bff0ea" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.9">
+        <path d="M 180 632 q 35 -10 70 0 M 700 638 q 35 -10 70 0"/>
+      </g>
+      <!-- foam edge, then sugar-white sand -->
+      <path d="M 0 662 q 54 -18 108 0 q 54 18 108 0 q 54 -18 108 0 q 54 18 108 0 q 54 -18 108 0 q 54 18 108 0 q 54 -18 108 0 q 54 18 108 0 q 54 -18 108 0 q 54 18 108 0 L 1080 662 L 1080 684 L 0 684 Z" fill="#ffffff" opacity="0.95"/>
+      <rect x="0" y="678" width="1080" height="402" fill="#fdf6e3"/>
+      <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+        <path d="M 210 780 q 60 -16 120 0 M 640 830 q 60 -16 120 0 M 380 970 q 60 -16 120 0 M 760 1000 q 60 -16 120 0"/>
+      </g>
+    </svg>
+
+    <!-- cheering from the back: Grace and Eric (Eric a head taller, cap backwards) -->
+    <img src="../../public/characters/pages/16-page-15/grace-cheer.svg" alt="Grace cheering" style="left: 69px; top: 523px; height: 390px;">
+    <img src="../../public/characters/pages/16-page-15/eric-cheer.svg" alt="Eric cheering" style="left: 699px; top: 498px; height: 417px;">
+
+    <!-- Ben and Katie mid toss -->
+    <img src="../../public/characters/pages/16-page-15/ben-toss.svg" alt="Ben tossing a bocce ball" style="left: 224px; top: 566px; height: 430px;">
+    <img src="../../public/characters/pages/16-page-15/katie-toss.svg" alt="Katie tossing a bocce ball" style="left: 504px; top: 566px; height: 430px;">
+
+    <!-- crab peeking over a bocce ball -->
+    <img src="../../public/characters/crab.svg" alt="Crab" style="left: 692px; top: 855px; height: 85px;">
+
+    <svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <!-- bocce balls resting on the sand -->
+      <g stroke="#3b2a21">
+        <circle cx="650" cy="905" r="15" fill="#ffffff" stroke-width="8"/>
+        <circle cx="748" cy="952" r="44" fill="#2ec4b6" stroke-width="10"/>
+        <circle cx="860" cy="915" r="30" fill="#ef6f6c" stroke-width="10"/>
+      </g>
+      <path d="M 716 938 Q 748 922 780 938 M 716 966 Q 748 982 780 966" fill="none" stroke="#3b2a21" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+      <!-- postcard ring -->
+      <circle cx="540" cy="540" r="531" fill="none" stroke="#3b2a21" stroke-width="18"/>
+    </svg>
+  </div>
+
+  <!-- ===================== vignette 3: dancing at the glowing flora-bama ===================== -->
+  <div class="vignette" style="left: 700px; top: 960px; width: 1150px; height: 1150px;">
+    <svg viewBox="0 0 1150 1150" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sunsetC" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#e26d8e"/>
+          <stop offset="0.5" stop-color="#ff8e6b"/>
+          <stop offset="1" stop-color="#ffb703"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1150" height="660" fill="url(#sunsetC)"/>
+      <!-- warm glow behind the bar -->
+      <circle cx="575" cy="655" r="150" fill="#ffd94a" opacity="0.5"/>
+      <!-- sunset clouds -->
+      <g fill="#ffe1d1" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+        <path d="M 180 160 q 16 -32 51 -28 q 13 -26 45 -20 q 32 4 36 31 q 29 4 27 29 q -3 21 -32 22 l -114 0 q -27 -4 -13 -34 Z"/>
+        <path d="M 850 210 q 14 -28 45 -24 q 12 -23 40 -18 q 28 4 32 27 q 26 4 24 26 q -2 19 -28 20 l -101 0 q -24 -4 -12 -31 Z"/>
+      </g>
+      <!-- music notes from the band inside -->
+      <g fill="#3b2a21" stroke="#3b2a21" stroke-width="7">
+        <g transform="translate(150 430) rotate(-10) scale(0.85)">
+          <ellipse cx="0" cy="30" rx="16" ry="12"/>
+          <path d="M 14 28 L 14 -30 Q 34 -26 44 -10" fill="none"/>
+        </g>
+        <g transform="translate(990 400) rotate(12) scale(0.85)">
+          <ellipse cx="0" cy="30" rx="16" ry="12"/>
+          <path d="M 14 28 L 14 -30 Q 34 -26 44 -10" fill="none"/>
+        </g>
+        <g transform="translate(940 120) rotate(-8) scale(0.7)">
+          <ellipse cx="0" cy="30" rx="16" ry="12"/>
+          <path d="M 14 28 L 14 -30 Q 34 -26 44 -10" fill="none"/>
+        </g>
+      </g>
+
+      <!-- the flora-bama, lit up for the evening -->
+      <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="245" y="380" width="660" height="285" rx="12" fill="#b79975" stroke-width="12"/>
+        <g stroke="#9c8266" stroke-width="5" opacity="0.85">
+          <path d="M 330 390 L 330 655 M 415 390 L 415 655 M 500 390 L 500 655 M 585 390 L 585 655 M 670 390 L 670 655 M 755 390 L 755 655 M 840 390 L 840 655"/>
+        </g>
+        <path d="M 225 388 L 575 316 L 925 388 L 925 424 L 225 424 Z" fill="#c3ced4" stroke-width="12"/>
+        <g stroke="#93a3ab" stroke-width="5" fill="none">
+          <path d="M 400 372 L 400 418 M 575 352 L 575 418 M 750 372 L 750 418"/>
+        </g>
+        <rect x="440" y="296" width="270" height="60" rx="8" fill="#a98c69" stroke-width="9"/>
+        <path d="M 420 302 L 575 268 L 730 302 L 730 330 L 420 330 Z" fill="#c3ced4" stroke-width="9"/>
+        <!-- sign -->
+        <rect x="400" y="168" width="350" height="92" rx="14" fill="#f2ede0" stroke-width="10"/>
+        <rect x="412" y="180" width="326" height="68" rx="8" fill="none" stroke="#ef6f6c" stroke-width="5"/>
+        <rect x="540" y="260" width="14" height="40" fill="#8a6f52" stroke-width="7"/>
+        <rect x="596" y="260" width="14" height="40" fill="#8a6f52" stroke-width="7"/>
+        <text x="575" y="232" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="50" fill="#1d3557" stroke="none" letter-spacing="2">FLORA-BAMA</text>
+        <!-- glowing windows -->
+        <g fill="#ffd94a" stroke-width="9">
+          <rect x="300" y="470" width="100" height="100" rx="8"/>
+          <rect x="750" y="470" width="100" height="100" rx="8"/>
+        </g>
+        <g stroke="#3b2a21" stroke-width="5" fill="none">
+          <path d="M 350 470 L 350 570 M 300 520 L 400 520 M 800 470 L 800 570 M 750 520 L 850 520"/>
+        </g>
+        <!-- saloon door -->
+        <rect x="525" y="545" width="100" height="120" rx="10" fill="#7d6248" stroke-width="9"/>
+        <path d="M 575 545 L 575 665" stroke="#3b2a21" stroke-width="5" fill="none"/>
+        <circle cx="562" cy="610" r="6" fill="#ffb703" stroke-width="5"/>
+        <circle cx="588" cy="610" r="6" fill="#ffb703" stroke-width="5"/>
+        <!-- license plates -->
+        <g stroke-width="6">
+          <rect x="440" y="480" width="70" height="40" rx="6" fill="#ef6f6c" transform="rotate(-4 475 500)"/>
+          <rect x="640" y="485" width="70" height="40" rx="6" fill="#8ed8ef" transform="rotate(3 675 505)"/>
+        </g>
+        <!-- string lights with an evening glow -->
+        <path d="M 255 440 Q 575 510 895 440" fill="none" stroke="#3b2a21" stroke-width="5"/>
+        <g fill="#ffd94a" stroke="none" opacity="0.3">
+          <circle cx="330" cy="465" r="26"/>
+          <circle cx="430" cy="483" r="26"/>
+          <circle cx="530" cy="492" r="26"/>
+          <circle cx="620" cy="492" r="26"/>
+          <circle cx="720" cy="483" r="26"/>
+          <circle cx="820" cy="465" r="26"/>
+        </g>
+        <g fill="#ffd94a" stroke="#3b2a21" stroke-width="5">
+          <circle cx="330" cy="465" r="12"/>
+          <circle cx="430" cy="483" r="12"/>
+          <circle cx="530" cy="492" r="12"/>
+          <circle cx="620" cy="492" r="12"/>
+          <circle cx="720" cy="483" r="12"/>
+          <circle cx="820" cy="465" r="12"/>
+        </g>
+      </g>
+
+      <!-- sand -->
+      <path d="M 0 655 Q 200 638 420 650 Q 640 662 860 646 Q 1000 638 1150 652 L 1150 1150 L 0 1150 Z" fill="#fdf6e3"/>
+      <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+        <path d="M 170 820 q 55 -15 110 0 M 890 830 q 55 -15 110 0 M 520 1080 q 55 -15 110 0"/>
+      </g>
+      <!-- lamplight spilling from the door -->
+      <ellipse cx="575" cy="672" rx="95" ry="16" fill="#ffd94a" opacity="0.35"/>
+    </svg>
+
+    <!-- back row dancers -->
+    <img src="../../public/characters/pages/16-page-15/chris-dance.svg" alt="Chris dancing" style="left: 120px; top: 589px; height: 308px;">
+    <img src="../../public/characters/pages/16-page-15/sarah-dance.svg" alt="Sarah dancing" style="left: 348px; top: 589px; height: 308px;">
+    <img src="../../public/characters/pages/16-page-15/grace-dance.svg" alt="Grace dancing" style="left: 562px; top: 589px; height: 308px;">
+    <img src="../../public/characters/pages/16-page-15/ben-dance.svg" alt="Ben dancing" style="left: 800px; top: 589px; height: 308px;">
+
+    <!-- front row dancers (Eric a head taller, cap backwards) -->
+    <img src="../../public/characters/pages/16-page-15/ian-dance.svg" alt="Ian dancing" style="left: 205px; top: 665px; height: 353px;">
+    <img src="../../public/characters/pages/16-page-15/katie-dance.svg" alt="Katie dancing" style="left: 442px; top: 665px; height: 353px;">
+    <img src="../../public/characters/pages/16-page-15/eric-dance.svg" alt="Eric dancing" style="left: 678px; top: 642px; height: 378px;">
+
+    <!-- crab dancing along at their feet -->
+    <img src="../../public/characters/crab.svg" alt="Crab" style="left: 372px; top: 910px; height: 100px;">
+
+    <svg viewBox="0 0 1150 1150" xmlns="http://www.w3.org/2000/svg">
+      <!-- little kicks of sand and boogie arcs -->
+      <g fill="none" stroke="#efe3c4" stroke-width="7" stroke-linecap="round">
+        <path d="M 258 1020 q 20 10 44 4 M 526 1020 q 20 10 44 4 M 812 1032 q 20 10 44 4"/>
+      </g>
+      <g fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round" opacity="0.5">
+        <path d="M 928 800 q 16 -20 10 -44 M 250 745 q -16 -20 -10 -44"/>
+      </g>
+      <!-- happy sparkles in the evening air -->
+      <g stroke="#fff3c9" stroke-width="6" stroke-linecap="round" opacity="0.95">
+        <path d="M 120 560 L 144 560 M 132 548 L 132 572"/>
+        <path d="M 1010 560 L 1030 560 M 1020 550 L 1020 570"/>
+      </g>
+      <!-- postcard ring -->
+      <circle cx="575" cy="575" r="566" fill="none" stroke="#3b2a21" stroke-width="18"/>
+    </svg>
+  </div>
+
+  <!-- ===================== the rhyme ===================== -->
+  <div class="text-band bottom"><p>They floated in waves and played bocce on sand,<br>and danced to the tunes of the Flora-Bama band.</p></div>
+
+</body>
+</html>

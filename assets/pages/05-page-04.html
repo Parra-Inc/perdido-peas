@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: sky, sun, gulf, empty sand, umbrella, chairs ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8fd3ef"/>
+        <stop offset="1" stop-color="#cdeef8"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1500" fill="url(#sky)"/>
+
+    <!-- sun, left, below the text band -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+      <circle cx="270" cy="880" r="110" fill="#ffb703"/>
+      <path d="M 270 725 L 270 682 M 270 1035 L 270 1078 M 115 880 L 72 880 M 425 880 L 468 880
+               M 160 770 L 130 740 M 380 770 L 410 740 M 160 990 L 130 1020 M 380 990 L 410 1020" fill="none"/>
+    </g>
+
+    <!-- puffy clouds -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <g transform="translate(-20 640)">
+        <path d="M 2050 250 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      </g>
+      <g transform="translate(560 420)">
+        <path d="M 480 720 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+      </g>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1450" width="2550" height="260" fill="url(#gulf)"/>
+    <path d="M 0 1450 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1510 L 0 1510 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 200 1550 q 45 -14 90 0 M 1020 1600 q 45 -14 90 0 M 1180 1545 q 45 -14 90 0 M 1740 1590 q 45 -14 90 0 M 2280 1550 q 45 -14 90 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1680 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1680 L 2550 1712 L 0 1712 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- big stretch of empty sugar-white sand -->
+    <rect x="0" y="1702" width="2550" height="848" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 210 1930 q 90 -22 180 0 M 1370 1830 q 90 -22 180 0 M 2260 1960 q 90 -22 180 0 M 130 2140 q 90 -22 180 0 M 1520 2470 q 90 -22 180 0 M 1060 2140 q 90 -22 180 0"/>
+    </g>
+
+    <!-- eric's running footprints, up from the bottom of the page to where he stands -->
+    <g fill="#efe3c4">
+      <ellipse cx="905" cy="2500" rx="26" ry="17" transform="rotate(-12 905 2500)"/>
+      <ellipse cx="965" cy="2420" rx="25" ry="16" transform="rotate(-10 965 2420)"/>
+      <ellipse cx="890" cy="2340" rx="24" ry="15" transform="rotate(-14 890 2340)"/>
+      <ellipse cx="940" cy="2255" rx="23" ry="14" transform="rotate(-8 940 2255)"/>
+      <ellipse cx="865" cy="2180" rx="21" ry="13" transform="rotate(-14 865 2180)"/>
+      <ellipse cx="905" cy="2100" rx="20" ry="12" transform="rotate(-8 905 2100)"/>
+      <ellipse cx="840" cy="2030" rx="18" ry="11" transform="rotate(-12 840 2030)"/>
+      <ellipse cx="875" cy="1955" rx="17" ry="10" transform="rotate(-8 875 1955)"/>
+    </g>
+
+    <!-- ===================== lonely umbrella + empty beach chairs ===================== -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+
+      <!-- tilted beach umbrella -->
+      <g transform="translate(1960 1720) rotate(8)">
+        <rect x="-14" y="-20" width="28" height="540" rx="12" fill="#b79975" stroke-width="10"/>
+        <!-- canopy panels: coral and white -->
+        <path d="M 0 -330 Q -240 -290 -380 -40 Q -317 -96 -253 -40 Q -150 -270 0 -330 Z" fill="#ef6f6c"/>
+        <path d="M 0 -330 Q -150 -270 -253 -40 Q -190 -96 -127 -40 Q -75 -260 0 -330 Z" fill="#ffffff"/>
+        <path d="M 0 -330 Q -75 -260 -127 -40 Q -63 -96 0 -40 L 0 -330 Z" fill="#ef6f6c"/>
+        <path d="M 0 -330 L 0 -40 Q 63 -96 127 -40 Q 75 -260 0 -330 Z" fill="#ffffff"/>
+        <path d="M 0 -330 Q 75 -260 127 -40 Q 190 -96 253 -40 Q 150 -270 0 -330 Z" fill="#ef6f6c"/>
+        <path d="M 0 -330 Q 150 -270 253 -40 Q 317 -96 380 -40 Q 240 -290 0 -330 Z" fill="#ffffff"/>
+        <!-- seams + outline -->
+        <g fill="none" stroke-width="8">
+          <path d="M 0 -330 Q -150 -270 -253 -40 M 0 -330 Q -75 -260 -127 -40 M 0 -330 L 0 -40 M 0 -330 Q 75 -260 127 -40 M 0 -330 Q 150 -270 253 -40"/>
+        </g>
+        <path d="M 0 -330 Q -240 -290 -380 -40 Q -317 -96 -253 -40 Q -190 -96 -127 -40 Q -63 -96 0 -40 Q 63 -96 127 -40 Q 190 -96 253 -40 Q 317 -96 380 -40 Q 240 -290 0 -330 Z" fill="none" stroke-width="12"/>
+        <circle cx="0" cy="-336" r="16" fill="#ffb703" stroke-width="8"/>
+      </g>
+
+      <!-- empty chair 1, coral stripes -->
+      <g transform="translate(1720 2150)">
+        <g fill="#b79975" stroke-width="9">
+          <rect x="-104" y="-80" width="26" height="180" rx="10" transform="rotate(-7 -91 10)"/>
+          <rect x="78" y="-80" width="26" height="180" rx="10" transform="rotate(7 91 10)"/>
+        </g>
+        <rect x="-95" y="-340" width="190" height="220" rx="22" fill="#ef6f6c" stroke-width="10"/>
+        <rect x="-24" y="-330" width="48" height="200" rx="14" fill="#ffffff" stroke="none" opacity="0.92"/>
+        <rect x="-108" y="-130" width="216" height="58" rx="16" fill="#ef6f6c" stroke-width="10"/>
+        <rect x="-24" y="-121" width="48" height="40" rx="10" fill="#ffffff" stroke="none" opacity="0.92"/>
+      </g>
+
+      <!-- empty chair 2, teal stripes -->
+      <g transform="translate(2210 2230) scale(1.05)">
+        <g fill="#b79975" stroke-width="9">
+          <rect x="-104" y="-80" width="26" height="180" rx="10" transform="rotate(-7 -91 10)"/>
+          <rect x="78" y="-80" width="26" height="180" rx="10" transform="rotate(7 91 10)"/>
+        </g>
+        <rect x="-95" y="-340" width="190" height="220" rx="22" fill="#2ec4b6" stroke-width="10"/>
+        <rect x="-24" y="-330" width="48" height="200" rx="14" fill="#ffffff" stroke="none" opacity="0.92"/>
+        <rect x="-108" y="-130" width="216" height="58" rx="16" fill="#2ec4b6" stroke-width="10"/>
+        <rect x="-24" y="-121" width="48" height="40" rx="10" fill="#ffffff" stroke="none" opacity="0.92"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== eric, small on the wide empty sand, calling out ===================== -->
+  <img src="../../public/characters/pages/05-page-04/eric-calling.svg" alt="Eric calling out"
+       style="position: absolute; left: 540px; bottom: 630px; height: 600px; width: auto;">
+
+  <!-- ===================== the puzzled seagull ===================== -->
+  <img src="../../public/characters/seagull.svg" alt="Seagull"
+       style="position: absolute; left: 1080px; bottom: 480px; height: 205px; width: auto;">
+
+  <!-- ===================== crab half-buried in the sand ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab"
+       style="position: absolute; left: 330px; bottom: 140px; height: 155px; width: auto;">
+
+  <!-- ===================== foreground details: call lines, gull's question mark, sand mound over the crab ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <!-- eric's shout carrying across the beach -->
+    <g fill="none" stroke="#3b2a21" stroke-width="9" stroke-linecap="round" opacity="0.85">
+      <path d="M 905 1510 q 34 52 0 104 M 950 1485 q 46 72 0 144"/>
+      <path d="M 625 1510 q -34 52 0 104 M 580 1485 q -46 72 0 144"/>
+    </g>
+
+    <!-- puzzled question mark over the seagull -->
+    <text x="1215" y="1850" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800"
+          font-size="110" fill="#3b2a21" transform="rotate(8 1215 1820)">?</text>
+
+    <!-- sand mound burying the crab's lower half -->
+    <path d="M 270 2360 Q 350 2316 430 2342 Q 505 2366 595 2336 L 595 2500 L 270 2500 Z" fill="#fdf6e3"/>
+    <path d="M 270 2360 Q 350 2316 430 2342 Q 505 2366 595 2336" fill="none" stroke="#efe3c4" stroke-width="9" stroke-linecap="round"/>
+  </svg>
+
+  <!-- ===================== story text ===================== -->
+  <div class="text-band top"><p>Perdido at last! Eric ran to the shore,<br>ready for friends and for fun and for more.<br>But wait... something's wrong. Not a buddy in sight.<br>"Where IS everybody? This just isn't right!"</p></div>
+
+</body>
+</html>

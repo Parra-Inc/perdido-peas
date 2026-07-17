@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .friend { position: absolute; height: 640px; width: auto; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: beach behind the picnic table ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e26d8e"/>
+        <stop offset="0.5" stop-color="#ff8e6b"/>
+        <stop offset="1" stop-color="#ffb703"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1300" fill="url(#sky)"/>
+
+    <!-- low setting sun, warm glow, upper left -->
+    <circle cx="250" cy="680" r="240" fill="#ffd94a" opacity="0.16"/>
+    <circle cx="250" cy="680" r="180" fill="#ffd94a" opacity="0.24"/>
+    <circle cx="250" cy="680" r="130" fill="#ffb703" stroke="#3b2a21" stroke-width="10"/>
+
+    <!-- soft sunset clouds -->
+    <g fill="#ffe0d0" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <g transform="translate(-620 -50)">
+        <path d="M 2050 250 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      </g>
+      <g transform="translate(180 -440)">
+        <path d="M 480 720 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+      </g>
+    </g>
+
+    <!-- gull drifting over the water -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(1580 470) scale(0.75)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1165" width="2550" height="195" fill="url(#gulf)"/>
+    <path d="M 0 1160 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 q 60 16 120 0 q 60 -16 120 0 L 2550 1215 L 0 1215 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 260 1230 q 45 -14 90 0 M 760 1268 q 45 -14 90 0 M 1300 1225 q 45 -14 90 0 M 1840 1270 q 45 -14 90 0 M 2300 1232 q 45 -14 90 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1345 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1345 L 2550 1375 L 0 1375 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand -->
+    <rect x="0" y="1367" width="2550" height="1183" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 30 1620 q 50 -14 100 0 M 2452 1700 q 45 -12 90 0 M 70 2480 q 60 -16 120 0 M 2380 2500 q 60 -16 120 0 M 40 1980 q 55 -14 110 0"/>
+    </g>
+
+    <!-- big beach umbrella planted in the sand behind the right end of the table -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="2368" y="700" width="24" height="880" rx="10" fill="#b79975" stroke-width="9"/>
+      <path d="M 2380 400 Q 2110 440 2050 745 Q 2105 775 2160 745 Q 2215 775 2270 745 Q 2325 775 2380 745 Q 2435 775 2490 745 Q 2545 775 2600 745 Q 2680 470 2380 400 Z" fill="#ef6f6c" stroke-width="11"/>
+      <path d="M 2380 400 Q 2245 520 2160 745 Q 2215 775 2270 745 Q 2320 520 2380 400 Z" fill="#fdf6e3" stroke-width="9"/>
+      <path d="M 2380 400 Q 2425 520 2490 745 Q 2545 775 2600 745 Q 2570 520 2380 400 Z" fill="#fdf6e3" stroke-width="9"/>
+      <circle cx="2380" cy="396" r="16" fill="#ffb703" stroke-width="8"/>
+    </g>
+  </svg>
+
+  <!-- ===================== the peas, seated behind the picnic table, glasses up ===================== -->
+  <img class="friend" src="../../public/characters/pages/14-page-13/ian-toast.svg"   alt="Ian"   style="left: 90px;   bottom: 870px;">
+  <img class="friend" src="../../public/characters/pages/14-page-13/katie-toast.svg" alt="Katie" style="left: 400px;  bottom: 870px;">
+  <img class="friend" src="../../public/characters/pages/14-page-13/chris-toast.svg" alt="Chris" style="left: 710px;  bottom: 870px;">
+  <img class="friend" src="../../public/characters/pages/14-page-13/grace-toast.svg" alt="Grace" style="left: 1360px; bottom: 870px;">
+  <img class="friend" src="../../public/characters/pages/14-page-13/ben-toast.svg"   alt="Ben"   style="left: 1670px; bottom: 870px;">
+  <img class="friend" src="../../public/characters/pages/14-page-13/sarah-toast.svg" alt="Sarah" style="left: 1980px; bottom: 870px;">
+  <img class="friend" src="../../public/characters/pages/14-page-13/eric-laughing-toast.svg" alt="Eric" style="left: 1018px; bottom: 850px; height: 685px;">
+
+  <!-- ===================== picnic table in front of the peas ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+
+      <!-- crossed A-frame legs at each end -->
+      <g fill="#8a6f52" stroke-width="10">
+        <path d="M 305 1850 L 370 1850 L 245 2145 L 180 2145 Z"/>
+        <path d="M 245 1850 L 310 1850 L 480 2145 L 415 2145 Z"/>
+        <path d="M 2180 1850 L 2245 1850 L 2370 2145 L 2305 2145 Z"/>
+        <path d="M 2240 1850 L 2305 1850 L 2135 2145 L 2070 2145 Z"/>
+      </g>
+
+      <!-- weathered-wood tabletop, slightly elevated three-quarter view -->
+      <path d="M 190 1490 L 2360 1490 L 2440 1790 L 110 1790 Z" fill="#b79975" stroke-width="12"/>
+      <g stroke="#9c8266" stroke-width="6" opacity="0.85" fill="none">
+        <path d="M 172 1562 L 2380 1562 M 152 1636 L 2400 1636 M 132 1712 L 2420 1712"/>
+      </g>
+      <!-- front apron -->
+      <rect x="110" y="1790" width="2330" height="64" rx="12" fill="#a98c69" stroke-width="10"/>
+
+      <!-- pitcher of key lime colada -->
+      <path d="M 726 1560 L 864 1560 L 850 1732 Q 848 1748 832 1748 L 758 1748 Q 742 1748 740 1732 Z" fill="#d9efad" stroke-width="10"/>
+      <path d="M 733 1568 L 857 1568 L 852 1626 L 738 1626 Z" fill="#eef8d6"/>
+      <path d="M 862 1596 Q 922 1606 914 1672 Q 906 1722 848 1722 L 846 1700 Q 886 1698 892 1668 Q 897 1626 858 1618 Z" fill="#d9efad" stroke-width="9"/>
+      <rect x="718" y="1538" width="154" height="30" rx="14" fill="#eef8d6" stroke-width="9"/>
+      <path d="M 764 1660 L 770 1716" fill="none" stroke="#ffffff" stroke-width="7" opacity="0.55"/>
+      <circle cx="732" cy="1548" r="30" fill="#d7ee8e" stroke-width="8"/>
+      <circle cx="732" cy="1548" r="18" fill="#f4fadf" stroke="none"/>
+      <path d="M 732 1566 L 732 1530 M 717 1557 L 747 1539 M 717 1539 L 747 1557" fill="none" stroke="#9fce62" stroke-width="4"/>
+
+      <!-- extra key lime colada on the table -->
+      <path d="M 902 1602 L 968 1602 L 961 1728 Q 959 1740 947 1740 L 923 1740 Q 911 1740 909 1728 Z" fill="#d9efad" stroke-width="9"/>
+      <path d="M 906 1608 L 964 1608 L 961 1640 L 909 1640 Z" fill="#eef8d6"/>
+      <rect x="908" y="1534" width="14" height="76" rx="7" transform="rotate(-14 915 1572)" fill="#ef6f6c" stroke-width="6"/>
+      <circle cx="966" cy="1604" r="21" fill="#d7ee8e" stroke-width="7"/>
+      <circle cx="966" cy="1604" r="12" fill="#f4fadf" stroke="none"/>
+      <path d="M 966 1617 L 966 1591 M 955 1610 L 977 1598 M 955 1598 L 977 1610" fill="none" stroke="#9fce62" stroke-width="4"/>
+
+      <!-- plate of peanut butter cups (one already missing...) -->
+      <ellipse cx="1700" cy="1712" rx="128" ry="38" fill="#f2ede0" stroke-width="9"/>
+      <ellipse cx="1700" cy="1710" rx="96" ry="24" fill="none" stroke="#d8d0bd" stroke-width="5"/>
+      <g>
+        <path d="M 1614 1668 L 1666 1668 L 1659 1700 L 1621 1700 Z" fill="#6b4226" stroke-width="7"/>
+        <ellipse cx="1640" cy="1668" rx="26" ry="10" fill="#d9954a" stroke-width="6"/>
+        <path d="M 1627 1676 L 1630 1696 M 1640 1678 L 1640 1697 M 1653 1676 L 1650 1696" fill="none" stroke="#4e2f1a" stroke-width="4"/>
+      </g>
+      <g>
+        <path d="M 1686 1656 L 1738 1656 L 1731 1688 L 1693 1688 Z" fill="#6b4226" stroke-width="7"/>
+        <ellipse cx="1712" cy="1656" rx="26" ry="10" fill="#d9954a" stroke-width="6"/>
+        <path d="M 1699 1664 L 1702 1684 M 1712 1666 L 1712 1685 M 1725 1664 L 1722 1684" fill="none" stroke="#4e2f1a" stroke-width="4"/>
+      </g>
+      <g>
+        <path d="M 1752 1672 L 1804 1672 L 1797 1704 L 1759 1704 Z" fill="#6b4226" stroke-width="7"/>
+        <ellipse cx="1778" cy="1672" rx="26" ry="10" fill="#d9954a" stroke-width="6"/>
+        <path d="M 1765 1680 L 1768 1700 M 1778 1682 L 1778 1701 M 1791 1680 L 1788 1700" fill="none" stroke="#4e2f1a" stroke-width="4"/>
+      </g>
+
+      <!-- extra bushwhacker on the table -->
+      <path d="M 2008 1616 L 2072 1616 L 2066 1730 Q 2064 1742 2052 1742 L 2028 1742 Q 2016 1742 2014 1730 Z" fill="#c09468" stroke-width="9"/>
+      <path d="M 2008 1616 Q 1999 1594 2020 1597 Q 2022 1579 2039 1585 Q 2046 1570 2059 1581 Q 2081 1587 2072 1616 Z" fill="#fff8ec" stroke-width="7"/>
+      <path d="M 2024 1602 q 5 7 13 4 M 2044 1596 q 5 7 13 3" fill="none" stroke="#8a5a34" stroke-width="4"/>
+      <g transform="translate(2072 1612) rotate(12)">
+        <path d="M -14 -6 L 14 -6 L 10 11 L -10 11 Z" fill="#6b4226" stroke-width="6"/>
+        <ellipse cx="0" cy="-6" rx="14" ry="6" fill="#d9954a" stroke-width="5"/>
+        <path d="M -7 -1 L -5 7 M 0 0 L 0 8 M 7 -1 L 5 7" fill="none" stroke="#4e2f1a" stroke-width="3"/>
+      </g>
+
+      <!-- near-side bench -->
+      <rect x="330" y="1978" width="1890" height="66" rx="16" fill="#a98c69" stroke-width="10"/>
+      <path d="M 360 2010 L 2190 2010" fill="none" stroke="#8f7a5c" stroke-width="5"/>
+      <path d="M 560 2044 L 622 2044 L 600 2160 L 538 2160 Z" fill="#8a6f52" stroke-width="9"/>
+      <path d="M 1928 2044 L 1990 2044 L 2012 2160 L 1950 2160 Z" fill="#8a6f52" stroke-width="9"/>
+    </g>
+
+    <!-- clink sparkles where the glasses meet -->
+    <g fill="none" stroke="#ffb703" stroke-width="9" stroke-linecap="round">
+      <path d="M 500 1240 L 500 1210 M 470 1262 L 446 1246 M 530 1262 L 554 1246"/>
+      <path d="M 1112 1200 L 1112 1170 M 1082 1222 L 1058 1206 M 1142 1222 L 1166 1206"/>
+      <path d="M 1748 1218 L 1748 1188 M 1718 1240 L 1694 1224 M 1778 1240 L 1802 1224"/>
+    </g>
+  </svg>
+
+  <!-- ===================== crab making off with a peanut butter cup ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 2340px; bottom: 460px; height: 140px; width: auto;">
+  <svg style="position: absolute; left: 2346px; bottom: 556px; width: 74px; height: 64px;" viewBox="0 0 74 64" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(37 34) rotate(-14)">
+      <path d="M -20 -8 L 20 -8 L 15 16 L -15 16 Z" fill="#6b4226" stroke="#3b2a21" stroke-width="6" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-8" rx="20" ry="8" fill="#d9954a" stroke="#3b2a21" stroke-width="5"/>
+      <path d="M -11 -2 L -8 12 M 0 0 L 0 13 M 11 -2 L 8 12" fill="none" stroke="#4e2f1a" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </svg>
+
+  <!-- ===================== text band ===================== -->
+  <div class="text-band bottom">
+    <p>They sipped key lime coladas, all icy and green,<br>and Reese's bushwhackers, the best ever seen!</p>
+  </div>
+
+</body>
+</html>

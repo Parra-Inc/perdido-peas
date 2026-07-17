@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .friend { position: absolute; height: 1200px; width: auto; }
+    .text-band {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      max-width: 2150px;
+      background: rgba(255,251,240,0.95);
+      border: 10px solid #3b2a21;
+      border-radius: 48px;
+      padding: 48px 88px;
+      box-sizing: border-box;
+    }
+    .text-band.top { top: 90px; }
+    .text-band.bottom { bottom: 90px; }
+    .text-band p {
+      margin: 0;
+      font-family: "Baloo 2", sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1.4;
+      color: #3b2a21;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: sky, sun, string lights, gulf, sand ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e26d8e"/>
+        <stop offset="0.5" stop-color="#ff8e6b"/>
+        <stop offset="1" stop-color="#ffb703"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1620" fill="url(#sky)"/>
+
+    <!-- low, warm setting sun sinking toward the gulf, matching the golden-hour neighbors -->
+    <circle cx="300" cy="940" r="225" fill="#ffd94a" opacity="0.12"/>
+    <circle cx="300" cy="940" r="190" fill="#ffd94a" opacity="0.18"/>
+    <circle cx="300" cy="940" r="156" fill="#ffd94a" opacity="0.26"/>
+    <circle cx="300" cy="940" r="125" fill="#ffb703" stroke="#3b2a21" stroke-width="10"/>
+
+    <!-- sunset-warmed clouds -->
+    <g fill="#ffe1d1" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <path d="M 1750 260 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      <path d="M 560 480 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+    </g>
+
+    <!-- gull overhead -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(2080 470) scale(0.85)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- festive string lights swagging across the deck, flora-bama style -->
+    <path d="M -40 720 Q 1275 1100 2590 720" fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round"/>
+    <g fill="#ffd94a" opacity="0.22" stroke="none">
+      <circle cx="223" cy="804" r="34"/>
+      <circle cx="486" cy="858" r="34"/>
+      <circle cx="749" cy="896" r="34"/>
+      <circle cx="1012" cy="918" r="34"/>
+      <circle cx="1275" cy="926" r="34"/>
+      <circle cx="1538" cy="918" r="34"/>
+      <circle cx="1801" cy="896" r="34"/>
+      <circle cx="2064" cy="858" r="34"/>
+      <circle cx="2327" cy="804" r="34"/>
+    </g>
+    <g fill="#ffd94a" stroke="#3b2a21" stroke-width="5">
+      <circle cx="223" cy="804" r="14"/>
+      <circle cx="486" cy="858" r="14"/>
+      <circle cx="749" cy="896" r="14"/>
+      <circle cx="1012" cy="918" r="14"/>
+      <circle cx="1275" cy="926" r="14"/>
+      <circle cx="1538" cy="918" r="14"/>
+      <circle cx="1801" cy="896" r="14"/>
+      <circle cx="2064" cy="858" r="14"/>
+      <circle cx="2327" cy="804" r="14"/>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1600" width="2550" height="180" fill="url(#gulf)"/>
+    <path d="M 0 1600 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1660 L 0 1660 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 220 1680 q 45 -14 90 0 M 700 1710 q 45 -14 90 0 M 1810 1700 q 45 -14 90 0"/>
+    </g>
+    <!-- warm gold sunset shimmer casting across the emerald water -->
+    <g stroke="#ffd94a" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.8">
+      <path d="M 110 1690 q 45 -12 90 0 M 300 1722 q 45 -12 90 0 M 2210 1692 q 45 -12 90 0 M 2380 1724 q 45 -12 90 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1760 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1760 L 2550 1790 L 0 1790 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand, warmed by the sunset -->
+    <rect x="0" y="1780" width="2550" height="120" fill="#fdf1de"/>
+  </svg>
+
+  <!-- ===================== the peas crowd in around eric's saved seat ===================== -->
+  <img class="friend" src="../../public/characters/ben.svg" alt="Ben" style="left: -310px; bottom: 349px;">
+  <img class="friend" src="../../public/characters/grace.svg" alt="Grace" style="left: 1970px; bottom: 349px;">
+  <img class="friend" src="../../public/characters/pages/13-page-12/katie-cheering.svg" alt="Katie" style="left: 30px; bottom: 349px;">
+  <img class="friend" src="../../public/characters/pages/13-page-12/sarah-cheering.svg" alt="Sarah" style="left: 1630px; bottom: 349px;">
+  <img class="friend" src="../../public/characters/pages/13-page-12/chris-patting.svg" alt="Chris" style="left: 430px; bottom: 349px;">
+  <img class="friend" src="../../public/characters/pages/13-page-12/ian-patting.svg" alt="Ian" style="left: 1210px; bottom: 349px;">
+  <img src="../../public/characters/pages/13-page-12/eric-sliding.svg" alt="Eric" style="position: absolute; left: 794px; bottom: 349px; height: 1284px; width: auto;">
+
+  <!-- ===================== the picnic table with eric's frosty drink ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <!-- weathered wood picnic table filling the foreground -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="-24" y="1942" width="2598" height="640" fill="#a98c69" stroke-width="12"/>
+      <g stroke="#8f7457" stroke-width="6" opacity="0.9">
+        <path d="M 300 1956 L 300 2568 M 700 1956 L 700 2568 M 1100 1956 L 1100 2568 M 1500 1956 L 1500 2568 M 1900 1956 L 1900 2568 M 2300 1956 L 2300 2568"/>
+      </g>
+      <rect x="-24" y="1830" width="2598" height="118" fill="#b79975" stroke-width="12"/>
+      <g stroke="#9c8266" stroke-width="6" opacity="0.85">
+        <path d="M 0 1888 L 2550 1888"/>
+        <path d="M 320 1858 q 60 -10 120 0 M 2090 1862 q 60 -10 120 0"/>
+      </g>
+      <ellipse cx="860" cy="1908" rx="16" ry="9" fill="#9c8266" stroke-width="5"/>
+      <ellipse cx="1985" cy="1912" rx="16" ry="9" fill="#9c8266" stroke-width="5"/>
+    </g>
+
+    <!-- the frosty key lime drink waiting at eric's seat -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- glass -->
+      <path d="M 1178 1665 L 1372 1665 L 1362 1828 Q 1361 1845 1344 1845 L 1206 1845 Q 1189 1845 1188 1828 Z" fill="#e8f7f3" stroke-width="10"/>
+      <!-- pale green key lime colada -->
+      <path d="M 1188 1702 L 1362 1702 L 1354 1826 Q 1353 1838 1341 1838 L 1209 1838 Q 1197 1838 1196 1826 Z" fill="#c9e69a" stroke="none"/>
+      <!-- frosty foam swirl on top -->
+      <path d="M 1188 1712 Q 1208 1692 1230 1706 Q 1252 1720 1274 1704 Q 1296 1690 1318 1706 Q 1340 1718 1362 1704 L 1362 1688 L 1188 1688 Z" fill="#ffffff" stroke="none" opacity="0.95"/>
+      <!-- glass shine -->
+      <path d="M 1210 1725 L 1210 1812" fill="none" stroke="#ffffff" stroke-width="9" opacity="0.55"/>
+
+      <!-- tiny paper umbrella standing in the drink, canopy above the straw -->
+      <g transform="translate(1332 1602) rotate(12)">
+        <path d="M 0 0 L -16 80" fill="none" stroke="#8a6f52" stroke-width="10"/>
+        <path d="M -52 6 Q 0 -44 52 6 Q 43 13 34 6 Q 26 13 17 6 Q 9 13 0 6 Q -9 13 -17 6 Q -26 13 -34 6 Q -43 13 -52 6 Z" fill="#ef6f6c" stroke-width="8"/>
+        <path d="M -28 -6 Q -14 -24 0 -33 M 28 -6 Q 14 -24 0 -33" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.7"/>
+        <circle cx="0" cy="-35" r="6" fill="#ffb703" stroke-width="6"/>
+      </g>
+
+      <!-- lime wheel slotted on the rim -->
+      <circle cx="1182" cy="1652" r="46" fill="#7cb342" stroke-width="8"/>
+      <circle cx="1182" cy="1652" r="33" fill="#d9edaa" stroke-width="6"/>
+      <path d="M 1182 1624 L 1182 1680 M 1158 1638 L 1206 1666 M 1206 1638 L 1158 1666" fill="none" stroke="#9cc46a" stroke-width="5"/>
+
+      <!-- short striped straw poking straight up out of the frosty drink -->
+      <g transform="translate(1232 1735) rotate(-80)">
+        <rect x="0" y="-11" width="205" height="22" rx="11" fill="#f7f3ea" stroke-width="7"/>
+        <g fill="#ef6f6c" stroke="none">
+          <rect x="36" y="-7" width="26" height="14" rx="4"/>
+          <rect x="94" y="-7" width="26" height="14" rx="4"/>
+          <rect x="152" y="-7" width="26" height="14" rx="4"/>
+        </g>
+      </g>
+
+      <!-- flat sparkle-drop condensation -->
+      <g fill="#eafaf7" stroke-width="5">
+        <path d="M 1235 1736 Q 1243 1748 1243 1754 A 8 8 0 1 1 1227 1754 Q 1227 1748 1235 1736 Z"/>
+        <path d="M 1318 1768 Q 1326 1780 1326 1786 A 8 8 0 1 1 1310 1786 Q 1310 1780 1318 1768 Z"/>
+        <path d="M 1252 1798 Q 1260 1810 1260 1816 A 8 8 0 1 1 1244 1816 Q 1244 1810 1252 1798 Z"/>
+      </g>
+      <g fill="#ffffff" stroke-width="5">
+        <path d="M 1172 1712 L 1176 1700 L 1180 1712 L 1192 1716 L 1180 1720 L 1176 1732 L 1172 1720 L 1160 1716 Z"/>
+        <path d="M 1385 1716 L 1389 1704 L 1393 1716 L 1405 1720 L 1393 1724 L 1389 1736 L 1385 1724 L 1373 1720 Z"/>
+        <path d="M 1368 1798 L 1372 1786 L 1376 1798 L 1388 1802 L 1376 1806 L 1372 1818 L 1368 1806 L 1356 1802 Z"/>
+      </g>
+      <g fill="#ffd94a" stroke-width="5">
+        <path d="M 1122 1588 L 1126 1576 L 1130 1588 L 1142 1592 L 1130 1596 L 1126 1608 L 1122 1596 L 1110 1592 Z"/>
+        <path d="M 1420 1662 L 1424 1650 L 1428 1662 L 1440 1666 L 1428 1670 L 1424 1682 L 1420 1670 L 1408 1666 Z"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== the easter-egg crab, scuttling on the rail beside eric's drink ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 1440px; bottom: 675px; height: 122px; width: auto;">
+
+  <!-- ===================== the rhyme ===================== -->
+  <div class="text-band bottom">
+    <p>They'd saved him a seat, and oh, what a treat:<br>a drink waited for him, all frosty and sweet!</p>
+  </div>
+
+</body>
+</html>

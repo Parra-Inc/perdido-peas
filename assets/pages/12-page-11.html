@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== base scene: sunset sky, sun, string lights, gulf, sand ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sunsetSky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e26d8e"/>
+        <stop offset="0.5" stop-color="#ff8e6b"/>
+        <stop offset="1" stop-color="#ffb703"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- golden-hour sky -->
+    <rect x="0" y="0" width="2550" height="1420" fill="url(#sunsetSky)"/>
+
+    <!-- setting sun, half dipped behind the gulf -->
+    <circle cx="760" cy="1400" r="235" fill="#ffd94a" opacity="0.25"/>
+    <circle cx="760" cy="1400" r="170" fill="#ffb703" stroke="#3b2a21" stroke-width="10"/>
+
+    <!-- gulls drifting home -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(2230 780) scale(0.75)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+      <g transform="translate(240 850) scale(0.6)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- string lights swagged overhead, edge to edge -->
+    <path d="M -20 1060 Q 400 1260 830 1160 Q 1270 1290 1710 1165 Q 2140 1265 2570 1080" fill="none" stroke="#3b2a21" stroke-width="7"/>
+    <g fill="#ffd94a" opacity="0.22" stroke="none">
+      <circle cx="190" cy="1141" r="36"/>
+      <circle cx="403" cy="1185" r="36"/>
+      <circle cx="616" cy="1191" r="36"/>
+      <circle cx="830" cy="1160" r="36"/>
+      <circle cx="1050" cy="1209" r="36"/>
+      <circle cx="1270" cy="1226" r="36"/>
+      <circle cx="1490" cy="1212" r="36"/>
+      <circle cx="1710" cy="1165" r="36"/>
+      <circle cx="1925" cy="1197" r="36"/>
+      <circle cx="2140" cy="1194" r="36"/>
+      <circle cx="2355" cy="1155" r="36"/>
+    </g>
+    <g fill="#ffd94a" stroke="#3b2a21" stroke-width="5">
+      <circle cx="190" cy="1141" r="16"/>
+      <circle cx="403" cy="1185" r="16"/>
+      <circle cx="616" cy="1191" r="16"/>
+      <circle cx="830" cy="1160" r="16"/>
+      <circle cx="1050" cy="1209" r="16"/>
+      <circle cx="1270" cy="1226" r="16"/>
+      <circle cx="1490" cy="1212" r="16"/>
+      <circle cx="1710" cy="1165" r="16"/>
+      <circle cx="1925" cy="1197" r="16"/>
+      <circle cx="2140" cy="1194" r="16"/>
+      <circle cx="2355" cy="1155" r="16"/>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1400" width="2550" height="260" fill="url(#gulf)"/>
+    <path d="M 0 1400 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1460 L 0 1460 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 180 1500 q 45 -14 90 0 M 1120 1490 q 45 -14 90 0 M 1720 1535 q 45 -14 90 0 M 2260 1495 q 45 -14 90 0"/>
+    </g>
+    <!-- sun glints down the water -->
+    <g stroke="#ffd94a" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.75">
+      <path d="M 660 1470 q 50 -12 100 0 M 700 1532 q 45 -12 90 0 M 640 1592 q 55 -12 110 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1630 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1630 L 2550 1662 L 0 1662 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand -->
+    <rect x="0" y="1652" width="2550" height="898" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 320 1780 q 90 -22 180 0 M 1400 1750 q 90 -22 180 0 M 2160 1820 q 90 -22 180 0 M 180 2450 q 90 -22 180 0 M 960 2490 q 90 -22 180 0 M 1760 2510 q 90 -22 180 0"/>
+    </g>
+
+    <!-- whoosh lines trailing behind running Eric -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.3">
+      <path d="M 40 1960 L 130 1960 M 25 2050 L 145 2050 M 45 2140 L 130 2140"/>
+    </g>
+    <!-- little sand puffs behind his kicked-up foot -->
+    <g stroke="#e3d3ac" stroke-width="8" stroke-linecap="round" fill="none">
+      <path d="M 150 2262 q 14 -18 34 -12 M 128 2300 q 10 -14 26 -10"/>
+    </g>
+  </svg>
+
+  <!-- ===================== the peas seated behind the picnic table, cheering ===================== -->
+  <img src="../../public/characters/pages/12-page-11/katie-cheering.svg" alt="Katie cheering" style="position: absolute; left: 1180px; bottom: 190px; height: 640px; width: auto;">
+  <img src="../../public/characters/pages/12-page-11/grace-cheering.svg" alt="Grace cheering" style="position: absolute; left: 1500px; bottom: 170px; height: 640px; width: auto;">
+  <img src="../../public/characters/pages/12-page-11/ben-cheering.svg" alt="Ben cheering" style="position: absolute; left: 1820px; bottom: 160px; height: 640px; width: auto;">
+  <img src="../../public/characters/pages/12-page-11/sarah-cheering.svg" alt="Sarah cheering" style="position: absolute; left: 2140px; bottom: 170px; height: 640px; width: auto;">
+
+  <!-- ===================== the big picnic table ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- crossed end legs -->
+      <g fill="#8a6f52" stroke-width="9">
+        <path d="M 1240 2250 L 1180 2466 L 1224 2466 L 1284 2250 Z"/>
+        <path d="M 1352 2250 L 1412 2466 L 1368 2466 L 1308 2250 Z"/>
+        <path d="M 2368 2250 L 2428 2466 L 2384 2466 L 2324 2250 Z"/>
+        <path d="M 2256 2250 L 2196 2466 L 2240 2466 L 2300 2250 Z"/>
+      </g>
+
+      <!-- tabletop -->
+      <rect x="1150" y="2160" width="1350" height="90" rx="14" fill="#b79975" stroke-width="12"/>
+      <path d="M 1170 2205 L 2480 2205" stroke="#9c8266" stroke-width="6"/>
+      <path d="M 1420 2168 L 1420 2242 M 1810 2168 L 1810 2242 M 2200 2168 L 2200 2242" stroke="#9c8266" stroke-width="5" opacity="0.7"/>
+
+      <!-- lemonade on the table -->
+      <g stroke-width="8">
+        <path d="M 1868 2064 L 1932 2064 Q 1948 2112 1940 2160 L 1860 2160 Q 1852 2112 1868 2064 Z" fill="#8ed8ef"/>
+        <path d="M 1940 2090 Q 1968 2104 1942 2134" fill="none"/>
+        <path d="M 1866 2098 L 1936 2098" stroke="#5cb8d6" stroke-width="6"/>
+        <rect x="1500" y="2100" width="48" height="60" rx="8" fill="#ef6f6c"/>
+        <rect x="2230" y="2100" width="48" height="60" rx="8" fill="#ffd94a"/>
+        <path d="M 1516 2098 L 1508 2066 M 2262 2098 L 2272 2066" stroke-width="6"/>
+      </g>
+
+      <!-- front bench -->
+      <rect x="1210" y="2300" width="1240" height="58" rx="12" fill="#a98c69" stroke-width="10"/>
+      <g fill="#8a6f52" stroke-width="9">
+        <rect x="1290" y="2358" width="32" height="110" rx="8"/>
+        <rect x="2340" y="2358" width="32" height="110" rx="8"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== standing peas waving at the end of the table ===================== -->
+  <img src="../../public/characters/pages/12-page-11/chris-waving.svg" alt="Chris waving" style="position: absolute; left: 580px; bottom: 240px; height: 640px; width: auto;">
+  <img src="../../public/characters/pages/12-page-11/ian-waving.svg" alt="Ian waving" style="position: absolute; left: 860px; bottom: 240px; height: 640px; width: auto;">
+
+  <!-- ===================== eric sprinting in, arms wide, flip-flops flying ===================== -->
+  <img src="../../public/characters/pages/12-page-11/eric-running.svg" alt="Eric running" style="position: absolute; left: 30px; bottom: 240px; height: 685px; width: auto;">
+
+  <!-- ===================== crab holding up a WELCOME ERIC pennant ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2022" y="2250" width="276" height="64" rx="10" fill="#f2ede0" stroke="#3b2a21" stroke-width="8"/>
+    <text x="2160" y="2295" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="30" letter-spacing="2" fill="#e2574c">WELCOME ERIC</text>
+  </svg>
+  <img src="../../public/characters/crab.svg" alt="Crab holding the welcome banner" style="position: absolute; left: 2060px; bottom: 125px; height: 150px; width: auto;">
+
+  <!-- ===================== text band ===================== -->
+  <div class="text-band top"><p>And there at a table, down close to the sea,<br>he spotted the Peas! Could it really be?<br>Ben! Chris! And Ian! And Katie! And Grace!<br>And Sarah! All cheering! He'd found the right place!</p></div>
+
+</body>
+</html>

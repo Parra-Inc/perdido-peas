@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      max-width: 2150px;
+      background: rgba(255,251,240,0.95);
+      border: 10px solid #3b2a21;
+      border-radius: 48px;
+      padding: 48px 88px;
+      box-sizing: border-box;
+    }
+    .text-band.top { top: 90px; }
+    .text-band.bottom { bottom: 90px; }
+    .text-band p {
+      margin: 0;
+      font-family: "Baloo 2", sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1.4;
+      color: #3b2a21;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: the same muted gray-blue classroom as page 1 ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="rainSky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#aebfca"/>
+        <stop offset="1" stop-color="#c5d3dc"/>
+      </linearGradient>
+      <clipPath id="glass">
+        <rect x="300" y="400" width="700" height="1000"/>
+      </clipPath>
+    </defs>
+
+    <!-- wall + floor -->
+    <rect x="0" y="0" width="2550" height="1900" fill="#dfe6ec"/>
+    <rect x="0" y="1900" width="2550" height="650" fill="#c6d0d7"/>
+    <g stroke="#aab8c1" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M 0 2060 L 2550 2060 M 0 2260 L 2550 2260"/>
+      <path d="M 420 1980 L 420 2060 M 1180 2060 L 1180 2260 M 2200 1980 L 2200 2060"/>
+    </g>
+    <!-- baseboard -->
+    <rect x="-20" y="1852" width="2590" height="52" fill="#cdd7dd" stroke="#3b2a21" stroke-width="9"/>
+
+    <!-- ===================== big window with rain ===================== -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- outer frame -->
+      <rect x="240" y="340" width="820" height="1120" rx="18" fill="#eef2f5" stroke-width="12"/>
+      <!-- glass: rainy gray-blue sky -->
+      <rect x="300" y="400" width="700" height="1000" fill="url(#rainSky)" stroke-width="9"/>
+
+      <g clip-path="url(#glass)">
+        <!-- gray rain clouds -->
+        <g fill="#cfd9df" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round">
+          <path transform="translate(350 560)" d="M 0 0 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+          <path transform="translate(640 800) scale(0.72)" d="M 0 0 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+        </g>
+        <!-- rain streaks -->
+        <g stroke="#93a9b6" stroke-width="8" stroke-linecap="round" fill="none">
+          <path d="M 372 680 l -22 90 M 480 640 l -22 90 M 588 700 l -22 90
+                   M 420 860 l -22 90 M 545 950 l -22 90 M 355 1060 l -22 90
+                   M 615 1120 l -22 90 M 465 1210 l -22 90 M 560 1320 l -22 90
+                   M 730 620 l -22 90 M 845 560 l -22 90 M 940 700 l -22 90
+                   M 765 850 l -22 90 M 890 990 l -22 90 M 725 1130 l -22 90
+                   M 945 1190 l -22 90 M 830 1300 l -22 90 M 350 1330 l -22 90"/>
+        </g>
+        <!-- raindrop trickles on the glass -->
+        <g stroke="#e2edf2" stroke-width="6" stroke-linecap="round" fill="none">
+          <path d="M 755 440 q 8 36 2 66 q -4 26 0 48"/>
+          <path d="M 352 940 q 6 34 0 62"/>
+        </g>
+        <circle cx="757" cy="562" r="8" fill="#e2edf2"/>
+        <circle cx="352" cy="1010" r="7" fill="#e2edf2"/>
+
+        <!-- faint warm reflection of the flora-bama string lights in the wet glass -->
+        <g opacity="0.55">
+          <path d="M 320 1070 Q 650 1195 980 1070" fill="none" stroke="#d9b25a" stroke-width="6" stroke-linecap="round"/>
+          <g fill="#ffd94a" opacity="0.35">
+            <circle cx="386" cy="1104" r="24"/>
+            <circle cx="485" cy="1129" r="24"/>
+            <circle cx="584" cy="1142" r="24"/>
+            <circle cx="716" cy="1142" r="24"/>
+            <circle cx="815" cy="1129" r="24"/>
+            <circle cx="914" cy="1104" r="24"/>
+          </g>
+          <g fill="#ffd94a" stroke="#d9a43c" stroke-width="4">
+            <circle cx="386" cy="1104" r="13"/>
+            <circle cx="485" cy="1129" r="13"/>
+            <circle cx="584" cy="1142" r="13"/>
+            <circle cx="716" cy="1142" r="13"/>
+            <circle cx="815" cy="1129" r="13"/>
+            <circle cx="914" cy="1104" r="13"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- muntins -->
+      <rect x="636" y="395" width="28" height="1010" fill="#eef2f5" stroke-width="9"/>
+      <rect x="295" y="886" width="710" height="28" fill="#eef2f5" stroke-width="9"/>
+      <!-- sill -->
+      <rect x="210" y="1448" width="880" height="56" rx="12" fill="#dde5ea" stroke-width="10"/>
+    </g>
+
+    <!-- ===================== ABC poster ===================== -->
+    <g transform="rotate(-2 1460 520)">
+      <rect x="1330" y="380" width="260" height="300" rx="14" fill="#f0f4f6" stroke="#3b2a21" stroke-width="10" stroke-linejoin="round"/>
+      <text x="1460" y="510" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="86" fill="#6b8298">ABC</text>
+      <text x="1460" y="602" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="700" font-size="64" fill="#93a7b5">abc</text>
+      <path d="M 1390 636 q 35 -16 70 0 q 35 16 70 0" fill="none" stroke="#9db0bc" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- ===================== wall clock, 2:00 (matches page 1 bookend) ===================== -->
+    <g stroke="#3b2a21" stroke-linecap="round">
+      <circle cx="2260" cy="420" r="150" fill="#f2ede0" stroke-width="12"/>
+      <g font-family="'Baloo 2', sans-serif" font-weight="700" font-size="44" fill="#1d3557" text-anchor="middle" stroke="none">
+        <text x="2260" y="319">12</text>
+        <text x="2378" y="435">3</text>
+        <text x="2260" y="538">6</text>
+        <text x="2142" y="435">9</text>
+      </g>
+      <!-- minute hand at 12, hour hand at 2 -->
+      <path d="M 2260 420 L 2260 338" stroke-width="12" fill="none"/>
+      <path d="M 2260 420 L 2310 391" stroke-width="14" fill="none"/>
+      <circle cx="2260" cy="420" r="13" fill="#3b2a21" stroke-width="6"/>
+    </g>
+  </svg>
+
+  <!-- ===================== eric, chin in hands, grinning at the window ===================== -->
+  <img src="../../public/characters/pages/18-page-17/eric-grinning.svg" alt="Eric grinning at his desk"
+       style="position: absolute; left: 1264px; bottom: 440px; height: 950px; width: auto;">
+
+  <!-- ===================== desk in front of eric (hides his legs) ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="snap">
+        <rect x="1332" y="1862" width="276" height="176"/>
+      </clipPath>
+    </defs>
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- front apron -->
+      <rect x="1180" y="1798" width="890" height="330" rx="12" fill="#a98c69" stroke-width="11"/>
+      <g stroke="#9c8266" stroke-width="6" opacity="0.85">
+        <path d="M 1330 1812 L 1330 2114 M 1480 1812 L 1480 2114 M 1630 1812 L 1630 2114 M 1780 1812 L 1780 2114 M 1930 1812 L 1930 2114"/>
+      </g>
+
+      <!-- snapshot of the peas at the picnic table, taped to the front of the desk -->
+      <g transform="translate(0 26) rotate(-3 1470 1970)">
+        <rect x="1310" y="1840" width="320" height="260" rx="8" fill="#ffffff" stroke-width="9"/>
+        <rect x="1332" y="1862" width="276" height="176" fill="#8fd3ef" stroke-width="7"/>
+        <g clip-path="url(#snap)" stroke-width="5">
+          <circle cx="1372" cy="1892" r="18" fill="#ffb703"/>
+          <rect x="1326" y="1922" width="290" height="22" fill="#2ec4b6" stroke="none"/>
+          <rect x="1326" y="1944" width="290" height="96" fill="#fdf6e3" stroke="none"/>
+          <path d="M 1332 1944 L 1608 1944" stroke="#efe3c4" stroke-width="5" fill="none"/>
+          <!-- the seven peas squeezed in behind the table -->
+          <g stroke-width="4">
+            <!-- shoulders -->
+            <rect x="1387" y="1959" width="22" height="14" rx="7" fill="#ef6f6c"/>
+            <rect x="1411" y="1959" width="22" height="14" rx="7" fill="#8ed8ef"/>
+            <rect x="1435" y="1959" width="22" height="14" rx="7" fill="#f2ede0"/>
+            <rect x="1459" y="1959" width="22" height="14" rx="7" fill="#ffd94a"/>
+            <rect x="1483" y="1959" width="22" height="14" rx="7" fill="#2ec4b6"/>
+            <rect x="1507" y="1959" width="22" height="14" rx="7" fill="#e26d8e"/>
+            <rect x="1531" y="1957" width="22" height="16" rx="7" fill="#f6dec6"/>
+            <!-- heads -->
+            <circle cx="1398" cy="1950" r="10" fill="#e8ae83"/>
+            <circle cx="1422" cy="1950" r="10" fill="#e8ae83"/>
+            <circle cx="1446" cy="1950" r="10" fill="#e8ae83"/>
+            <circle cx="1470" cy="1950" r="10" fill="#f9e6d2"/>
+            <circle cx="1494" cy="1950" r="10" fill="#f9e6d2"/>
+            <circle cx="1518" cy="1950" r="10" fill="#f1be96"/>
+            <circle cx="1542" cy="1943" r="11" fill="#f1be96"/>
+            <!-- hair and hats: ian red cap, katie brown, chris navy cap, grace white bucket, ben bun, sarah blonde, eric navy backwards -->
+            <path d="M 1388 1950 a 10 10 0 0 1 20 0 Z" fill="#d95d55"/>
+            <path d="M 1386 1950 L 1392 1946" stroke="#d95d55" stroke-width="5" fill="none"/>
+            <path d="M 1412 1950 a 10 10 0 0 1 20 0 Z" fill="#5f4530"/>
+            <path d="M 1436 1950 a 10 10 0 0 1 20 0 Z" fill="#33415e"/>
+            <path d="M 1460 1950 a 10 10 0 0 1 20 0 Z" fill="#f2ede0"/>
+            <path d="M 1457 1950 L 1483 1950" stroke="#3b2a21" stroke-width="4" fill="none"/>
+            <path d="M 1484 1950 a 10 10 0 0 1 20 0 Z" fill="#6b4a2f"/>
+            <circle cx="1494" cy="1938" r="3.5" fill="#6b4a2f"/>
+            <path d="M 1508 1950 a 10 10 0 0 1 20 0 Z" fill="#e8c46a"/>
+            <path d="M 1531 1943 a 11 11 0 0 1 22 0 Z" fill="#33415e"/>
+            <path d="M 1551 1941 L 1557 1943" stroke="#33415e" stroke-width="5" fill="none"/>
+          </g>
+          <!-- picnic table in front of them -->
+          <rect x="1392" y="1972" width="156" height="14" rx="5" fill="#b79975"/>
+          <path d="M 1410 1986 L 1398 2014 M 1530 1986 L 1542 2014" fill="none"/>
+          <rect x="1378" y="1998" width="184" height="11" rx="5" fill="#a98c69" stroke-width="4"/>
+        </g>
+        <text x="1470" y="2082" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="700" font-size="42" fill="#1d3557" stroke="none">the peas!</text>
+        <!-- tape holding the snapshot up -->
+        <g transform="rotate(4 1470 1838)">
+          <rect x="1420" y="1820" width="100" height="34" rx="6" fill="#f7ecc0" opacity="0.92" stroke="#ddc98e" stroke-width="4"/>
+        </g>
+      </g>
+
+      <!-- desktop -->
+      <rect x="1128" y="1748" width="1000" height="58" rx="16" fill="#b79975" stroke-width="12"/>
+
+      <!-- notebook with doodles, now wearing a flora-bama sticker -->
+      <g transform="rotate(-4 1376 1689)">
+        <rect x="1248" y="1600" width="256" height="178" rx="10" fill="#f7f4ec" stroke-width="9"/>
+        <rect x="1248" y="1600" width="34" height="178" rx="10" fill="#ef6f6c" stroke-width="9"/>
+        <!-- pencil doodle squiggle above the crab drawing -->
+        <path d="M 1300 1628 q 22 -12 44 0 q 22 12 44 0" fill="none" stroke="#9db0bc" stroke-width="7"/>
+        <!-- little flora-bama sticker, a mini version of the big sign -->
+        <g stroke-width="6">
+          <rect x="1404" y="1606" width="94" height="46" rx="10" fill="#f2ede0"/>
+          <rect x="1411" y="1614" width="80" height="30" rx="6" fill="none" stroke="#ef6f6c" stroke-width="4"/>
+          <text x="1451" y="1635" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="14" fill="#1d3557" stroke="none" textLength="72" lengthAdjust="spacingAndGlyphs">FLORA-BAMA</text>
+        </g>
+      </g>
+
+      <!-- papers -->
+      <g transform="rotate(-5 1880 1690)">
+        <rect x="1762" y="1618" width="228" height="150" rx="8" fill="#f2ede0" stroke-width="9"/>
+      </g>
+      <g transform="rotate(3 1900 1680)">
+        <rect x="1790" y="1600" width="230" height="158" rx="8" fill="#ffffff" stroke-width="9"/>
+        <g stroke="#c3d0d8" stroke-width="7">
+          <path d="M 1818 1640 L 1990 1640 M 1818 1676 L 1990 1676 M 1818 1712 L 1930 1712"/>
+        </g>
+      </g>
+
+      <!-- pencil on the desk -->
+      <g transform="rotate(8 1890 1782)" stroke-width="8">
+        <rect x="1770" y="1768" width="200" height="28" rx="6" fill="#ffb703"/>
+        <path d="M 1970 1768 L 2014 1782 L 1970 1796 Z" fill="#f6dec6"/>
+        <path d="M 1998 1777 L 2014 1782 L 1998 1787 Z" fill="#3b2a21" stroke="none"/>
+        <rect x="1744" y="1768" width="26" height="28" rx="9" fill="#f2937b"/>
+      </g>
+
+      <!-- seashell beside his pencil -->
+      <g transform="translate(2056 1738) rotate(12) scale(1.18)" stroke-width="7">
+        <rect x="-11" y="24" width="22" height="16" rx="7" fill="#f6dec6"/>
+        <path d="M 0 30 Q -36 18 -36 -8 Q -36 -30 0 -30 Q 36 -30 36 -8 Q 36 18 0 30 Z" fill="#f6dec6"/>
+        <path d="M 0 30 L -19 -25 M 0 30 L 0 -30 M 0 30 L 19 -25" fill="none" stroke="#d9a97c" stroke-width="5"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== the crab doodle, now in a tiny party hat ===================== -->
+  <img src="../../public/characters/pages/18-page-17/crab-partyhat.svg" alt="Crab doodle in a party hat"
+       style="position: absolute; left: 1316px; top: 1642px; height: 112px; width: auto; transform: rotate(-4deg);">
+
+  <!-- ===================== story text ===================== -->
+  <div class="text-band bottom">
+    <p>And now when it rains and the school clock ticks slow,<br>Eric smiles at the window... he knows where he'll go.</p>
+  </div>
+
+</body>
+</html>

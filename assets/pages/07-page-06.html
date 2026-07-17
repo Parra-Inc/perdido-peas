@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: sky, sun, wide open gulf ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8fd3ef"/>
+        <stop offset="1" stop-color="#cdeef8"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1180" fill="url(#sky)"/>
+
+    <!-- afternoon sun, left -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+      <circle cx="300" cy="660" r="110" fill="#ffb703"/>
+      <path d="M 300 495 L 300 450 M 300 825 L 300 870 M 135 660 L 90 660 M 465 660 L 510 660
+               M 183 543 L 151 511 M 417 543 L 449 511 M 183 777 L 151 809 M 417 777 L 449 809" fill="none"/>
+    </g>
+
+    <!-- puffy clouds -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <path d="M 2050 580 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      <path d="M 1530 660 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+    </g>
+
+    <!-- the wide open gulf -->
+    <rect x="0" y="1140" width="2550" height="1410" fill="url(#gulf)"/>
+    <path d="M 0 1140 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 L 2640 1210 L 0 1210 Z" fill="#2ec4b6"/>
+
+    <!-- wave highlights out on the water -->
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 260 1270 q 45 -14 90 0 M 1420 1240 q 45 -14 90 0 M 2240 1330 q 45 -14 90 0
+               M 130 1520 q 45 -14 90 0 M 1780 1560 q 45 -14 90 0 M 620 1420 q 45 -14 90 0
+               M 2320 1780 q 45 -14 90 0 M 180 1900 q 45 -14 90 0 M 1620 1860 q 45 -14 90 0"/>
+    </g>
+
+    <!-- empty coral inner tube, drifting left -->
+    <g transform="translate(620 1700)">
+      <ellipse cx="0" cy="70" rx="260" ry="38" fill="none" stroke="#bff0ea" stroke-width="10" opacity="0.8"/>
+      <ellipse cx="0" cy="0" rx="200" ry="80" fill="#ef6f6c"/>
+      <g stroke="#ffffff" stroke-width="42" stroke-linecap="butt">
+        <path d="M 0 -84 L 0 -40 M 0 26 L 0 84 M -204 -6 L -98 -8 M 204 -6 L 98 -8" fill="none"/>
+      </g>
+      <ellipse cx="0" cy="-8" rx="100" ry="36" fill="#3fcdbe" stroke="#3b2a21" stroke-width="9"/>
+      <ellipse cx="0" cy="0" rx="200" ry="80" fill="none" stroke="#3b2a21" stroke-width="10"/>
+    </g>
+
+    <!-- empty sunshine inner tube, drifting right and farther out -->
+    <g transform="translate(2080 1490)">
+      <ellipse cx="0" cy="52" rx="190" ry="28" fill="none" stroke="#bff0ea" stroke-width="9" opacity="0.8"/>
+      <ellipse cx="0" cy="0" rx="145" ry="58" fill="#ffb703" stroke="#3b2a21" stroke-width="10"/>
+      <ellipse cx="0" cy="-6" rx="72" ry="26" fill="#3fcdbe" stroke="#3b2a21" stroke-width="9"/>
+      <path d="M -104 -34 Q -50 -52 8 -48" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+    </g>
+
+    <!-- lonely pool noodle bobbing by -->
+    <g transform="translate(330 2020) rotate(-6)">
+      <ellipse cx="0" cy="46" rx="250" ry="32" fill="none" stroke="#bff0ea" stroke-width="10" opacity="0.8"/>
+      <path d="M -192 4 Q 0 -58 192 4 Q 210 10 202 44 Q 0 -12 -202 44 Q -210 10 -192 4 Z" fill="#4e8fd1" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+      <ellipse cx="-197" cy="24" rx="11" ry="16" fill="#33415e" stroke="#3b2a21" stroke-width="6"/>
+    </g>
+  </svg>
+
+  <!-- ===================== eric, knee-deep, shading his eyes ===================== -->
+  <img src="../../public/characters/pages/07-page-06/eric.svg" alt="Eric" style="position: absolute; left: 640px; bottom: 160px; height: 1100px; width: auto;">
+
+  <!-- ===================== the fish pops up and shrugs ===================== -->
+  <img src="../../public/characters/pages/07-page-06/fish.svg" alt="Fish" style="position: absolute; left: 1680px; bottom: 260px; height: 300px; width: auto;">
+
+  <!-- ===================== clear shallow water in front, wavy cut at eric's knees ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="shallow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#49cfc0"/>
+        <stop offset="1" stop-color="#7de3d6"/>
+      </linearGradient>
+    </defs>
+
+    <path d="M 0 2228 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 L 2660 2550 L 0 2550 Z" fill="url(#shallow)"/>
+    <path d="M 0 2228 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+
+    <!-- ripples around eric's legs and the fish -->
+    <g fill="none" stroke="#ffffff" stroke-width="10" opacity="0.85">
+      <ellipse cx="1052" cy="2248" rx="200" ry="32"/>
+      <ellipse cx="1795" cy="2262" rx="155" ry="28"/>
+    </g>
+
+    <!-- gentle squiggles in the shallows -->
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 300 2360 q 45 -14 90 0 M 900 2440 q 45 -14 90 0 M 1500 2340 q 45 -14 90 0
+               M 2100 2450 q 45 -14 90 0 M 600 2505 q 45 -14 90 0 M 2330 2320 q 45 -14 90 0"/>
+    </g>
+
+    <!-- tiny leaf raft for the crab -->
+    <ellipse cx="380" cy="2402" rx="215" ry="30" fill="none" stroke="#bff0ea" stroke-width="10" opacity="0.9"/>
+    <path d="M 235 2382 Q 380 2318 525 2382 Q 380 2440 235 2382 Z" fill="#8fbe6a" stroke="#3b2a21" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M 262 2380 Q 380 2350 500 2380" fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  </svg>
+
+  <!-- ===================== crab floating on the leaf ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 285px; bottom: 160px; height: 150px; width: auto;">
+
+  <!-- ===================== page text ===================== -->
+  <div class="text-band top"><p>He looked in the water where waves swish and sway.<br>No friends were out floating the afternoon away.</p></div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: sunset sky, setting sun, gulf, sand ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sunsetSky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e26d8e"/>
+        <stop offset="0.55" stop-color="#ff8e6b"/>
+        <stop offset="1" stop-color="#ffb703"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sunset sky -->
+    <rect x="0" y="0" width="2550" height="1600" fill="url(#sunsetSky)"/>
+
+    <!-- setting sun, half sunk at the horizon -->
+    <circle cx="1900" cy="1560" r="190" fill="#ffb703" stroke="#3b2a21" stroke-width="12"/>
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+      <path d="M 1900 1310 L 1900 1260 M 1690 1400 L 1650 1370 M 2110 1400 L 2150 1370 M 1780 1330 L 1758 1288 M 2020 1330 L 2042 1288" fill="none"/>
+    </g>
+
+    <!-- puffy clouds -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <path d="M 2050 250 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      <path d="M 270 380 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+    </g>
+
+    <!-- gulls heading home -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(330 1130) scale(0.8)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+      <g transform="translate(2180 1020) scale(0.7)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1560" width="2550" height="260" fill="url(#gulf)"/>
+    <path d="M 0 1560 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1620 L 0 1620 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 220 1660 q 45 -14 90 0 M 660 1705 q 45 -14 90 0 M 1180 1655 q 45 -14 90 0 M 2300 1700 q 45 -14 90 0"/>
+    </g>
+    <!-- golden shimmer under the setting sun -->
+    <g stroke="#ffd94a" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.85">
+      <path d="M 1795 1648 L 2005 1648 M 1840 1700 L 1960 1700 M 1868 1752 L 1932 1752"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1790 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1790 L 2550 1820 L 0 1820 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand -->
+    <rect x="0" y="1810" width="2550" height="740" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 240 2040 q 90 -22 180 0 M 640 2380 q 90 -22 180 0 M 2080 2090 q 90 -22 180 0 M 1980 2420 q 90 -22 180 0 M 380 2250 q 90 -22 180 0 M 1140 2400 q 90 -22 180 0"/>
+    </g>
+
+    <!-- scallop shell on the sand -->
+    <g transform="translate(420 2280)" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M 25 70 A 55 55 0 0 1 135 70 L 95 92 L 65 92 Z" fill="#f2ede0"/>
+      <path d="M 80 92 L 48 26 M 80 92 L 80 15 M 80 92 L 112 26" stroke-width="6" fill="none" opacity="0.45"/>
+    </g>
+  </svg>
+
+  <!-- ===================== the crab, waving goodbye ===================== -->
+  <img src="../../public/characters/pages/19-back-cover/crab-waving.svg" alt="Crab waving goodbye"
+       style="position: absolute; left: 980px; bottom: 240px; height: 460px; width: auto;">
+
+  <!-- ===================== coral bocce ball beside him ===================== -->
+  <svg style="position: absolute; left: 1720px; bottom: 240px; width: 250px; height: 250px;" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="110" cy="110" r="96" fill="#ef6f6c" stroke="#3b2a21" stroke-width="12"/>
+    <path d="M 40 80 Q 110 40 180 80 M 40 140 Q 110 180 180 140" fill="none" stroke="#3b2a21" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+    <!-- sand mound burying the bottom of the ball -->
+    <path d="M -10 168 Q 40 146 90 160 Q 140 174 180 158 Q 210 148 230 160 L 230 230 L -10 230 Z" fill="#fdf6e3"/>
+    <path d="M -10 168 Q 40 146 90 160 Q 140 174 180 158 Q 210 148 230 160" fill="none" stroke="#efe3c4" stroke-width="9" stroke-linecap="round"/>
+  </svg>
+
+  <!-- ===================== hand-lettered goodbye + wave marks ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <g font-family="'Baloo 2', sans-serif" font-weight="800" text-anchor="middle">
+      <!-- coral sticker shadow -->
+      <g fill="#ef6f6c" stroke="#3b2a21" stroke-width="30" stroke-linejoin="round" paint-order="stroke" transform="translate(14 18)">
+        <text x="1275" y="470" font-size="280" letter-spacing="10"
+              dy="0 18 -26 24 -28 26 -22" rotate="-4 3 -3 4 -4 3 -3">See you</text>
+        <text x="1275" y="830" font-size="280" letter-spacing="10"
+              dy="0 16 -24 22 -26 24 -22 24 -26 24 -24 22" rotate="-4 3 -3 4 -4 3 -3 4 -4 3 -3 4">at the Bama!</text>
+      </g>
+      <!-- sunshine main letters -->
+      <g fill="#ffb703" stroke="#3b2a21" stroke-width="18" stroke-linejoin="round" paint-order="stroke">
+        <text x="1275" y="470" font-size="280" letter-spacing="10"
+              dy="0 18 -26 24 -28 26 -22" rotate="-4 3 -3 4 -4 3 -3">See you</text>
+        <text x="1275" y="830" font-size="280" letter-spacing="10"
+              dy="0 16 -24 22 -26 24 -22 24 -26 24 -24 22" rotate="-4 3 -3 4 -4 3 -3 4 -4 3 -3 4">at the Bama!</text>
+      </g>
+    </g>
+
+    <!-- little wave motion marks arcing around the raised claw -->
+    <g fill="none" stroke="#3b2a21" stroke-width="9" stroke-linecap="round" opacity="0.5">
+      <path d="M 1570 1890 Q 1615 1915 1605 1965"/>
+      <path d="M 1600 1855 Q 1655 1890 1642 1952"/>
+    </g>
+  </svg>
+
+</body>
+</html>

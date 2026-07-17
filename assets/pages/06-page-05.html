@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: sky, sun, water, sand, bocce court ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8fd3ef"/>
+        <stop offset="1" stop-color="#cdeef8"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+      <!-- reusable bocce ball: fill comes from the <use> -->
+      <g id="bocce">
+        <circle cx="0" cy="0" r="96" stroke="#3b2a21" stroke-width="16"/>
+        <path d="M -70 -30 Q 0 -70 70 -30 M -70 30 Q 0 70 70 30" fill="none" stroke="#3b2a21" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+      </g>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1600" fill="url(#sky)"/>
+
+    <!-- sun, top left -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+      <circle cx="260" cy="270" r="120" fill="#ffb703"/>
+      <path d="M 260 90 L 260 40 M 260 450 L 260 500 M 80 270 L 30 270 M 440 270 L 490 270
+               M 133 143 L 98 108 M 387 143 L 422 108 M 133 397 L 98 432 M 387 397 L 422 432" fill="none"/>
+    </g>
+
+    <!-- puffy clouds -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <path d="M 2050 250 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      <path d="M 640 620 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+      <g transform="translate(1310 460) scale(0.75)">
+        <path d="M 0 0 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+      </g>
+    </g>
+
+    <!-- gulls overhead -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(2140 620) scale(0.85)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+      <g transform="translate(430 1150) scale(0.7)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- emerald gulf at the horizon -->
+    <rect x="0" y="1560" width="2550" height="260" fill="url(#gulf)"/>
+    <path d="M 0 1560 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1620 L 0 1620 Z" fill="#2ec4b6"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 180 1660 q 45 -14 90 0 M 620 1700 q 45 -14 90 0 M 1120 1650 q 45 -14 90 0 M 1720 1695 q 45 -14 90 0 M 2260 1655 q 45 -14 90 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1790 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1790 L 2550 1820 L 0 1820 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand -->
+    <rect x="0" y="1810" width="2550" height="740" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 160 1860 q 90 -22 180 0 M 1790 1852 q 90 -22 180 0 M 90 2230 q 90 -22 180 0 M 2290 2280 q 80 -20 160 0"/>
+    </g>
+
+    <!-- ===================== the bocce court, mid-game but abandoned ===================== -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- corner stakes behind the frame -->
+      <g fill="#8a6f52" stroke-width="8">
+        <rect x="468" y="1815" width="32" height="58" rx="9"/>
+        <rect x="1482" y="1815" width="32" height="58" rx="9"/>
+      </g>
+      <!-- weathered wood frame -->
+      <path d="M 470 1845 L 1510 1845 L 1640 2050 L 320 2050 Z" fill="#b79975" stroke-width="12"/>
+      <!-- raked sand inside -->
+      <path d="M 525 1880 L 1460 1880 L 1550 2016 L 415 2016 Z" fill="#f8eed6" stroke-width="10"/>
+      <!-- plank hints on the frame -->
+      <g stroke="#9c8266" stroke-width="6" fill="none">
+        <path d="M 700 2022 L 697 2044 M 1000 2022 L 998 2044 M 1280 2022 L 1282 2044 M 900 1851 L 899 1874 M 1180 1851 L 1181 1874"/>
+      </g>
+      <!-- front corner stakes -->
+      <g fill="#8a6f52" stroke-width="9">
+        <rect x="302" y="1990" width="36" height="70" rx="10"/>
+        <rect x="1604" y="1990" width="36" height="70" rx="10"/>
+      </g>
+    </g>
+    <!-- rake lines in the court sand -->
+    <g stroke="#efe3c4" stroke-width="8" stroke-linecap="round" fill="none">
+      <path d="M 570 1915 Q 1000 1907 1430 1915 M 520 1955 Q 1000 1945 1495 1955 M 470 1998 Q 1000 1988 1545 1998"/>
+    </g>
+
+    <!-- bocce balls sitting perfectly still -->
+    <use href="#bocce" transform="translate(650 1945) scale(0.58)" fill="#ef6f6c"/>
+    <use href="#bocce" transform="translate(810 1928) scale(0.46)" fill="#ef6f6c"/>
+    <use href="#bocce" transform="translate(960 1965) scale(0.54)" fill="#ffb703"/>
+    <use href="#bocce" transform="translate(1170 1936) scale(0.56)" fill="#2ec4b6"/>
+
+    <!-- pallino trail where the crab has been pushing -->
+    <path d="M 1080 1998 q 45 -10 90 -6 q 40 4 70 0" fill="none" stroke="#e8d9b5" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- the little white pallino -->
+    <circle cx="1380" cy="1958" r="24" fill="#ffffff" stroke="#3b2a21" stroke-width="9"/>
+  </svg>
+
+  <!-- ===================== crab pushing the pallino ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 1240px; top: 1910px; height: 110px; width: auto;">
+
+  <!-- ===================== eric, hiding behind the umbrella ===================== -->
+  <img src="../../public/characters/eric.svg" alt="Eric" style="position: absolute; left: 1310px; bottom: 450px; height: 730px; width: auto;">
+
+  <!-- ===================== striped beach umbrella in front of eric ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(2070 1870) rotate(-16)" stroke-linejoin="round" stroke-linecap="round">
+      <!-- pole, planted deep in the sand -->
+      <rect x="-16" y="-80" width="32" height="330" rx="13" fill="#b79975" stroke="#3b2a21" stroke-width="9"/>
+      <!-- canopy: coral dome with scalloped hem -->
+      <path d="M -470 0 A 472 472 0 0 1 470 0
+               Q 376 56 282 0 Q 188 56 94 0 Q 0 56 -94 0 Q -188 56 -282 0 Q -376 56 -470 0 Z"
+            fill="#ef6f6c" stroke="#3b2a21" stroke-width="13"/>
+      <!-- white panels -->
+      <path d="M 0 -472 Q -145 -270 -282 0 Q -188 56 -94 0 Q -46 -270 0 -472 Z" fill="#fdf6e3" stroke="#3b2a21" stroke-width="10"/>
+      <path d="M 0 -472 Q 46 -270 94 0 Q 188 56 282 0 Q 145 -270 0 -472 Z" fill="#fdf6e3" stroke="#3b2a21" stroke-width="10"/>
+      <!-- finial on top -->
+      <circle cx="0" cy="-486" r="19" fill="#ffb703" stroke="#3b2a21" stroke-width="9"/>
+    </g>
+    <!-- sand mound where the pole is planted -->
+    <path d="M 2065 2115 Q 2110 2078 2150 2092 Q 2192 2106 2230 2094 Q 2262 2085 2290 2098 L 2290 2140 L 2065 2140 Z" fill="#fdf6e3"/>
+    <path d="M 2065 2115 Q 2110 2078 2150 2092 Q 2192 2106 2230 2094 Q 2262 2085 2290 2098" fill="none" stroke="#efe3c4" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- question marks floating over eric's head -->
+    <g font-family="'Baloo 2', sans-serif" font-weight="800" text-anchor="middle"
+       fill="#ffb703" stroke="#3b2a21" stroke-width="14" stroke-linejoin="round" paint-order="stroke">
+      <text x="1520" y="1382" font-size="150" transform="rotate(-9 1520 1382)">?</text>
+      <text x="1666" y="1258" font-size="112" transform="rotate(10 1666 1258)">?</text>
+      <text x="1420" y="1190" font-size="86" transform="rotate(-14 1420 1190)">?</text>
+    </g>
+  </svg>
+
+  <!-- ===================== page text ===================== -->
+  <div class="text-band bottom"><p>He looked by the bocce balls out in the sun.<br>Nobody playing. No friends. Not a one.</p></div>
+
+</body>
+</html>

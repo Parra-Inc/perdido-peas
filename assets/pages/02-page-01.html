@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+      max-width: 2150px;
+      background: rgba(255,251,240,0.95);
+      border: 10px solid #3b2a21;
+      border-radius: 48px;
+      padding: 48px 88px;
+      box-sizing: border-box;
+    }
+    .text-band.top { top: 90px; }
+    .text-band.bottom { bottom: 90px; }
+    .text-band p {
+      margin: 0;
+      font-family: "Baloo 2", sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1.4;
+      color: #3b2a21;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: muted gray-blue classroom ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="rainSky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#aebfca"/>
+        <stop offset="1" stop-color="#c5d3dc"/>
+      </linearGradient>
+      <clipPath id="glass">
+        <rect x="300" y="400" width="700" height="1000"/>
+      </clipPath>
+    </defs>
+
+    <!-- wall + floor -->
+    <rect x="0" y="0" width="2550" height="1900" fill="#dfe6ec"/>
+    <rect x="0" y="1900" width="2550" height="650" fill="#c6d0d7"/>
+    <g stroke="#aab8c1" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M 0 2060 L 2550 2060 M 0 2260 L 2550 2260"/>
+      <path d="M 420 1980 L 420 2060 M 1180 2060 L 1180 2260 M 2200 1980 L 2200 2060"/>
+    </g>
+    <!-- baseboard -->
+    <rect x="-20" y="1852" width="2590" height="52" fill="#cdd7dd" stroke="#3b2a21" stroke-width="9"/>
+
+    <!-- ===================== big window with rain ===================== -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- outer frame -->
+      <rect x="240" y="340" width="820" height="1120" rx="18" fill="#eef2f5" stroke-width="12"/>
+      <!-- glass: rainy gray-blue sky -->
+      <rect x="300" y="400" width="700" height="1000" fill="url(#rainSky)" stroke-width="9"/>
+
+      <g clip-path="url(#glass)">
+        <!-- gray rain clouds -->
+        <g fill="#cfd9df" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round">
+          <path transform="translate(350 560)" d="M 0 0 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+          <path transform="translate(640 800) scale(0.72)" d="M 0 0 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+        </g>
+        <!-- rain streaks -->
+        <g stroke="#93a9b6" stroke-width="8" stroke-linecap="round" fill="none">
+          <path d="M 372 680 l -22 90 M 480 640 l -22 90 M 588 700 l -22 90
+                   M 420 860 l -22 90 M 545 950 l -22 90 M 355 1060 l -22 90
+                   M 615 1120 l -22 90 M 465 1210 l -22 90 M 560 1320 l -22 90
+                   M 730 620 l -22 90 M 845 560 l -22 90 M 940 700 l -22 90
+                   M 765 850 l -22 90 M 890 990 l -22 90 M 725 1130 l -22 90
+                   M 945 1190 l -22 90 M 830 1300 l -22 90 M 350 1330 l -22 90"/>
+        </g>
+        <!-- raindrop trickles on the glass -->
+        <g stroke="#e2edf2" stroke-width="6" stroke-linecap="round" fill="none">
+          <path d="M 755 440 q 8 36 2 66 q -4 26 0 48"/>
+          <path d="M 352 940 q 6 34 0 62"/>
+        </g>
+        <circle cx="757" cy="562" r="8" fill="#e2edf2"/>
+        <circle cx="352" cy="1010" r="7" fill="#e2edf2"/>
+      </g>
+
+      <!-- muntins -->
+      <rect x="636" y="395" width="28" height="1010" fill="#eef2f5" stroke-width="9"/>
+      <rect x="295" y="886" width="710" height="28" fill="#eef2f5" stroke-width="9"/>
+      <!-- sill -->
+      <rect x="210" y="1448" width="880" height="56" rx="12" fill="#dde5ea" stroke-width="10"/>
+    </g>
+
+    <!-- ===================== ABC poster ===================== -->
+    <g transform="rotate(-2 1460 520)">
+      <rect x="1330" y="380" width="260" height="300" rx="14" fill="#f0f4f6" stroke="#3b2a21" stroke-width="10" stroke-linejoin="round"/>
+      <text x="1460" y="510" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="86" fill="#6b8298">ABC</text>
+      <text x="1460" y="602" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="700" font-size="64" fill="#93a7b5">abc</text>
+      <path d="M 1390 636 q 35 -16 70 0 q 35 16 70 0" fill="none" stroke="#9db0bc" stroke-width="8" stroke-linecap="round"/>
+    </g>
+
+    <!-- ===================== wall clock, 2:00 ===================== -->
+    <g stroke="#3b2a21" stroke-linecap="round">
+      <circle cx="2260" cy="420" r="150" fill="#f2ede0" stroke-width="12"/>
+      <g font-family="'Baloo 2', sans-serif" font-weight="700" font-size="44" fill="#1d3557" text-anchor="middle" stroke="none">
+        <text x="2260" y="319">12</text>
+        <text x="2378" y="435">3</text>
+        <text x="2260" y="538">6</text>
+        <text x="2142" y="435">9</text>
+      </g>
+      <!-- minute hand at 12, hour hand at 2 -->
+      <path d="M 2260 420 L 2260 338" stroke-width="12" fill="none"/>
+      <path d="M 2260 420 L 2310 391" stroke-width="14" fill="none"/>
+      <circle cx="2260" cy="420" r="13" fill="#3b2a21" stroke-width="6"/>
+    </g>
+
+    <!-- ===================== a faint dream bubble, just beginning ===================== -->
+    <g opacity="0.7">
+      <circle cx="1762" cy="1235" r="20" fill="#ffffff" stroke="#3b2a21" stroke-width="9"/>
+      <circle cx="1848" cy="1112" r="33" fill="#ffffff" stroke="#3b2a21" stroke-width="9"/>
+      <path transform="translate(1790 940) scale(1.6)" d="M 0 0 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"
+            fill="#ffffff" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round"/>
+      <g opacity="0.75">
+        <circle cx="1950" cy="900" r="42" fill="#ffb703" stroke="#3b2a21" stroke-width="8"/>
+        <path d="M 1950 838 L 1950 816 M 1950 962 L 1950 984 M 1888 900 L 1866 900 M 2012 900 L 2034 900
+                 M 1906 856 L 1891 841 M 1994 856 L 2009 841 M 1906 944 L 1891 959 M 1994 944 L 2009 959"
+              fill="none" stroke="#3b2a21" stroke-width="7" stroke-linecap="round"/>
+        <path d="M 2040 966 q 28 -16 56 0 q 28 16 56 0" fill="none" stroke="#2ec4b6" stroke-width="10" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== eric, chin in hands, dreaming ===================== -->
+  <img src="../../public/characters/pages/02-page-01/eric-dreaming.svg" alt="Eric dreaming at his desk"
+       style="position: absolute; left: 1264px; bottom: 440px; height: 950px; width: auto;">
+
+  <!-- ===================== desk in front of eric (hides his legs) ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- front apron -->
+      <rect x="1180" y="1798" width="890" height="330" rx="12" fill="#a98c69" stroke-width="11"/>
+      <g stroke="#9c8266" stroke-width="6" opacity="0.85">
+        <path d="M 1330 1812 L 1330 2114 M 1480 1812 L 1480 2114 M 1630 1812 L 1630 2114 M 1780 1812 L 1780 2114 M 1930 1812 L 1930 2114"/>
+      </g>
+      <!-- desktop -->
+      <rect x="1128" y="1748" width="1000" height="58" rx="16" fill="#b79975" stroke-width="12"/>
+
+      <!-- notebook with doodles -->
+      <g transform="rotate(-4 1376 1689)">
+        <rect x="1248" y="1600" width="256" height="178" rx="10" fill="#f7f4ec" stroke-width="9"/>
+        <rect x="1248" y="1600" width="34" height="178" rx="10" fill="#ef6f6c" stroke-width="9"/>
+        <!-- pencil doodle squiggles around the crab drawing -->
+        <path d="M 1310 1628 q 22 -12 44 0 q 22 12 44 0" fill="none" stroke="#9db0bc" stroke-width="7"/>
+        <circle cx="1462" cy="1630" r="14" fill="none" stroke="#9db0bc" stroke-width="7"/>
+      </g>
+
+      <!-- papers -->
+      <g transform="rotate(-5 1880 1690)">
+        <rect x="1762" y="1618" width="228" height="150" rx="8" fill="#f2ede0" stroke-width="9"/>
+      </g>
+      <g transform="rotate(3 1900 1680)">
+        <rect x="1790" y="1600" width="230" height="158" rx="8" fill="#ffffff" stroke-width="9"/>
+        <g stroke="#c3d0d8" stroke-width="7">
+          <path d="M 1818 1640 L 1990 1640 M 1818 1676 L 1990 1676 M 1818 1712 L 1930 1712"/>
+        </g>
+      </g>
+
+      <!-- pencils on the desk -->
+      <g transform="rotate(8 1890 1782)" stroke-width="8">
+        <rect x="1770" y="1768" width="200" height="28" rx="6" fill="#ffb703"/>
+        <path d="M 1970 1768 L 2014 1782 L 1970 1796 Z" fill="#f6dec6"/>
+        <path d="M 1998 1777 L 2014 1782 L 1998 1787 Z" fill="#3b2a21" stroke="none"/>
+        <rect x="1744" y="1768" width="26" height="28" rx="9" fill="#f2937b"/>
+      </g>
+      <g transform="rotate(-7 2010 1735)" stroke-width="8">
+        <rect x="1930" y="1722" width="150" height="24" rx="6" fill="#ef6f6c"/>
+        <path d="M 2080 1722 L 2116 1734 L 2080 1746 Z" fill="#f6dec6"/>
+        <path d="M 2102 1730 L 2116 1734 L 2102 1738 Z" fill="#3b2a21" stroke="none"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- ===================== the crab: eric's doodle on his notebook ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab doodle"
+       style="position: absolute; left: 1316px; top: 1642px; height: 112px; width: auto; transform: rotate(-4deg);">
+
+  <!-- ===================== story text ===================== -->
+  <div class="text-band bottom">
+    <p>The rain tapped the window. The clock ticked so slow.<br>And Eric sat dreaming of where he would go.</p>
+  </div>
+
+</body>
+</html>

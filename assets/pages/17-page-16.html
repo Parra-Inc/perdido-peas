@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .friend { position: absolute; height: 707px; width: auto; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; }
+    .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: sunset sky, melting sun, gold-painted gulf, sand, flora-bama edge ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sunsetSky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#e26d8e"/>
+        <stop offset="0.55" stop-color="#ff8e6b"/>
+        <stop offset="1" stop-color="#ffb703"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sunset sky -->
+    <rect x="0" y="0" width="2550" height="1500" fill="url(#sunsetSky)"/>
+
+    <!-- warm puffy clouds -->
+    <g fill="#ffe9d0" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <path d="M 480 640 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      <path d="M 1930 560 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+    </g>
+
+    <!-- a last gull heading home -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" transform="translate(640 860) scale(0.75)">
+      <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+      <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+      <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+    </g>
+
+    <!-- the sun melting into the gulf -->
+    <circle cx="1275" cy="1430" r="250" fill="#ffb703" stroke="#3b2a21" stroke-width="12"/>
+
+    <!-- emerald gulf at dusk -->
+    <rect x="0" y="1450" width="2550" height="510" fill="url(#gulf)"/>
+    <path d="M 0 1450 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1510 L 0 1510 Z" fill="#2ec4b6"/>
+
+    <!-- gold painted on the sea: the sun's shimmer -->
+    <g stroke="#ffd94a" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.95">
+      <path d="M 1195 1492 L 1355 1492"/>
+      <path d="M 1160 1548 L 1250 1548 M 1292 1548 L 1395 1548"/>
+      <path d="M 1130 1608 L 1240 1608 M 1286 1608 L 1420 1608"/>
+      <path d="M 1170 1668 L 1300 1668 M 1340 1668 L 1430 1668"/>
+      <path d="M 1120 1730 L 1260 1730"/>
+    </g>
+    <g stroke="#ffb703" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 1212 1520 L 1302 1520 M 1240 1578 L 1330 1578 M 1198 1638 L 1288 1638"/>
+    </g>
+
+    <!-- quiet wave highlights away from the shimmer -->
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 260 1580 q 45 -14 90 0 M 660 1660 q 45 -14 90 0 M 1880 1600 q 45 -14 90 0 M 2200 1680 q 45 -14 90 0 M 460 1760 q 45 -14 90 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1930 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1930 L 2550 1962 L 0 1962 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- sugar-white sand -->
+    <rect x="0" y="1950" width="2550" height="600" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 220 2060 q 90 -22 180 0 M 1050 2030 q 90 -22 180 0 M 1640 2070 q 90 -22 180 0"/>
+    </g>
+
+    <!-- edge of the flora-bama with its string lights coming on -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="2330" y="1560" width="320" height="480" rx="14" fill="#b79975" stroke-width="12"/>
+      <path d="M 2420 1572 L 2420 2032 M 2510 1572 L 2510 2032" fill="none" stroke="#9c8266" stroke-width="6" opacity="0.85"/>
+      <path d="M 2290 1572 L 2470 1440 L 2650 1440 L 2650 1572 Z" fill="#c3ced4" stroke-width="12"/>
+      <path d="M 2394 1512 L 2394 1562 M 2470 1450 L 2470 1562 M 2548 1450 L 2548 1562" fill="none" stroke="#93a3ab" stroke-width="6"/>
+      <rect x="2400" y="1680" width="130" height="130" rx="10" fill="#ffd94a" stroke-width="9"/>
+      <path d="M 2465 1680 L 2465 1810 M 2400 1745 L 2530 1745" fill="none" stroke-width="6"/>
+      <rect x="2258" y="1620" width="24" height="440" rx="8" fill="#8a6f52" stroke-width="9"/>
+      <path d="M 2334 1690 Q 2302 1742 2272 1632" fill="none" stroke-width="6"/>
+      <path d="M 2340 1660 Q 2440 1730 2540 1665 Q 2600 1700 2650 1670" fill="none" stroke-width="6"/>
+    </g>
+    <!-- twinkling bulbs with soft halos -->
+    <g fill="#ffd94a" opacity="0.3">
+      <circle cx="2312" cy="1720" r="27"/>
+      <circle cx="2290" cy="1697" r="27"/>
+      <circle cx="2390" cy="1702" r="27"/>
+      <circle cx="2440" cy="1712" r="27"/>
+      <circle cx="2490" cy="1705" r="27"/>
+      <circle cx="2592" cy="1698" r="27"/>
+    </g>
+    <g fill="#ffd94a" stroke="#3b2a21" stroke-width="5">
+      <circle cx="2312" cy="1720" r="13"/>
+      <circle cx="2290" cy="1697" r="13"/>
+      <circle cx="2390" cy="1702" r="13"/>
+      <circle cx="2440" cy="1712" r="13"/>
+      <circle cx="2490" cy="1705" r="13"/>
+      <circle cx="2592" cy="1698" r="13"/>
+    </g>
+  </svg>
+
+  <!-- ===================== the crew, sitting in a row watching the sunset ===================== -->
+  <!-- back-view seated variants; bums share the same sand line, Eric tallest even seated, Katie smallest -->
+  <img src="../../public/characters/crab.svg" alt="Crab" style="position: absolute; left: 200px; bottom: 368px; height: 150px; width: auto;">
+  <img class="friend" src="../../public/characters/pages/17-page-16/ian-seated-back.svg"   alt="Ian"   style="left: 240px;  bottom: 310px;">
+  <img class="friend" src="../../public/characters/pages/17-page-16/katie-seated-back.svg" alt="Katie" style="left: 480px;  bottom: 310px;">
+  <img class="friend" src="../../public/characters/pages/17-page-16/chris-seated-back.svg" alt="Chris" style="left: 720px;  bottom: 310px;">
+  <img class="friend" src="../../public/characters/pages/17-page-16/grace-seated-back.svg" alt="Grace" style="left: 985px;  bottom: 310px;">
+  <img class="friend" src="../../public/characters/pages/17-page-16/ben-seated-back.svg"   alt="Ben"   style="left: 1245px; bottom: 310px;">
+  <img class="friend" src="../../public/characters/pages/17-page-16/sarah-seated-back.svg" alt="Sarah" style="left: 1500px; bottom: 310px;">
+  <img class="friend" src="../../public/characters/pages/17-page-16/eric-seated-back.svg"  alt="Eric"  style="left: 1771px; bottom: 310px; height: 757px;">
+
+  <!-- ===================== foreground sand details ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 420 2290 q 90 -22 180 0 M 1250 2340 q 90 -22 180 0 M 1980 2300 q 90 -22 180 0 M 760 2430 q 90 -22 180 0 M 1620 2450 q 90 -22 180 0"/>
+    </g>
+    <!-- coral starfish resting on the sand -->
+    <g transform="translate(220 2400)">
+      <path d="M 0 -55 L 14 -19 L 52 -17 L 22 6 L 34 44 L 0 22 L -34 44 L -22 6 L -52 -17 L -14 -19 Z" fill="#ef6f6c" stroke="#3b2a21" stroke-width="8" stroke-linejoin="round"/>
+      <circle cx="0" cy="-12" r="4" fill="#c85852"/>
+      <circle cx="12" cy="6" r="4" fill="#c85852"/>
+      <circle cx="-12" cy="6" r="4" fill="#c85852"/>
+    </g>
+  </svg>
+
+  <!-- ===================== page text ===================== -->
+  <div class="text-band top"><p>The sun dipped down low, painting gold on the sea,<br>with friends all together, right where they should be.</p></div>
+
+</body>
+</html>

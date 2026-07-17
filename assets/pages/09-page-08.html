@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2150px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: cooled sky, lower sun, long empty shoreline ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#9cc4d6"/>
+        <stop offset="1" stop-color="#d2e5ec"/>
+      </linearGradient>
+      <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2aada2"/>
+        <stop offset="1" stop-color="#55c5ba"/>
+      </linearGradient>
+    </defs>
+
+    <!-- cooled-down sky -->
+    <rect x="0" y="0" width="2550" height="1500" fill="url(#sky)"/>
+
+    <!-- sun, sitting a bit lower over the water -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+      <circle cx="300" cy="1160" r="105" fill="#ffb703"/>
+      <path d="M 300 1020 L 300 985 M 300 1300 L 300 1335 M 160 1160 L 125 1160 M 440 1160 L 475 1160
+               M 201 1061 L 176 1036 M 399 1061 L 424 1036 M 201 1259 L 176 1284 M 399 1259 L 424 1284" fill="none"/>
+    </g>
+
+    <!-- muted clouds drifting -->
+    <g fill="#f4f7f9" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <g transform="translate(-180 330)">
+        <path d="M 2050 250 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      </g>
+      <g transform="translate(280 60)">
+        <path d="M 480 720 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+      </g>
+    </g>
+
+    <!-- emerald gulf at the horizon, cooled -->
+    <rect x="0" y="1450" width="2550" height="260" fill="url(#gulf)"/>
+    <path d="M 0 1450 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 q 60 18 120 0 q 60 -18 120 0 L 2550 1510 L 0 1510 Z" fill="#2aada2"/>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.8">
+      <path d="M 200 1550 q 45 -14 90 0 M 660 1595 q 45 -14 90 0 M 1180 1545 q 45 -14 90 0 M 1740 1590 q 45 -14 90 0 M 2280 1550 q 45 -14 90 0"/>
+    </g>
+
+    <!-- foam edge where waves meet the sand -->
+    <path d="M 0 1680 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 q 70 -26 140 0 q 70 26 140 0 L 2550 1680 L 2550 1712 L 0 1712 Z" fill="#ffffff" opacity="0.95"/>
+
+    <!-- one long, empty mile of sugar-white sand -->
+    <rect x="0" y="1702" width="2550" height="848" fill="#fdf6e3"/>
+    <g stroke="#efe3c4" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 250 1950 q 90 -22 180 0 M 2160 1980 q 90 -22 180 0 M 880 2300 q 90 -22 180 0 M 2080 2440 q 90 -22 180 0"/>
+    </g>
+
+    <!-- eric's single trail of footprints, one lonely mile from the far shoreline -->
+    <g fill="#e8d9b2">
+      <ellipse cx="604" cy="1748" rx="11" ry="6.5" transform="rotate(14 604 1748)"/>
+      <ellipse cx="668" cy="1780" rx="12" ry="7" transform="rotate(15 668 1780)"/>
+      <ellipse cx="743" cy="1784" rx="13" ry="7.5" transform="rotate(15 743 1784)"/>
+      <ellipse cx="830" cy="1826" rx="14" ry="8" transform="rotate(16 830 1826)"/>
+      <ellipse cx="920" cy="1834" rx="15" ry="9" transform="rotate(16 920 1834)"/>
+      <ellipse cx="1013" cy="1880" rx="17" ry="10" transform="rotate(17 1013 1880)"/>
+      <ellipse cx="1109" cy="1891" rx="18" ry="11" transform="rotate(17 1109 1891)"/>
+      <ellipse cx="1208" cy="1943" rx="20" ry="12" transform="rotate(18 1208 1943)"/>
+      <ellipse cx="1310" cy="1956" rx="21" ry="13" transform="rotate(18 1310 1956)"/>
+      <ellipse cx="1414" cy="2013" rx="23" ry="14" transform="rotate(19 1414 2013)"/>
+      <ellipse cx="1510" cy="2024" rx="24" ry="15" transform="rotate(19 1510 2024)"/>
+      <ellipse cx="1595" cy="2077" rx="26" ry="16" transform="rotate(20 1595 2077)"/>
+    </g>
+
+    <!-- old pier pilings marching out toward the water -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="2236" y="1345" width="48" height="400" rx="10" fill="#b79975" stroke-width="10"/>
+      <path d="M 2250 1390 L 2250 1560 M 2270 1420 L 2270 1660" stroke="#9c8266" stroke-width="6" fill="none"/>
+      <rect x="2336" y="1520" width="40" height="205" rx="9" fill="#a98c69" stroke-width="9"/>
+      <path d="M 2352 1560 L 2352 1680" stroke="#8a6f52" stroke-width="5" fill="none"/>
+      <rect x="2420" y="1596" width="34" height="120" rx="8" fill="#8a6f52" stroke-width="9"/>
+    </g>
+
+    <!-- little sand mounds anchoring each piling -->
+    <g>
+      <path d="M 2212 1758 Q 2260 1732 2308 1758 L 2308 1774 L 2212 1774 Z" fill="#fdf6e3"/>
+      <path d="M 2212 1758 Q 2260 1732 2308 1758" fill="none" stroke="#efe3c4" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 2318 1734 Q 2356 1712 2394 1734 L 2394 1748 L 2318 1748 Z" fill="#fdf6e3"/>
+      <path d="M 2318 1734 Q 2356 1712 2394 1734" fill="none" stroke="#efe3c4" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 2404 1726 Q 2437 1706 2470 1726 L 2470 1738 L 2404 1738 Z" fill="#fdf6e3"/>
+      <path d="M 2404 1726 Q 2437 1706 2470 1726" fill="none" stroke="#efe3c4" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <!-- driftwood resting in the dry sand -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M 200 2380 Q 210 2350 260 2348 L 520 2352 Q 560 2354 556 2382 Q 552 2406 512 2408 L 250 2410 Q 205 2408 200 2380 Z" fill="#a98c69" stroke-width="10"/>
+      <path d="M 268 2372 L 480 2375 M 280 2392 L 430 2394" stroke="#8a6f52" stroke-width="6" fill="none"/>
+      <circle cx="232" cy="2379" r="11" fill="none" stroke="#8a6f52" stroke-width="6"/>
+    </g>
+  </svg>
+
+  <!-- ===================== the pelican, watching from the tall post ===================== -->
+  <img src="../../public/characters/pelican.svg" alt="Pelican"
+       style="position: absolute; left: 2152px; bottom: 1182px; height: 250px; width: auto;">
+
+  <!-- ===================== eric, trudging along with his hands in his pockets ===================== -->
+  <img src="../../public/characters/pages/09-page-08/eric-walking.svg" alt="Eric walking, lonely"
+       style="position: absolute; left: 1450px; bottom: 460px; height: 680px; width: auto;">
+
+  <!-- ===================== the crab, scuttling along his footprints ===================== -->
+  <img src="../../public/characters/crab.svg" alt="Crab"
+       style="position: absolute; left: 1150px; bottom: 585px; height: 150px; width: auto;">
+
+  <!-- ===================== story text ===================== -->
+  <div class="text-band top"><p>So he walked down the beach feeling lonely and blue,<br>one mile in the sand with no Peas in view.</p></div>
+
+</body>
+</html>

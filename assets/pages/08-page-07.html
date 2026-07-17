@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=2550">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body {
+      width: 2550px;
+      height: 2550px;
+      overflow: hidden;
+      position: relative;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .layer { position: absolute; inset: 0; }
+    .text-band { position: absolute; left: 50%; transform: translateX(-50%); width: max-content; max-width: 2400px; background: rgba(255,251,240,0.95); border: 10px solid #3b2a21; border-radius: 48px; padding: 48px 88px; box-sizing: border-box; }
+    .text-band.top { top: 90px; } .text-band.bottom { bottom: 90px; }
+    .text-band p { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 80px; line-height: 1.4; color: #3b2a21; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== scene: condo pool, glassy still ===================== -->
+  <svg class="layer" viewBox="0 0 2550 2550" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#8fd3ef"/>
+        <stop offset="1" stop-color="#cdeef8"/>
+      </linearGradient>
+      <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2ec4b6"/>
+        <stop offset="1" stop-color="#5fd6c9"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="2550" height="1300" fill="url(#sky)"/>
+
+    <!-- sun, top right -->
+    <g stroke="#3b2a21" stroke-width="10" stroke-linecap="round">
+      <circle cx="2240" cy="240" r="110" fill="#ffb703"/>
+      <path d="M 2240 80 L 2240 34 M 2240 400 L 2240 446 M 2074 240 L 2028 240 M 2406 240 L 2452 240
+               M 2123 123 L 2091 91 M 2357 123 L 2389 91 M 2123 357 L 2091 389 M 2357 357 L 2389 389" fill="none"/>
+    </g>
+
+    <!-- puffy clouds -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" opacity="0.95">
+      <g transform="translate(-1550 -40)">
+        <path d="M 2050 250 q 30 -60 95 -52 q 25 -48 85 -38 q 60 8 68 58 q 55 8 50 55 q -5 40 -60 42 l -215 0 q -50 -8 -23 -65 Z"/>
+      </g>
+      <g transform="translate(650 -320)">
+        <path d="M 480 720 q 25 -50 80 -44 q 22 -40 72 -32 q 50 7 57 49 q 46 7 42 46 q -4 34 -50 35 l -180 0 q -42 -7 -21 -54 Z"/>
+      </g>
+    </g>
+
+    <!-- gull drifting between the condos -->
+    <g fill="#ffffff" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(1690 560) scale(0.8)">
+        <path d="M 0 30 Q 40 10 78 26 Q 110 -14 148 6 Q 128 34 96 44 Q 60 56 22 48 Q 4 44 0 30 Z"/>
+        <path d="M 60 30 Q 90 -30 140 -34 Q 118 6 92 22" fill="#c9ced4"/>
+        <path d="M 148 6 L 176 14 L 150 24" fill="#ffb703" stroke-width="7"/>
+      </g>
+    </g>
+
+    <!-- condo towers behind the pool fence -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <!-- left condo -->
+      <rect x="90" y="430" width="570" height="780" rx="14" fill="#f2ede0" stroke-width="12"/>
+      <rect x="62" y="392" width="626" height="46" rx="10" fill="#c3ced4" stroke-width="10"/>
+      <g fill="#8ed8ef" stroke-width="8">
+        <rect x="150" y="500" width="110" height="88" rx="10"/>
+        <rect x="330" y="500" width="110" height="88" rx="10"/>
+        <rect x="510" y="500" width="110" height="88" rx="10"/>
+        <rect x="150" y="650" width="110" height="88" rx="10"/>
+        <rect x="330" y="650" width="110" height="88" rx="10"/>
+        <rect x="510" y="650" width="110" height="88" rx="10"/>
+        <rect x="150" y="800" width="110" height="88" rx="10"/>
+        <rect x="330" y="800" width="110" height="88" rx="10"/>
+        <rect x="510" y="800" width="110" height="88" rx="10"/>
+        <rect x="150" y="950" width="110" height="88" rx="10"/>
+        <rect x="330" y="950" width="110" height="88" rx="10"/>
+        <rect x="510" y="950" width="110" height="88" rx="10"/>
+      </g>
+
+      <!-- right condo -->
+      <rect x="1900" y="530" width="560" height="680" rx="14" fill="#dfe6ec" stroke-width="12"/>
+      <rect x="1872" y="492" width="616" height="44" rx="10" fill="#c3ced4" stroke-width="10"/>
+      <g fill="#8ed8ef" stroke-width="8">
+        <rect x="1960" y="600" width="110" height="84" rx="10"/>
+        <rect x="2140" y="600" width="110" height="84" rx="10"/>
+        <rect x="2320" y="600" width="110" height="84" rx="10"/>
+        <rect x="1960" y="740" width="110" height="84" rx="10"/>
+        <rect x="2140" y="740" width="110" height="84" rx="10"/>
+        <rect x="2320" y="740" width="110" height="84" rx="10"/>
+        <rect x="1960" y="880" width="110" height="84" rx="10"/>
+        <rect x="2140" y="880" width="110" height="84" rx="10"/>
+        <rect x="2320" y="880" width="110" height="84" rx="10"/>
+      </g>
+    </g>
+
+    <!-- pool fence -->
+    <g fill="#c3ced4" stroke="#3b2a21" stroke-linejoin="round">
+      <g stroke-width="5">
+        <rect x="30" y="1088" width="16" height="118" rx="7"/>
+        <rect x="125" y="1088" width="16" height="118" rx="7"/>
+        <rect x="220" y="1088" width="16" height="118" rx="7"/>
+        <rect x="315" y="1088" width="16" height="118" rx="7"/>
+        <rect x="410" y="1088" width="16" height="118" rx="7"/>
+        <rect x="505" y="1088" width="16" height="118" rx="7"/>
+        <rect x="600" y="1088" width="16" height="118" rx="7"/>
+        <rect x="695" y="1088" width="16" height="118" rx="7"/>
+        <rect x="790" y="1088" width="16" height="118" rx="7"/>
+        <rect x="885" y="1088" width="16" height="118" rx="7"/>
+        <rect x="980" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1075" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1170" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1265" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1360" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1455" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1550" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1645" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1740" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1835" y="1088" width="16" height="118" rx="7"/>
+        <rect x="1930" y="1088" width="16" height="118" rx="7"/>
+        <rect x="2025" y="1088" width="16" height="118" rx="7"/>
+        <rect x="2120" y="1088" width="16" height="118" rx="7"/>
+        <rect x="2215" y="1088" width="16" height="118" rx="7"/>
+        <rect x="2310" y="1088" width="16" height="118" rx="7"/>
+        <rect x="2405" y="1088" width="16" height="118" rx="7"/>
+        <rect x="2500" y="1088" width="16" height="118" rx="7"/>
+      </g>
+      <g stroke-width="6">
+        <rect x="-12" y="1078" width="2574" height="20" rx="8"/>
+        <rect x="-12" y="1184" width="2574" height="18" rx="8"/>
+      </g>
+    </g>
+
+    <!-- concrete pool deck -->
+    <rect x="0" y="1202" width="2550" height="1348" fill="#ece4d0"/>
+    <g stroke="#d9cdaf" stroke-width="8" stroke-linecap="round" fill="none">
+      <path d="M 120 1300 L 300 1300 M 2260 1320 L 2450 1320 M 90 2200 L 280 2200 M 2290 2180 L 2470 2180 M 1050 1260 L 1230 1260"/>
+    </g>
+
+    <!-- empty loungers with folded towels -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <g transform="translate(310 1240)">
+        <rect x="-6" y="-16" width="158" height="30" rx="15" transform="translate(36 104) rotate(-38)" fill="#f2ede0" stroke-width="9"/>
+        <rect x="8" y="96" width="380" height="30" rx="15" fill="#f2ede0" stroke-width="9"/>
+        <rect x="48" y="126" width="22" height="36" rx="8" fill="#b79975" stroke-width="8"/>
+        <rect x="320" y="126" width="22" height="36" rx="8" fill="#b79975" stroke-width="8"/>
+        <rect x="190" y="58" width="140" height="40" rx="12" fill="#ef6f6c" stroke-width="9"/>
+        <path d="M 236 64 L 236 92" stroke-width="5" opacity="0.5" fill="none"/>
+        <rect x="202" y="24" width="118" height="36" rx="12" fill="#2ec4b6" stroke-width="9"/>
+        <path d="M 242 30 L 242 54" stroke-width="5" opacity="0.5" fill="none"/>
+      </g>
+      <g transform="translate(1490 1240)">
+        <rect x="-6" y="-16" width="158" height="30" rx="15" transform="translate(36 104) rotate(-38)" fill="#f2ede0" stroke-width="9"/>
+        <rect x="8" y="96" width="380" height="30" rx="15" fill="#f2ede0" stroke-width="9"/>
+        <rect x="48" y="126" width="22" height="36" rx="8" fill="#b79975" stroke-width="8"/>
+        <rect x="320" y="126" width="22" height="36" rx="8" fill="#b79975" stroke-width="8"/>
+        <rect x="190" y="58" width="140" height="40" rx="12" fill="#2ec4b6" stroke-width="9"/>
+        <path d="M 236 64 L 236 92" stroke-width="5" opacity="0.5" fill="none"/>
+        <rect x="202" y="24" width="118" height="36" rx="12" fill="#ef6f6c" stroke-width="9"/>
+        <path d="M 242 30 L 242 54" stroke-width="5" opacity="0.5" fill="none"/>
+      </g>
+    </g>
+
+    <!-- glassy pool -->
+    <rect x="330" y="1420" width="1890" height="590" rx="64" fill="#fbf6e9" stroke="#3b2a21" stroke-width="12"/>
+    <rect x="364" y="1454" width="1822" height="522" rx="46" fill="url(#pool)" stroke="#3b2a21" stroke-width="9"/>
+
+    <!-- long straight glassy highlights: still as a bathtub -->
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 460 1600 L 860 1600 M 1420 1550 L 1830 1550 M 820 1900 L 1260 1900 M 1560 1910 L 1970 1910"/>
+    </g>
+
+    <!-- still, glassy center: flat highlight streaks only (no reflection blob) -->
+    <g stroke="#bff0ea" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.85">
+      <path d="M 980 1610 L 1360 1610 M 1080 1720 L 1300 1720"/>
+    </g>
+
+    <!-- lone duck floatie drifting in the corner -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <ellipse cx="620" cy="1860" rx="135" ry="82" fill="#ffd94a" stroke-width="10"/>
+      <ellipse cx="628" cy="1862" rx="70" ry="38" fill="#4fcfc0" stroke-width="9"/>
+      <path d="M 728 1818 q 30 -26 16 -52 q 28 10 12 60 Z" fill="#ffd94a" stroke-width="9"/>
+      <circle cx="520" cy="1772" r="52" fill="#ffd94a" stroke-width="10"/>
+      <ellipse cx="462" cy="1782" rx="26" ry="15" fill="#f07f3c" stroke-width="8"/>
+      <circle cx="532" cy="1758" r="8" fill="#3b2a21"/>
+    </g>
+    <g stroke="#bff0ea" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M 450 1940 q 45 -12 90 0 M 680 1950 q 45 -12 90 0"/>
+    </g>
+
+    <!-- diving board jutting over the far edge -->
+    <g stroke="#3b2a21" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="1892" y="1356" width="176" height="62" rx="12" fill="#c3ced4" stroke-width="9"/>
+      <rect x="1910" y="1386" width="140" height="314" rx="34" fill="#f2ede0" stroke-width="12"/>
+      <path d="M 1932 1470 L 2028 1470 M 1932 1544 L 2028 1544 M 1932 1618 L 2028 1618" stroke="#d8d0bd" stroke-width="6" fill="none"/>
+    </g>
+  </svg>
+
+  <!-- ===================== eric peeking over the edge ===================== -->
+  <img src="../../public/characters/pages/08-page-07/eric.svg" alt="Eric" style="position: absolute; left: 839px; bottom: 1112px; height: 830px; width: auto;">
+
+  <!-- ===================== crab sunning on the diving board ===================== -->
+  <img src="../../public/characters/pages/08-page-07/crab.svg" alt="Crab" style="position: absolute; left: 1880px; bottom: 862px; height: 150px; width: auto;">
+
+  <!-- ===================== text band ===================== -->
+  <div class="text-band bottom">
+    <p>He peeked at the pool where they'd splash and they'd play,<br>but the pool was as still as a bathtub all day.</p>
+  </div>
+
+</body>
+</html>
