@@ -35,7 +35,26 @@
       "sourceSize": { "width": 2550, "height": 2550 },
       "borderRadius": 0,
       "templates": [
-        { "src": "assets/pages/00-cover.html", "name": "00-cover", "label": "Cover" }
+        { "src": "assets/pages/00-cover.html", "name": "00-cover", "label": "Cover" },
+        { "src": "assets/pages/01-dedication.html", "name": "01-dedication", "label": "Dedication" },
+        { "src": "assets/pages/02-page-01.html", "name": "02-page-01", "label": "Page 1" },
+        { "src": "assets/pages/03-page-02.html", "name": "03-page-02", "label": "Page 2" },
+        { "src": "assets/pages/04-page-03.html", "name": "04-page-03", "label": "Page 3" },
+        { "src": "assets/pages/05-page-04.html", "name": "05-page-04", "label": "Page 4" },
+        { "src": "assets/pages/06-page-05.html", "name": "06-page-05", "label": "Page 5" },
+        { "src": "assets/pages/07-page-06.html", "name": "07-page-06", "label": "Page 6" },
+        { "src": "assets/pages/08-page-07.html", "name": "08-page-07", "label": "Page 7" },
+        { "src": "assets/pages/09-page-08.html", "name": "09-page-08", "label": "Page 8" },
+        { "src": "assets/pages/10-page-09.html", "name": "10-page-09", "label": "Page 9" },
+        { "src": "assets/pages/11-page-10.html", "name": "11-page-10", "label": "Page 10" },
+        { "src": "assets/pages/12-page-11.html", "name": "12-page-11", "label": "Page 11" },
+        { "src": "assets/pages/13-page-12.html", "name": "13-page-12", "label": "Page 12" },
+        { "src": "assets/pages/14-page-13.html", "name": "14-page-13", "label": "Page 13" },
+        { "src": "assets/pages/15-page-14.html", "name": "15-page-14", "label": "Page 14" },
+        { "src": "assets/pages/16-page-15.html", "name": "16-page-15", "label": "Page 15" },
+        { "src": "assets/pages/17-page-16.html", "name": "17-page-16", "label": "Page 16" },
+        { "src": "assets/pages/18-page-17.html", "name": "18-page-17", "label": "Page 17" },
+        { "src": "assets/pages/19-back-cover.html", "name": "19-back-cover", "label": "Back Cover" }
       ],
       "export": [
         { "name": "print", "label": "Print 2550", "size": { "width": 2550, "height": 2550 }, "outFile": "exports/pages/{template}.png" },
