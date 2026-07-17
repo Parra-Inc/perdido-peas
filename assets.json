@@ -63,6 +63,20 @@
       "customExport": { "defaultWidth": 2550, "defaultHeight": 2550 }
     },
     {
+      "id": "og",
+      "label": "OG Image",
+      "sourceSize": { "width": 2560, "height": 1344 },
+      "borderRadius": 0,
+      "templates": [
+        { "src": "assets/og/og-cover.html", "name": "og-cover", "label": "OG Cover" }
+      ],
+      "export": [
+        { "name": "og", "label": "OG 1200x630", "size": { "width": 1200, "height": 630 }, "outFile": "exports/og/{template}.png" },
+        { "name": "web-og", "label": "Web opengraph-image", "size": { "width": 1200, "height": 630 }, "outFile": "web/app/opengraph-image.png" }
+      ],
+      "customExport": { "defaultWidth": 1200, "defaultHeight": 630 }
+    },
+    {
       "id": "lineup",
       "label": "Crew Lineup",
       "sourceSize": { "width": 2900, "height": 540 },

@@ -11,6 +11,12 @@ const baloo = Baloo_2({
 export const metadata: Metadata = {
   title: "Perdido Peas",
   description: "A children's book by Ian MacCallum and Katie Rivas. Tap the cover to read!",
+  openGraph: {
+    title: "Perdido Peas",
+    description: "A children's book by Ian MacCallum and Katie Rivas. Tap the cover to read!",
+    type: "website",
+    siteName: "Perdido Peas",
+  },
 };
 
 export const viewport: Viewport = {
