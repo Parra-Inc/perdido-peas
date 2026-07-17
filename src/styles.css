@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Perdido Peas shared palette: every page and character pulls from these tokens */
+:root {
+  /* line work */
+  --fb-outline: #3b2a21;
+
+  /* skin + face */
+  --fb-skin: #f1be96;
+  --fb-skin-shade: #e0a57e;
+  --fb-blush: #f2937b;
+  --fb-hair: #8a6844;
+  --fb-beard: #7a5c42;
+
+  /* wardrobe */
+  --fb-cap-navy: #33415e;
+  --fb-cap-dark: #283349;
+  --fb-tee-peach: #f6dec6;
+  --fb-shorts-navy: #46557f;
+  --fb-flipflop-blue: #4e8fd1;
+
+  /* world */
+  --fb-sky: #d7eff4;
+  --fb-water: #35b8a8;
+  --fb-sand: #f7ebd3;
+  --fb-sand-shadow: #d9c7a8;
+  --fb-sun: #ffd66b;
+  --fb-coral: #f2937b;
+  --fb-crab: #f07f3c;
+
+  /* type */
+  --fb-font-display: "Arial Rounded MT Bold", "Marker Felt", "Comic Sans MS", system-ui, sans-serif;
+}
+
+.fb-page {
+  position: relative;
+  overflow: hidden;
+  font-family: var(--fb-font-display);
+  color: var(--fb-outline);
+}

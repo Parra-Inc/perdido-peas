@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 150">
+  <!-- the pelican (watches Eric from a post on page 8): brown body, pale head with a sunny crown, big orange pouch bill -->
+  <g stroke="#3b2a21" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- legs -->
+    <line x1="52" y1="112" x2="50" y2="132" stroke-width="5"/>
+    <line x1="78" y1="112" x2="80" y2="132" stroke-width="5"/>
+    <!-- webbed feet -->
+    <path d="M 40 136 Q 50 129 60 136 Q 50 142 40 136 Z" fill="#f2a24c"/>
+    <path d="M 70 136 Q 80 129 90 136 Q 80 142 70 136 Z" fill="#f2a24c"/>
+    <!-- body -->
+    <ellipse cx="65" cy="86" rx="40" ry="40" fill="#b0917c"/>
+    <!-- folded wings -->
+    <ellipse cx="32" cy="94" rx="11" ry="24" transform="rotate(14 32 94)" fill="#8f7261"/>
+    <ellipse cx="98" cy="94" rx="11" ry="24" transform="rotate(-14 98 94)" fill="#8f7261"/>
+    <!-- head -->
+    <circle cx="65" cy="38" r="26" fill="#f6f1e6"/>
+    <!-- big pouch bill hanging over the chest -->
+    <path d="M 46 46 L 84 46 L 79 90 Q 65 102 51 90 Z" fill="#f2a24c"/>
+    <!-- mouth line across the pouch -->
+    <path d="M 46 46 Q 65 56 84 46" fill="none" stroke-width="4"/>
+  </g>
+  <!-- eyes -->
+  <circle cx="54" cy="34" r="6.5" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="76" cy="34" r="6.5" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="55" cy="35" r="2.4" fill="#3b2a21"/>
+  <circle cx="77" cy="35" r="2.4" fill="#3b2a21"/>
+</svg>

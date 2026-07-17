@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  /* Perdido Peas palette, pulled from the book's art style guide */
+  --color-sand: #fdf6e3;
+  --color-sand-deep: #f5e9c9;
+  --color-gulf: #2ec4b6;
+  --color-gulf-deep: #17a398;
+  --color-emerald-sea: #0b7a6b;
+  --color-sunshine: #ffb703;
+  --color-coral: #ef6f6c;
+  --color-cap-navy: #1d3557;
+  --color-sky: #8ecae6;
+
+  --font-display: var(--font-baloo), ui-rounded, "Comic Sans MS", cursive;
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 120% 60% at 50% -10%, #bfeef0 0%, transparent 60%),
+    linear-gradient(to bottom, #9adfd9 0%, #2ec4b6 42%, #2ec4b6 55%, #fdf6e3 55%, #f5e9c9 100%);
+  background-attachment: fixed;
+  font-family: var(--font-display);
+  color: var(--color-cap-navy);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* --- Book 3D scene --- */
+.book-scene {
+  perspective: 1800px;
+}
+
+.book-cover-3d {
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 0.9s cubic-bezier(0.4, 0.1, 0.2, 1);
+}
+
+.book-cover-3d.is-open {
+  transform: rotateY(-100deg);
+  opacity: 0;
+  transition:
+    transform 0.9s cubic-bezier(0.4, 0.1, 0.2, 1),
+    opacity 0.35s ease 0.55s;
+  pointer-events: none;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Idle wobble invites the tap */
+@keyframes bob {
+  0%, 100% { transform: translateY(0) rotate(-0.6deg); }
+  50% { transform: translateY(-10px) rotate(0.6deg); }
+}
+.animate-bob {
+  animation: bob 3.2s ease-in-out infinite;
+}
+
+/* Page flip animations (rotate around the spine edge) */
+@keyframes flip-in-next {
+  from { transform: rotateY(60deg); opacity: 0; }
+  to { transform: rotateY(0deg); opacity: 1; }
+}
+@keyframes flip-in-prev {
+  from { transform: rotateY(-60deg); opacity: 0; }
+  to { transform: rotateY(0deg); opacity: 1; }
+}
+.flip-next {
+  transform-origin: left center;
+  animation: flip-in-next 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+.flip-prev {
+  transform-origin: right center;
+  animation: flip-in-prev 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+@keyframes float-note {
+  0% { transform: translateY(0) rotate(-8deg); opacity: 0; }
+  20% { opacity: 0.9; }
+  100% { transform: translateY(-90px) rotate(10deg); opacity: 0; }
+}
+.music-note {
+  animation: float-note 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bob, .music-note { animation: none; }
+  .book-cover-3d, .flip-next, .flip-prev { transition: none; animation: none; }
+}

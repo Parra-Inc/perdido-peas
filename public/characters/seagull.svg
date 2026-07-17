@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 132">
+  <!-- the puzzled seagull (page 4, plus gulls overhead on the cover): white egg body, gray wings, sunshine-yellow beak, orange webbed feet -->
+  <g stroke="#3b2a21" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- legs -->
+    <line x1="48" y1="100" x2="46" y2="118" stroke-width="5"/>
+    <line x1="72" y1="100" x2="74" y2="118" stroke-width="5"/>
+    <!-- webbed feet -->
+    <path d="M 28 122 Q 42 111 56 122 Q 42 130 28 122 Z" fill="#f2a24c"/>
+    <path d="M 64 122 Q 78 111 92 122 Q 78 130 64 122 Z" fill="#f2a24c"/>
+    <!-- tail feathers -->
+    <path d="M 84 80 L 112 90 L 90 102 Z" fill="#c3d0da"/>
+    <!-- body -->
+    <ellipse cx="60" cy="66" rx="37" ry="44" fill="#ffffff"/>
+    <!-- folded wings -->
+    <ellipse cx="29" cy="76" rx="11" ry="24" transform="rotate(14 29 76)" fill="#c3d0da"/>
+    <ellipse cx="91" cy="76" rx="11" ry="24" transform="rotate(-14 91 76)" fill="#c3d0da"/>
+    <!-- beak -->
+    <path d="M 44 54 L 76 54 L 60 76 Z" fill="#f7c73f"/>
+  </g>
+  <!-- eyes -->
+  <circle cx="48" cy="41" r="7" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="72" cy="41" r="7" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="49" cy="42" r="2.6" fill="#3b2a21"/>
+  <circle cx="73" cy="42" r="2.6" fill="#3b2a21"/>
+</svg>

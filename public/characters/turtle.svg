@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 120">
+  <!-- the sea turtle: emerald shell, sandy rim, one flipper up in a friendly wave -->
+  <g stroke="#3b2a21" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- head peeking over the shell -->
+    <circle cx="70" cy="36" r="21" fill="#8fce6f"/>
+    <!-- waving flipper (viewer left), base tucked behind the shell -->
+    <ellipse cx="30" cy="58" rx="10" ry="24" transform="rotate(38 30 58)" fill="#8fce6f"/>
+    <!-- resting flipper (viewer right) -->
+    <ellipse cx="119" cy="90" rx="20" ry="9" transform="rotate(16 119 90)" fill="#8fce6f"/>
+    <!-- shell -->
+    <path d="M 24 96 Q 24 52 70 52 Q 116 52 116 96 Z" fill="#2e8f6d"/>
+    <!-- sandy shell rim -->
+    <path d="M 21 95 Q 70 103 119 95 Q 120 106 109 106 L 31 106 Q 20 106 21 95 Z" fill="#e8d9a8"/>
+  </g>
+  <!-- shell scute pattern -->
+  <g fill="none" stroke="#247a5c" stroke-width="4" stroke-linecap="round">
+    <path d="M 52 60 L 47 78"/>
+    <path d="M 70 57 L 70 79"/>
+    <path d="M 88 60 L 93 78"/>
+    <path d="M 34 84 Q 70 92 106 84"/>
+  </g>
+  <!-- face -->
+  <circle cx="62" cy="31" r="6.5" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="78" cy="31" r="6.5" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="63" cy="32" r="2.4" fill="#3b2a21"/>
+  <circle cx="79" cy="32" r="2.4" fill="#3b2a21"/>
+  <path d="M 63 42 Q 70 47 77 42" fill="none" stroke="#3b2a21" stroke-width="4" stroke-linecap="round"/>
+</svg>

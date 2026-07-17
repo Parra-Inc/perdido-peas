@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "name": "Perdido Peas",
+  "publicDir": "public",
+  "command": "npx open-assets render --force",
+  "collections": [
+    {
+      "id": "characters",
+      "label": "Character Sheet",
+      "sourceSize": { "width": 1200, "height": 1200 },
+      "borderRadius": 0,
+      "templates": [
+        { "src": "assets/characters/eric.html", "name": "eric", "label": "Eric" },
+        { "src": "assets/characters/ian.html", "name": "ian", "label": "Ian" },
+        { "src": "assets/characters/chris.html", "name": "chris", "label": "Chris" },
+        { "src": "assets/characters/katie.html", "name": "katie", "label": "Katie" },
+        { "src": "assets/characters/grace.html", "name": "grace", "label": "Grace" },
+        { "src": "assets/characters/ben.html", "name": "ben", "label": "Ben" },
+        { "src": "assets/characters/sarah.html", "name": "sarah", "label": "Sarah" },
+        { "src": "assets/characters/crab.html", "name": "crab", "label": "Crab" },
+        { "src": "assets/characters/seagull.html", "name": "seagull", "label": "Seagull" },
+        { "src": "assets/characters/turtle.html", "name": "turtle", "label": "Turtle" },
+        { "src": "assets/characters/pelican.html", "name": "pelican", "label": "Pelican" },
+        { "src": "assets/characters/fish.html", "name": "fish", "label": "Fish" }
+      ],
+      "export": [
+        { "name": "full", "label": "Full 1200", "size": { "width": 1200, "height": 1200 }, "outFile": "exports/characters/full/{template}.png" },
+        { "name": "thumb", "label": "Thumb 512", "size": { "width": 512, "height": 512 }, "outFile": "exports/characters/thumb/{template}.png" }
+      ],
+      "customExport": { "defaultWidth": 1200, "defaultHeight": 1200 }
+    },
+    {
+      "id": "pages",
+      "label": "Book Pages",
+      "sourceSize": { "width": 2550, "height": 2550 },
+      "borderRadius": 0,
+      "templates": [
+        { "src": "assets/pages/00-cover.html", "name": "00-cover", "label": "Cover" }
+      ],
+      "export": [
+        { "name": "print", "label": "Print 2550", "size": { "width": 2550, "height": 2550 }, "outFile": "exports/pages/{template}.png" },
+        { "name": "web", "label": "Web Reader 1600", "size": { "width": 1600, "height": 1600 }, "outFile": "web/public/pages/{template}.png" }
+      ],
+      "customExport": { "defaultWidth": 2550, "defaultHeight": 2550 }
+    },
+    {
+      "id": "lineup",
+      "label": "Crew Lineup",
+      "sourceSize": { "width": 2900, "height": 540 },
+      "borderRadius": 0,
+      "templates": [
+        { "src": "assets/characters/lineup.html", "name": "lineup", "label": "The Perdido Peas" }
+      ],
+      "export": [
+        { "name": "review", "label": "Review 2088", "size": { "width": 2088, "height": 389 }, "outFile": "exports/lineup/{template}.png" }
+      ],
+      "customExport": { "defaultWidth": 2900, "defaultHeight": 540 }
+    }
+  ]
+}

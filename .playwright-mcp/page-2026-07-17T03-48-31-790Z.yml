@@ -1,0 +1,10 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic:
+      - generic: 🎵
+      - generic: 🎶
+      - generic: 🎵
+    - button "Open the book" [ref=e5] [cursor=pointer]:
+      - 'img "Cover: Perdido Peas by Ian MacCallum" [ref=e7]'
+    - paragraph [ref=e9]: Tap the book to open it! 🦀
+  - alert [ref=e10]
