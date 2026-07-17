@@ -235,6 +235,6 @@
 
 ## Back cover (optional)
 
-**Text:** See you at the Bama!
+**Text:** See you at the Flora-Bama Peas!
 
 **Illustration:** The crab alone on the sand, waving, tiny sunglasses on, a bocce ball beside him, sunset sky.
