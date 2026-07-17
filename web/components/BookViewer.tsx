@@ -9,6 +9,7 @@ const LAST = pages.length - 1;
 export default function BookViewer() {
   const [opened, setOpened] = useState(false);
   const [index, setIndex] = useState(0); // 0 = cover (closed book)
+  const [prevIndex, setPrevIndex] = useState<number | null>(null); // page shown under the incoming one during a turn
   const [dir, setDir] = useState<"next" | "prev" | null>(null);
   const [dragDx, setDragDx] = useState(0);
   const drag = useRef<{ startX: number; pointerId: number } | null>(null);
@@ -17,12 +18,14 @@ export default function BookViewer() {
   const openBook = useCallback(() => {
     setOpened(true);
     setIndex(1);
+    setPrevIndex(null);
     setDir(null);
   }, []);
 
   const closeBook = useCallback(() => {
     setOpened(false);
     setIndex(0);
+    setPrevIndex(null);
     setDir(null);
   }, []);
 
@@ -30,6 +33,7 @@ export default function BookViewer() {
     if (!opened) return openBook();
     if (index >= LAST) return closeBook(); // the end: start over
     setDir("next");
+    setPrevIndex(index);
     setIndex((i) => i + 1);
   }, [opened, index, openBook, closeBook]);
 
@@ -37,6 +41,7 @@ export default function BookViewer() {
     if (!opened) return;
     if (index <= 1) return closeBook();
     setDir("prev");
+    setPrevIndex(index);
     setIndex((i) => i - 1);
   }, [opened, index, closeBook]);
 
@@ -117,13 +122,24 @@ export default function BookViewer() {
             opened ? "" : "invisible"
           }`}
         >
+          {/* Outgoing page stays put underneath while the new one crossfades in over it */}
+          {opened && prevIndex !== null && (
+            <img
+              src={pages[prevIndex].src}
+              alt=""
+              aria-hidden
+              draggable={false}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          )}
           {opened && (
             <img
               key={index}
               src={page.src}
               alt={page.alt}
               draggable={false}
-              className={`h-full w-full object-cover ${dir === "next" ? "flip-next" : dir === "prev" ? "flip-prev" : ""}`}
+              onAnimationEnd={() => setPrevIndex(null)}
+              className={`relative h-full w-full object-cover ${dir === "next" ? "page-in-next" : dir === "prev" ? "page-in-prev" : ""}`}
               style={dragDx ? { transform: `translateX(${dragDx * 0.25}px)` } : undefined}
             />
           )}
@@ -173,7 +189,7 @@ export default function BookViewer() {
           <NavButton label="Previous page" onClick={prev}>
             ←
           </NavButton>
-          <PageCounter label={page.counter} special={index === 1 || index >= LAST} />
+          <PageCounter label={page.counter} />
           <NavButton label={index >= LAST ? "Start over" : "Next page"} onClick={next}>
             {index >= LAST ? "↺" : "→"}
           </NavButton>

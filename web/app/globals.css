@@ -65,22 +65,20 @@ body {
   animation: bob 3.2s ease-in-out infinite;
 }
 
-/* Page flip animations (rotate around the spine edge) */
-@keyframes flip-in-next {
-  from { transform: rotateY(60deg); opacity: 0; }
-  to { transform: rotateY(0deg); opacity: 1; }
+/* Page turns: soft crossfade-slide over the previous page (the cover keeps its 3D open) */
+@keyframes page-in-next {
+  from { transform: translateX(5%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
-@keyframes flip-in-prev {
-  from { transform: rotateY(-60deg); opacity: 0; }
-  to { transform: rotateY(0deg); opacity: 1; }
+@keyframes page-in-prev {
+  from { transform: translateX(-5%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
-.flip-next {
-  transform-origin: left center;
-  animation: flip-in-next 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+.page-in-next {
+  animation: page-in-next 0.35s ease-out;
 }
-.flip-prev {
-  transform-origin: right center;
-  animation: flip-in-prev 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+.page-in-prev {
+  animation: page-in-prev 0.35s ease-out;
 }
 
 @keyframes float-note {
@@ -94,5 +92,5 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .animate-bob, .music-note { animation: none; }
-  .book-cover-3d, .flip-next, .flip-prev { transition: none; animation: none; }
+  .book-cover-3d, .page-in-next, .page-in-prev { transition: none; animation: none; }
 }
