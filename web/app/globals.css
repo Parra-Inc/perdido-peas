@@ -65,20 +65,25 @@ body {
   animation: bob 3.2s ease-in-out infinite;
 }
 
-/* Page turns: soft crossfade-slide over the previous page (the cover keeps its 3D open) */
-@keyframes page-in-next {
-  from { transform: translateX(5%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+/* Page turns: the page folds at the spine, same hinge as the cover.
+   Next folds the outgoing page away; prev folds the incoming page back down. */
+.page-fold {
+  transform-style: preserve-3d;
+  transform-origin: left center;
 }
-@keyframes page-in-prev {
-  from { transform: translateX(-5%); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+@keyframes page-fold-out {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-100deg); }
 }
-.page-in-next {
-  animation: page-in-next 0.35s ease-out;
+@keyframes page-fold-in {
+  from { transform: rotateY(-100deg); }
+  to { transform: rotateY(0deg); }
 }
-.page-in-prev {
-  animation: page-in-prev 0.35s ease-out;
+.page-fold-out {
+  animation: page-fold-out 0.6s cubic-bezier(0.4, 0.1, 0.2, 1) both;
+}
+.page-fold-in {
+  animation: page-fold-in 0.6s cubic-bezier(0.4, 0.1, 0.2, 1) both;
 }
 
 @keyframes float-note {
@@ -92,5 +97,5 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .animate-bob, .music-note { animation: none; }
-  .book-cover-3d, .page-in-next, .page-in-prev { transition: none; animation: none; }
+  .book-cover-3d, .page-fold-out, .page-fold-in { transition: none; animation: none; }
 }

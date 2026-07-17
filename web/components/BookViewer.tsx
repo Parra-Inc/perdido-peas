@@ -9,8 +9,8 @@ const LAST = pages.length - 1;
 export default function BookViewer() {
   const [opened, setOpened] = useState(false);
   const [index, setIndex] = useState(0); // 0 = cover (closed book)
-  const [prevIndex, setPrevIndex] = useState<number | null>(null); // page shown under the incoming one during a turn
-  const [dir, setDir] = useState<"next" | "prev" | null>(null);
+  // While a turn is in flight: the page folding at the spine + the page pinned underneath it
+  const [fold, setFold] = useState<{ pageIdx: number; underIdx: number; dir: "next" | "prev" } | null>(null);
   const [dragDx, setDragDx] = useState(0);
   const drag = useRef<{ startX: number; pointerId: number } | null>(null);
   const suppressClick = useRef(false);
@@ -18,32 +18,35 @@ export default function BookViewer() {
   const openBook = useCallback(() => {
     setOpened(true);
     setIndex(1);
-    setPrevIndex(null);
-    setDir(null);
+    setFold(null);
   }, []);
 
   const closeBook = useCallback(() => {
     setOpened(false);
     setIndex(0);
-    setPrevIndex(null);
-    setDir(null);
+    setFold(null);
   }, []);
 
   const next = useCallback(() => {
     if (!opened) return openBook();
     if (index >= LAST) return closeBook(); // the end: start over
-    setDir("next");
-    setPrevIndex(index);
+    setFold({ pageIdx: index, underIdx: index + 1, dir: "next" });
     setIndex((i) => i + 1);
   }, [opened, index, openBook, closeBook]);
 
   const prev = useCallback(() => {
     if (!opened) return;
     if (index <= 1) return closeBook();
-    setDir("prev");
-    setPrevIndex(index);
+    setFold({ pageIdx: index - 1, underIdx: index, dir: "prev" });
     setIndex((i) => i - 1);
   }, [opened, index, closeBook]);
+
+  // Safety net: clear the fold even if animationend never fires (e.g. reduced motion)
+  useEffect(() => {
+    if (!fold) return;
+    const t = setTimeout(() => setFold(null), 700);
+    return () => clearTimeout(t);
+  }, [fold]);
 
   // Arrow key navigation
   useEffect(() => {
@@ -122,24 +125,16 @@ export default function BookViewer() {
             opened ? "" : "invisible"
           }`}
         >
-          {/* Outgoing page stays put underneath while the new one crossfades in over it */}
-          {opened && prevIndex !== null && (
-            <img
-              src={pages[prevIndex].src}
-              alt=""
-              aria-hidden
-              draggable={false}
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          )}
+          {/* The page pinned to the book while a fold is in flight: the incoming page for
+              next (revealed as the old one folds away), the outgoing page for prev
+              (covered as the old one folds back down) */}
           {opened && (
             <img
-              key={index}
-              src={page.src}
+              key={fold?.dir === "prev" ? fold.underIdx : index}
+              src={fold?.dir === "prev" ? pages[fold.underIdx].src : page.src}
               alt={page.alt}
               draggable={false}
-              onAnimationEnd={() => setPrevIndex(null)}
-              className={`relative h-full w-full object-cover ${dir === "next" ? "page-in-next" : dir === "prev" ? "page-in-prev" : ""}`}
+              className="h-full w-full object-cover"
               style={dragDx ? { transform: `translateX(${dragDx * 0.25}px)` } : undefined}
             />
           )}
@@ -153,6 +148,28 @@ export default function BookViewer() {
             />
           )}
         </div>
+
+        {/* Turning page, hinged at the spine exactly like the cover. Sits outside the
+            clipped frame so the 3D swing isn't cut off */}
+        {opened && fold && (
+          <div aria-hidden className="pointer-events-none absolute inset-0">
+            <div
+              className={`page-fold backface-hidden absolute inset-0 ${
+                fold.dir === "next" ? "page-fold-out" : "page-fold-in"
+              }`}
+              onAnimationEnd={() => setFold(null)}
+            >
+              <img
+                src={pages[fold.pageIdx].src}
+                alt=""
+                draggable={false}
+                className="h-full w-full rounded-2xl border-4 border-white object-cover shadow-[0_18px_40px_-12px_rgba(29,53,87,0.45)]"
+              />
+              {/* Spine highlight, same as the cover */}
+              <span className="absolute inset-y-0 left-0 w-4 rounded-l-2xl bg-gradient-to-r from-black/25 to-transparent" />
+            </div>
+          </div>
+        )}
 
         {/* Closed cover, hinged at the spine. Ignores taps once open so the page underneath gets them */}
         <div className={`absolute inset-0 ${opened ? "pointer-events-none" : "animate-bob"}`}>
