@@ -1,12 +1,14 @@
 <p align="center">
-  <img src="public/banner/banner.png" alt="Perdido Peas - a children's book written and illustrated with AI" width="100%" />
+  <a href="https://perdido-peas.vercel.app">
+    <img src="public/banner/banner.png" alt="Perdido Peas - a children's book written and illustrated with AI" width="100%" />
+  </a>
 </p>
 
 <h1 align="center">Perdido Peas</h1>
 
 <p align="center">
-  <strong>A rhyming children's picture book, written and illustrated end to end with AI.</strong><br>
-  Read it online, tap the cover to open it, and flip through all 17 pages.
+  <strong>A children's picture book, written, illustrated, and published end to end with AI in about 2 hours.</strong><br>
+  Built to get my friends excited for a beach trip. Open-sourced so you can make your own.
 </p>
 
 <p align="center">
@@ -17,9 +19,9 @@
 
 ## What this is
 
-**Perdido Peas** is a short, rhyming children's book about a boy named Eric who arrives at the beach, can't find his friends anywhere, and follows the music down the shore until he discovers them all waiting for him at the Flora-Bama. It was written, illustrated, laid out, and published as an interactive web reader without a single hand-drawn line or stock illustration. Every page, every character, and the cover were **generated as code** and rendered to print-ready art.
+I had a beach trip coming up with a group of friends, so I spent about two hours making them a short rhyming picture book to get everyone hyped. The book itself is a personal in-joke; the interesting part is **how it was made**: written, illustrated, laid out, and published as an interactive web reader without a single hand-drawn line or stock illustration. Every page, every character, and the cover were **generated as code** and rendered to print-ready art.
 
-This repo doubles as a **worked example of how to write a children's book with AI**: a reusable, prompt-by-prompt process you can copy for your own picture book. If you searched for *how to make a children's book with AI*, *AI children's book generator*, *AI storybook illustrations*, or *self-publish a picture book*, start with [The reusable process](#the-reusable-process-how-to-write-a-childrens-book-with-ai) below.
+That's why this repo is open source. It's a **worked example of how to write a children's book with AI**: a reusable, prompt-by-prompt process you can copy for your own picture book. If you searched for *how to make a children's book with AI*, *AI children's book generator*, *AI storybook illustrations*, or *self-publish a picture book*, start with [The reusable process](#the-reusable-process-how-to-write-a-childrens-book-with-ai) below.
 
 - **Live reader:** https://perdido-peas.vercel.app
 - **Manuscript (text + per-page illustration briefs):** [book.md](book.md)
@@ -254,4 +256,4 @@ The pages export at 2550 x 2550 px (300 DPI) for an 8.5" square trim. Add bleed 
 
 ---
 
-*Perdido Peas is a personalized gift book made for a group of friends (the "Perdido Peas"). Written with [Claude Code](https://claude.com/claude-code), illustrated with [open-assets](https://www.npmjs.com/package/@open-assets/open-assets).*
+*Perdido Peas is a personalized gift book made in about two hours for a group of friends (the "Perdido Peas") ahead of a beach trip. Written with [Claude Code](https://claude.com/claude-code), illustrated with [open-assets](https://www.npmjs.com/package/@open-assets/open-assets).*
