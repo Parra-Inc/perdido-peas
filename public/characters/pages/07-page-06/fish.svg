@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <!-- the fish, page 6 variant: popped straight up out of the water, fins out in a shrug,
+       tail down below the waterline -->
+  <g transform="translate(100 0) rotate(90)">
+    <g stroke="#3b2a21" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+      <!-- tail, now pointing down into the water -->
+      <path d="M 94 50 L 122 30 Q 115 50 122 70 Z" fill="#f7c73f"/>
+      <!-- body -->
+      <ellipse cx="58" cy="50" rx="42" ry="28" fill="#f2705f"/>
+      <!-- stripe -->
+      <path d="M 70 26 Q 62 50 70 74" fill="none" stroke="#d95547" stroke-width="4"/>
+    </g>
+  </g>
+  <!-- shrug fins, out and up like little palms -->
+  <g stroke="#3b2a21" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M 74 56 Q 95 50 100 28 Q 85 31 75 43 Q 71 50 74 56 Z" fill="#f7c73f"/>
+    <path d="M 26 56 Q 5 50 0 28 Q 15 31 25 43 Q 29 50 26 56 Z" fill="#f7c73f"/>
+  </g>
+  <!-- face, front-on: wide unsure eyes and a wobbly little mouth -->
+  <circle cx="40" cy="33" r="6.5" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="60" cy="33" r="6.5" fill="#ffffff" stroke="#3b2a21" stroke-width="4"/>
+  <circle cx="40.5" cy="34" r="2.4" fill="#3b2a21"/>
+  <circle cx="60.5" cy="34" r="2.4" fill="#3b2a21"/>
+  <path d="M 43 48 Q 47 52 50 48 Q 53 44 57 48" fill="none" stroke="#3b2a21" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Katie seated, back view: wavy brown bob cascading over her back, pink bow on the crown, pink tee -->
+  <g transform="translate(66 165.44) scale(0.78)">
+    <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <!-- relaxed arms, hands on the sand -->
+      <path d="M 388 528 Q 416 540 428 574 Q 438 616 440 664 Q 441 686 429 690 Q 417 692 412 677 Q 404 644 401 600 Q 398 554 386 534 Z" fill="#f1be96"/>
+      <ellipse cx="432" cy="702" rx="21" ry="24" fill="#f1be96"/>
+      <path d="M 212 528 Q 184 540 172 574 Q 162 616 160 664 Q 159 686 171 690 Q 183 692 188 677 Q 196 644 199 600 Q 202 554 214 534 Z" fill="#f1be96"/>
+      <ellipse cx="168" cy="702" rx="21" ry="24" fill="#f1be96"/>
+      <!-- rounded tee back -->
+      <path d="M 300 466 Q 254 468 228 486 Q 198 504 192 544 L 186 690 Q 184 726 222 728 L 378 728 Q 416 726 414 690 L 408 544 Q 402 504 372 486 Q 346 468 300 466 Z" fill="#f7ccd4"/>
+      <!-- head from behind (fully covered by hair) -->
+      <ellipse cx="300" cy="330" rx="150" ry="145" fill="#f1be96"/>
+    </g>
+    <!-- wavy brown hair seen from behind, falling over the shoulders -->
+    <path d="M 300 174
+             Q 400 178 442 228
+             Q 470 268 464 316
+             Q 482 356 468 396
+             Q 454 428 470 466
+             Q 482 498 464 528
+             Q 450 546 430 538
+             Q 370 550 300 550
+             Q 230 550 170 538
+             Q 150 546 136 528
+             Q 118 498 130 466
+             Q 146 428 132 396
+             Q 118 356 136 316
+             Q 130 268 158 228
+             Q 200 178 300 174 Z" fill="#5f4530" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M 450 258 Q 468 308 454 358 Q 442 400 458 442 M 150 258 Q 132 308 146 358 Q 158 400 142 442" fill="none" stroke="#46311f" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 464 398 Q 452 448 466 490 Q 472 516 456 530 M 136 398 Q 148 448 134 490 Q 128 516 144 530" fill="none" stroke="#46311f" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 442 238 Q 456 283 446 328 Q 438 366 450 398 M 158 238 Q 144 283 154 328 Q 162 366 150 398" fill="none" stroke="#7a5c42" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+    <path d="M 250 258 Q 240 340 252 410 Q 258 452 250 492 M 350 258 Q 360 340 348 410 Q 342 452 350 492" fill="none" stroke="#46311f" stroke-width="5" stroke-linecap="round"/>
+    <!-- pale pink bow on the side of her crown, visible from behind -->
+    <path d="M 396 214 L 370 196 Q 360 212 370 226 Z" fill="#f7ccd4" stroke="#3b2a21" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 396 214 L 422 194 Q 434 208 424 224 Z" fill="#f7ccd4" stroke="#3b2a21" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="396" cy="212" r="9" fill="#f7ccd4" stroke="#3b2a21" stroke-width="6"/>
+  </g>
+</svg>

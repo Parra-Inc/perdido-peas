@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Ben seated, back view: skinny and pale, brown man bun, green tank top showing bare shoulders -->
+  <g transform="translate(21 52.64) scale(0.93)">
+    <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <!-- skinny relaxed arms, hands on the sand -->
+      <path d="M 380 522 Q 404 534 414 570 Q 424 612 426 660 Q 427 682 416 686 Q 405 688 400 673 Q 393 640 391 598 Q 389 552 378 528 Z" fill="#f9e6d2"/>
+      <ellipse cx="418" cy="698" rx="19" ry="22" fill="#f9e6d2"/>
+      <path d="M 220 522 Q 196 534 186 570 Q 176 612 174 660 Q 173 682 184 686 Q 195 688 200 673 Q 207 640 209 598 Q 211 552 222 528 Z" fill="#f9e6d2"/>
+      <ellipse cx="182" cy="698" rx="19" ry="22" fill="#f9e6d2"/>
+      <!-- narrow bare back -->
+      <path d="M 300 462 Q 260 464 238 480 Q 212 496 207 534 L 202 688 Q 200 724 234 726 L 366 726 Q 400 724 398 688 L 393 534 Q 388 496 362 480 Q 340 464 300 462 Z" fill="#f9e6d2"/>
+      <!-- tank top back panel with straps -->
+      <path d="M 230 508 Q 300 542 370 508 L 380 560 L 376 688 Q 376 720 346 722 L 254 722 Q 224 720 224 688 L 220 560 Z" fill="#a8c8a0"/>
+      <path d="M 244 512 Q 238 490 244 470 L 262 466 Q 256 492 260 522 Z" fill="#a8c8a0" stroke-width="7"/>
+      <path d="M 356 512 Q 362 490 356 470 L 338 466 Q 344 492 340 522 Z" fill="#a8c8a0" stroke-width="7"/>
+      <!-- neck, ears, narrow head from behind (no face) -->
+      <rect x="282" y="436" width="36" height="56" rx="12" fill="#f9e6d2"/>
+      <circle cx="156" cy="352" r="15" fill="#f9e6d2"/>
+      <circle cx="444" cy="352" r="15" fill="#f9e6d2"/>
+      <ellipse cx="300" cy="330" rx="138" ry="145" fill="#f9e6d2"/>
+    </g>
+    <!-- man bun sitting on the crown -->
+    <circle cx="300" cy="182" r="26" fill="#6b4e35" stroke="#3b2a21" stroke-width="9"/>
+    <!-- hair pulled back over the whole head into the bun -->
+    <path d="M 165 330 Q 162 192 300 178 Q 438 192 435 330 Q 436 396 402 428 Q 300 452 198 428 Q 164 396 165 330 Z" fill="#6b4e35" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <ellipse cx="300" cy="200" rx="15" ry="6" fill="#4e3826"/>
+    <path d="M 214 248 Q 300 214 386 248 M 200 330 Q 300 282 400 330 M 208 396 Q 300 352 392 396" fill="none" stroke="#4e3826" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

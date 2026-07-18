@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Eric, page 1 pose variant: seated at his desk, chin resting in both hands,
+       dreamy sideways gaze toward the window. Cap stays backwards.
+       Legs and elbows are hidden behind the desk on the page. -->
+
+  <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- cap bill: single tab poking out behind the head, backwards as always -->
+    <path d="M 435 212 Q 512 210 522 226 Q 528 244 518 252 Q 505 258 435 252 Z" fill="#283349"/>
+
+    <!-- legs (hidden behind the desk on the page) -->
+    <rect x="250" y="640" width="36" height="88" rx="17" fill="#f1be96"/>
+    <rect x="314" y="640" width="36" height="88" rx="17" fill="#f1be96"/>
+
+    <!-- flip-flops -->
+    <ellipse cx="268" cy="738" rx="44" ry="14" fill="#4e8fd1"/>
+    <ellipse cx="332" cy="738" rx="44" ry="14" fill="#4e8fd1"/>
+
+    <!-- shorts -->
+    <path d="M 240 588 L 360 588 L 364 656 Q 365 672 350 672 L 314 672 Q 305 672 303 662 Q 301 654 300 654 Q 299 654 297 662 Q 295 672 286 672 L 250 672 Q 235 672 236 656 Z" fill="#46557f"/>
+  </g>
+
+  <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tee -->
+    <path d="M 300 382
+             Q 272 384 255 393
+             Q 222 400 205 418
+             Q 188 448 185 500
+             Q 190 512 205 508
+             Q 224 504 238 496
+             L 232 598
+             Q 268 606 300 606
+             Q 332 606 368 598
+             L 362 496
+             Q 376 504 395 508
+             Q 410 512 415 500
+             Q 412 448 395 418
+             Q 378 400 345 393
+             Q 328 384 300 382 Z" fill="#f6dec6"/>
+    <!-- collar -->
+    <path d="M 262 394 Q 300 420 338 394" fill="none" stroke-width="6"/>
+
+    <!-- neck, then ears tucked behind, then head over them -->
+    <rect x="278" y="360" width="44" height="48" rx="12" fill="#f1be96"/>
+    <circle cx="142" cy="274" r="16" fill="#f1be96"/>
+    <circle cx="458" cy="274" r="16" fill="#f1be96"/>
+    <ellipse cx="300" cy="252" rx="150" ry="145" fill="#f1be96"/>
+  </g>
+
+  <!-- blush -->
+  <ellipse cx="206" cy="300" rx="20" ry="12" fill="#f2937b" opacity="0.45"/>
+  <ellipse cx="394" cy="300" rx="20" ry="12" fill="#f2937b" opacity="0.45"/>
+
+  <!-- nose -->
+  <ellipse cx="300" cy="300" rx="19" ry="14" fill="#e8ac80" stroke="#3b2a21" stroke-width="7"/>
+
+  <!-- soft daydream smile -->
+  <path d="M 272 344 Q 300 362 328 344" fill="none" stroke="#3b2a21" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- eyes + brows: pupils drifted toward the window (viewer left), a little dreamy -->
+  <circle cx="248" cy="260" r="13" fill="#3b2a21"/>
+  <circle cx="332" cy="260" r="13" fill="#3b2a21"/>
+  <circle cx="252" cy="255" r="4.5" fill="#ffffff"/>
+  <circle cx="336" cy="255" r="4.5" fill="#ffffff"/>
+  <path d="M 236 232 Q 258 223 280 231 M 320 231 Q 342 223 364 232" fill="none" stroke="#3b2a21" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- backwards cap dome -->
+  <path d="M 150 232
+           Q 150 114 300 96
+           Q 450 114 450 232
+           Q 380 206 300 206
+           Q 220 206 150 232 Z" fill="#33415e" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 161 223 Q 300 194 439 223" fill="none" stroke="#283349" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 300 200 Q 262 152 246 112 M 300 200 Q 338 152 354 112" fill="none" stroke="#283349" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="300" cy="97" r="10" fill="#283349" stroke="#3b2a21" stroke-width="6"/>
+
+  <!-- arms drawn last so the mitten hands rest on the cheeks:
+       forearms prop up from the desk (elbows hidden behind it), single silhouettes -->
+  <!-- right forearm (viewer right) -->
+  <path d="M 346 398
+           Q 342 480 354 555
+           Q 360 588 383 592
+           Q 405 594 411 572
+           Q 415 488 397 408
+           Q 391 388 372 385
+           Q 352 384 346 398 Z" fill="#f1be96" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+  <ellipse cx="360" cy="366" rx="25" ry="29" transform="rotate(-12 360 366)" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+
+  <!-- left forearm (viewer left), mirror -->
+  <path d="M 254 398
+           Q 258 480 246 555
+           Q 240 588 217 592
+           Q 195 594 189 572
+           Q 185 488 203 408
+           Q 209 388 228 385
+           Q 248 384 254 398 Z" fill="#f1be96" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+  <ellipse cx="240" cy="366" rx="25" ry="29" transform="rotate(12 240 366)" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+</svg>

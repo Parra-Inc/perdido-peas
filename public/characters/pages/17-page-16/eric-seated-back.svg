@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Eric seated, back view: backwards navy cap (dome + bill toward the viewer), peach tee, hands resting on the sand -->
+  <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <!-- relaxed arms, hands on the sand -->
+    <path d="M 388 528 Q 416 540 428 574 Q 438 616 440 664 Q 441 686 429 690 Q 417 692 412 677 Q 404 644 401 600 Q 398 554 386 534 Z" fill="#f1be96"/>
+    <ellipse cx="432" cy="702" rx="21" ry="24" fill="#f1be96"/>
+    <path d="M 212 528 Q 184 540 172 574 Q 162 616 160 664 Q 159 686 171 690 Q 183 692 188 677 Q 196 644 199 600 Q 202 554 214 534 Z" fill="#f1be96"/>
+    <ellipse cx="168" cy="702" rx="21" ry="24" fill="#f1be96"/>
+    <!-- rounded tee back -->
+    <path d="M 300 466 Q 254 468 228 486 Q 198 504 192 544 L 186 690 Q 184 726 222 728 L 378 728 Q 416 726 414 690 L 408 544 Q 402 504 372 486 Q 346 468 300 466 Z" fill="#f6dec6"/>
+    <path d="M 264 480 Q 300 500 336 480" fill="none" stroke-width="6"/>
+    <!-- neck, ears, head from behind (clean shaven, no face) -->
+    <rect x="278" y="436" width="44" height="52" rx="12" fill="#f1be96"/>
+    <circle cx="142" cy="352" r="16" fill="#f1be96"/>
+    <circle cx="458" cy="352" r="16" fill="#f1be96"/>
+    <ellipse cx="300" cy="330" rx="150" ry="145" fill="#f1be96"/>
+  </g>
+  <!-- short brown hair at the nape below the cap -->
+  <path d="M 158 312 Q 300 288 442 312 Q 446 380 420 424 Q 300 458 180 424 Q 154 380 158 312 Z" fill="#6b4e35" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+  <!-- backwards cap: dome, then the bill tab pointing back toward the viewer -->
+  <path d="M 150 310 Q 150 192 300 174 Q 450 192 450 310 Q 380 284 300 284 Q 220 284 150 310 Z" fill="#33415e" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 161 301 Q 300 272 439 301" fill="none" stroke="#283349" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 300 278 Q 262 230 246 190 M 300 278 Q 338 230 354 190" fill="none" stroke="#283349" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="300" cy="175" r="10" fill="#283349" stroke="#3b2a21" stroke-width="6"/>
+  <path d="M 206 310 Q 300 280 394 310 Q 400 318 396 328 Q 300 366 204 328 Q 200 318 206 310 Z" fill="#283349" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+</svg>

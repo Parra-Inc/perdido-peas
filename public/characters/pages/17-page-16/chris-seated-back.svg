@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Chris seated, back view: navy Braves cap from behind (red brim tips peeking at the sides), buzzed black hair, gray tee -->
+  <g transform="translate(21 52.64) scale(0.93)">
+    <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <!-- relaxed arms, hands on the sand -->
+      <path d="M 388 528 Q 416 540 428 574 Q 438 616 440 664 Q 441 686 429 690 Q 417 692 412 677 Q 404 644 401 600 Q 398 554 386 534 Z" fill="#e8ae83"/>
+      <ellipse cx="432" cy="702" rx="21" ry="24" fill="#e8ae83"/>
+      <path d="M 212 528 Q 184 540 172 574 Q 162 616 160 664 Q 159 686 171 690 Q 183 692 188 677 Q 196 644 199 600 Q 202 554 214 534 Z" fill="#e8ae83"/>
+      <ellipse cx="168" cy="702" rx="21" ry="24" fill="#e8ae83"/>
+      <!-- rounded tee back -->
+      <path d="M 300 466 Q 254 468 228 486 Q 198 504 192 544 L 186 690 Q 184 726 222 728 L 378 728 Q 416 726 414 690 L 408 544 Q 402 504 372 486 Q 346 468 300 466 Z" fill="#cdd6dd"/>
+      <path d="M 264 480 Q 300 500 336 480" fill="none" stroke-width="6"/>
+      <!-- neck, ears, head from behind (no face) -->
+      <rect x="278" y="436" width="44" height="52" rx="12" fill="#e8ae83"/>
+      <circle cx="142" cy="352" r="16" fill="#e8ae83"/>
+      <circle cx="458" cy="352" r="16" fill="#e8ae83"/>
+      <ellipse cx="300" cy="330" rx="150" ry="145" fill="#e8ae83"/>
+    </g>
+    <!-- buzzed black hair band under the cap -->
+    <path d="M 156 310 Q 300 284 444 310 Q 448 378 424 422 Q 300 458 176 422 Q 152 378 156 310 Z" fill="#2d2622" stroke="#3b2a21" stroke-width="6" stroke-linejoin="round"/>
+    <!-- navy cap dome from behind -->
+    <path d="M 150 310 Q 150 192 300 174 Q 450 192 450 310 Q 380 284 300 284 Q 220 284 150 310 Z" fill="#1f2f52" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M 300 278 Q 262 230 246 190 M 300 278 Q 338 230 354 190" fill="none" stroke="#16233f" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="300" cy="175" r="10" fill="#16233f" stroke="#3b2a21" stroke-width="6"/>
+    <!-- red brim tips just peeking past the head on both sides -->
+    <path d="M 152 302 Q 130 306 128 320 Q 134 332 154 326 Z" fill="#c0392b" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 448 302 Q 470 306 472 320 Q 466 332 446 326 Z" fill="#c0392b" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+</svg>

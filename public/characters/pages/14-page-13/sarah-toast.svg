@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Sarah, toast pose (page 13): left arm rotated rigidly around the shoulder pivot 220,490
+       to raise a key lime colada toward the middle of the table. Right arm keeps the A-pose. -->
+  <g transform="translate(36 90.24) scale(0.88)">
+
+    <!-- wavy blonde hair falling BEHIND the back: drawn first so the body covers its middle -->
+    <path d="M 300 96
+             Q 400 100 442 150
+             Q 470 190 464 238
+             Q 482 278 468 318
+             Q 454 350 470 388
+             Q 482 420 464 450
+             Q 450 468 430 460
+             Q 370 472 300 472
+             Q 230 472 170 460
+             Q 150 468 136 450
+             Q 118 420 130 388
+             Q 146 350 132 318
+             Q 118 278 136 238
+             Q 130 190 158 150
+             Q 200 100 300 96 Z" fill="#e8c46a" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M 450 180 Q 468 230 454 280 Q 442 322 458 364 M 150 180 Q 132 230 146 280 Q 158 322 142 364" fill="none" stroke="#c9a24b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 464 320 Q 452 370 466 412 Q 472 438 456 452 M 136 320 Q 148 370 134 412 Q 128 438 144 452" fill="none" stroke="#c9a24b" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 442 160 Q 456 205 446 250 Q 438 288 450 320 M 158 160 Q 144 205 154 250 Q 162 288 150 320" fill="none" stroke="#f4d98c" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+
+    <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <!-- legs -->
+      <rect x="250" y="640" width="36" height="88" rx="17" fill="#f1be96"/>
+      <rect x="314" y="640" width="36" height="88" rx="17" fill="#f1be96"/>
+      <!-- flip-flops -->
+      <ellipse cx="268" cy="738" rx="44" ry="14" fill="#e88ba8"/>
+      <ellipse cx="332" cy="738" rx="44" ry="14" fill="#e88ba8"/>
+      <!-- shorts -->
+      <path d="M 240 588 L 360 588 L 364 656 Q 365 672 350 672 L 314 672 Q 305 672 303 662 Q 301 654 300 654 Q 299 654 297 662 Q 295 672 286 672 L 250 672 Q 235 672 236 656 Z" fill="#f2ede4"/>
+    </g>
+
+    <!-- right arm stays hanging -->
+    <path d="M 372 484 Q 398 492 409 520 Q 420 548 422 570 Q 423 588 412 592 Q 400 594 395 580 Q 389 565 388 540 Q 386 506 372 484 Z" fill="#f1be96" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <ellipse cx="414" cy="601" rx="23" ry="26" transform="rotate(-8 414 601)" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+
+    <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+      <!-- tee -->
+      <path d="M 300 382 Q 272 384 255 393 Q 222 400 205 418 Q 188 448 185 500 Q 190 512 205 508 Q 224 504 238 496 L 232 598 Q 268 606 300 606 Q 332 606 368 598 L 362 496 Q 376 504 395 508 Q 410 512 415 500 Q 412 448 395 418 Q 378 400 345 393 Q 328 384 300 382 Z" fill="#58b8c8"/>
+      <path d="M 262 394 Q 300 420 338 394" fill="none" stroke-width="6"/>
+
+      <!-- neck, ears, head -->
+      <rect x="278" y="360" width="44" height="48" rx="12" fill="#f1be96"/>
+      <circle cx="142" cy="274" r="16" fill="#f1be96"/>
+      <circle cx="458" cy="274" r="16" fill="#f1be96"/>
+      <ellipse cx="300" cy="252" rx="150" ry="145" fill="#f1be96"/>
+    </g>
+
+    <!-- face (shifted down slightly to clear the bangs) -->
+    <ellipse cx="206" cy="308" rx="20" ry="12" fill="#f2937b" opacity="0.45"/>
+    <ellipse cx="394" cy="308" rx="20" ry="12" fill="#f2937b" opacity="0.45"/>
+    <ellipse cx="300" cy="308" rx="14" ry="11" fill="#e0a57e" stroke="#3b2a21" stroke-width="7"/>
+    <path d="M 260 332 Q 300 341 340 332 Q 336 372 300 378 Q 264 372 260 332 Z" fill="#4a2b22" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 267 338 Q 300 344 333 338 Q 331 353 300 356 Q 269 353 267 338 Z" fill="#ffffff"/>
+    <path d="M 258 330 q -8 -2 -12 -9 M 342 330 q 8 -2 12 -9" fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- blue eyes -->
+    <circle cx="258" cy="274" r="13" fill="#4a90d9"/>
+    <circle cx="342" cy="274" r="13" fill="#4a90d9"/>
+    <circle cx="258" cy="274" r="6" fill="#26211d"/>
+    <circle cx="342" cy="274" r="6" fill="#26211d"/>
+    <circle cx="262" cy="269" r="4" fill="#ffffff"/>
+    <circle cx="346" cy="269" r="4" fill="#ffffff"/>
+    <path d="M 247 264 L 240 256 M 253 261 L 249 252" fill="none" stroke="#3b2a21" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 353 264 L 360 256 M 347 261 L 351 252" fill="none" stroke="#3b2a21" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 236 248 Q 258 239 280 247 M 320 247 Q 342 239 364 248" fill="none" stroke="#b08d3f" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- front hairline: smooth dome with soft bangs sweep and wavy strands -->
+    <path d="M 152 244 Q 146 116 300 100 Q 454 116 448 244 Q 380 196 300 196 Q 220 196 152 244 Z" fill="#e8c46a" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M 224 210 Q 232 224 226 240 M 376 210 Q 368 224 374 240" fill="none" stroke="#c9a24b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 198 212 Q 186 184 198 160 Q 208 140 200 122 M 402 212 Q 414 184 402 160 Q 392 140 400 122" fill="none" stroke="#c9a24b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 252 194 Q 242 166 254 144 Q 264 124 256 108 M 348 194 Q 358 166 346 144 Q 336 124 344 108" fill="none" stroke="#c9a24b" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- sunglasses perched on top of her hair -->
+    <rect x="226" y="118" width="54" height="34" rx="15" fill="#2d2622" stroke="#3b2a21" stroke-width="7"/>
+    <rect x="320" y="118" width="54" height="34" rx="15" fill="#2d2622" stroke="#3b2a21" stroke-width="7"/>
+    <path d="M 280 134 Q 300 126 320 134" fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- key lime colada, drawn first so the mitten grips in front of the glass -->
+    <g transform="translate(166 411) rotate(-12)">
+      <path d="M -34 -128 L 34 -128 L 26 -12 Q 24 0 12 0 L -12 0 Q -24 0 -26 -12 Z" fill="#d9efad" stroke="#3b2a21" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M -31 -123 L 31 -123 L 28 -92 L -28 -92 Z" fill="#eef8d6"/>
+      <path d="M 13 -74 L 9 -30" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+      <rect x="14" y="-194" width="13" height="74" rx="6.5" transform="rotate(14 20.5 -157)" fill="#ef6f6c" stroke="#3b2a21" stroke-width="6"/>
+      <circle cx="-32" cy="-126" r="22" fill="#d7ee8e" stroke="#3b2a21" stroke-width="7"/>
+      <circle cx="-32" cy="-126" r="13" fill="#f4fadf"/>
+      <path d="M -32 -139 L -32 -113 M -43 -132 L -21 -120 M -43 -120 L -21 -132" fill="none" stroke="#9fce62" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- left arm raised for the toast, rotated rigidly around the shoulder pivot 220,490 -->
+    <g transform="rotate(135 220 490)">
+      <path d="M 228 484 Q 202 492 191 520 Q 180 548 178 570 Q 177 588 188 592 Q 200 594 205 580 Q 211 565 212 540 Q 214 506 228 484 Z" fill="#f1be96" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+      <ellipse cx="186" cy="601" rx="23" ry="26" transform="rotate(8 186 601)" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Eric, triumph pose (page 10): both arms rotated rigidly at the shoulder pivots
+       (right 380,490 / left 220,490) so the mitten hands punch up in a wide V.
+       Cap stays BACKWARDS. Everything else identical to the stock front view. -->
+
+  <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- cap bill: single tab poking out behind the head, set slightly to the back on one side.
+         NOTE: in any side/profile shot the cap is BACKWARDS, bill pointing fully behind him -->
+    <path d="M 435 212 Q 512 210 522 226 Q 528 244 518 252 Q 505 258 435 252 Z" fill="#283349"/>
+
+    <!-- legs -->
+    <rect x="250" y="640" width="36" height="88" rx="17" fill="#f1be96"/>
+    <rect x="314" y="640" width="36" height="88" rx="17" fill="#f1be96"/>
+
+    <!-- flip-flops -->
+    <ellipse cx="268" cy="738" rx="44" ry="14" fill="#4e8fd1"/>
+    <ellipse cx="332" cy="738" rx="44" ry="14" fill="#4e8fd1"/>
+
+    <!-- shorts, fitted: slightly narrower than the tee hem, openings hugging the legs -->
+    <path d="M 240 588 L 360 588 L 364 656 Q 365 672 350 672 L 314 672 Q 305 672 303 662 Q 301 654 300 654 Q 299 654 297 662 Q 295 672 286 672 L 250 672 Q 235 672 236 656 Z" fill="#46557f"/>
+  </g>
+
+  <g stroke="#3b2a21" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tee -->
+    <path d="M 300 382
+             Q 272 384 255 393
+             Q 222 400 205 418
+             Q 188 448 185 500
+             Q 190 512 205 508
+             Q 224 504 238 496
+             L 232 598
+             Q 268 606 300 606
+             Q 332 606 368 598
+             L 362 496
+             Q 376 504 395 508
+             Q 410 512 415 500
+             Q 412 448 395 418
+             Q 378 400 345 393
+             Q 328 384 300 382 Z" fill="#f6dec6"/>
+    <!-- collar -->
+    <path d="M 262 394 Q 300 420 338 394" fill="none" stroke-width="6"/>
+
+    <!-- neck, then ears tucked behind, then head over them -->
+    <rect x="278" y="360" width="44" height="48" rx="12" fill="#f1be96"/>
+    <circle cx="142" cy="274" r="16" fill="#f1be96"/>
+    <circle cx="458" cy="274" r="16" fill="#f1be96"/>
+    <ellipse cx="300" cy="252" rx="150" ry="145" fill="#f1be96"/>
+  </g>
+
+  <!-- blush -->
+  <ellipse cx="206" cy="300" rx="20" ry="12" fill="#f2937b" opacity="0.45"/>
+  <ellipse cx="394" cy="300" rx="20" ry="12" fill="#f2937b" opacity="0.45"/>
+
+  <!-- nose: bigger button nose so it clearly reads -->
+  <ellipse cx="300" cy="300" rx="19" ry="14" fill="#e8ac80" stroke="#3b2a21" stroke-width="7"/>
+
+  <!-- big grin -->
+  <path d="M 245 322 Q 300 331 355 322 Q 352 372 300 380 Q 248 372 245 322 Z" fill="#4a2b22" stroke="#3b2a21" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M 253 329 Q 300 336 347 329 Q 345 348 300 352 Q 255 348 253 329 Z" fill="#ffffff"/>
+  <ellipse cx="300" cy="369" rx="24" ry="9" fill="#d96a5b"/>
+  <!-- smile corner dimples -->
+  <path d="M 243 320 q -8 -2 -12 -9 M 357 320 q 8 -2 12 -9" fill="none" stroke="#3b2a21" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- eyes + happy raised brows -->
+  <circle cx="258" cy="266" r="13" fill="#3b2a21"/>
+  <circle cx="342" cy="266" r="13" fill="#3b2a21"/>
+  <circle cx="262" cy="261" r="4.5" fill="#ffffff"/>
+  <circle cx="346" cy="261" r="4.5" fill="#ffffff"/>
+  <path d="M 236 236 Q 258 226 280 235 M 320 235 Q 342 226 364 236" fill="none" stroke="#3b2a21" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- backwards cap dome: clean band edge, straight around the forehead -->
+  <path d="M 150 232
+           Q 150 114 300 96
+           Q 450 114 450 232
+           Q 380 206 300 206
+           Q 220 206 150 232 Z" fill="#33415e" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 161 223 Q 300 194 439 223" fill="none" stroke="#283349" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 300 200 Q 262 152 246 112 M 300 200 Q 338 152 354 112" fill="none" stroke="#283349" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="300" cy="97" r="10" fill="#283349" stroke="#3b2a21" stroke-width="6"/>
+
+  <!-- arms punched up in a triumphant V, drawn last so the full silhouettes read over the tee -->
+  <!-- right arm (viewer right), rotated rigidly around the shoulder pivot 380,490 -->
+  <g transform="rotate(-120 380 490)">
+    <path d="M 372 484
+             Q 398 492 409 520
+             Q 420 548 422 570
+             Q 423 588 412 592
+             Q 400 594 395 580
+             Q 389 565 388 540
+             Q 386 506 372 484 Z" fill="#f1be96" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <ellipse cx="414" cy="601" rx="23" ry="26" transform="rotate(-8 414 601)" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+  </g>
+
+  <!-- left arm (viewer left), mirror of the right, pivot 220,490 -->
+  <g transform="rotate(120 220 490)">
+    <path d="M 228 484
+             Q 202 492 191 520
+             Q 180 548 178 570
+             Q 177 588 188 592
+             Q 200 594 205 580
+             Q 211 565 212 540
+             Q 214 506 228 484 Z" fill="#f1be96" stroke="#3b2a21" stroke-width="9" stroke-linejoin="round"/>
+    <ellipse cx="186" cy="601" rx="23" ry="26" transform="rotate(8 186 601)" fill="#f1be96" stroke="#3b2a21" stroke-width="9"/>
+  </g>
+</svg>
