@@ -279,44 +279,262 @@
     },
     "pages/05-page-04": {
       "print": {
-        "sourceChecksum": "sha256:bd41b6550ffc362727fe6a9f76837c708e082d50c00512dee50e214afb63f63f",
+        "sourceChecksum": "sha256:84b12c99d3d6ea7305438bef269678fd54cc153c63fa06381e87637f4bc7ad53",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/05-page-04.png",
-        "exportedAt": "2026-07-17T04:46:03.145Z",
+        "exportedAt": "2026-07-17T04:48:24.153Z",
         "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
       },
       "web": {
-        "sourceChecksum": "sha256:bd41b6550ffc362727fe6a9f76837c708e082d50c00512dee50e214afb63f63f",
+        "sourceChecksum": "sha256:84b12c99d3d6ea7305438bef269678fd54cc153c63fa06381e87637f4bc7ad53",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/05-page-04.png",
-        "exportedAt": "2026-07-17T04:46:04.994Z",
+        "exportedAt": "2026-07-17T04:48:25.631Z",
         "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
       }
     },
     "pages/06-page-05": {
       "print": {
-        "sourceChecksum": "sha256:fd0a21ab087f915bcb0d843cb4db094d2dedf4c80ff09ebfc9047ff76597cad6",
+        "sourceChecksum": "sha256:8bfe8279a872fdcf3611f91d25ef8e8eee780ad2bd741206d57010df926f88f3",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/06-page-05.png",
-        "exportedAt": "2026-07-17T04:46:23.648Z",
+        "exportedAt": "2026-07-17T04:49:49.663Z",
         "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
       },
       "web": {
-        "sourceChecksum": "sha256:fd0a21ab087f915bcb0d843cb4db094d2dedf4c80ff09ebfc9047ff76597cad6",
+        "sourceChecksum": "sha256:8bfe8279a872fdcf3611f91d25ef8e8eee780ad2bd741206d57010df926f88f3",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/06-page-05.png",
-        "exportedAt": "2026-07-17T04:46:25.083Z",
+        "exportedAt": "2026-07-17T04:49:51.097Z",
         "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
       }
     },
     "pages/02-page-01": {
       "print": {
-        "sourceChecksum": "sha256:215765141beb5aa2d32d93526df5b846fe07d06106f340168876991391515f6d",
+        "sourceChecksum": "sha256:ee2de1c1ad3ef6a088c09b7108ecbf66aa9f27df8d8090039c5ff1214192a436",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/02-page-01.png",
-        "exportedAt": "2026-07-17T04:46:35.372Z",
+        "exportedAt": "2026-07-17T04:49:23.293Z",
         "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
       },
       "web": {
-        "sourceChecksum": "sha256:215765141beb5aa2d32d93526df5b846fe07d06106f340168876991391515f6d",
+        "sourceChecksum": "sha256:ee2de1c1ad3ef6a088c09b7108ecbf66aa9f27df8d8090039c5ff1214192a436",
         "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/02-page-01.png",
-        "exportedAt": "2026-07-17T04:46:37.235Z",
+        "exportedAt": "2026-07-17T04:49:24.726Z",
         "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/03-page-02": {
+      "print": {
+        "sourceChecksum": "sha256:3eafe8e99dff96ee2d9aa872291c6549968c5866b189d6704df6bd9e058b00da",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/03-page-02.png",
+        "exportedAt": "2026-07-17T04:54:21.459Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:3eafe8e99dff96ee2d9aa872291c6549968c5866b189d6704df6bd9e058b00da",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/03-page-02.png",
+        "exportedAt": "2026-07-17T04:54:22.881Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/07-page-06": {
+      "print": {
+        "sourceChecksum": "sha256:0f98c68faebdcd900d82f756dbc546ce382edf77738ed79965aa123ceff06d46",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/07-page-06.png",
+        "exportedAt": "2026-07-17T04:51:07.418Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:0f98c68faebdcd900d82f756dbc546ce382edf77738ed79965aa123ceff06d46",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/07-page-06.png",
+        "exportedAt": "2026-07-17T04:51:08.880Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/08-page-07": {
+      "print": {
+        "sourceChecksum": "sha256:6dbe37d6ed2335670c0ef2c93be8e4070711b0697e1773cbaa0e3cfd71f1bb0c",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/08-page-07.png",
+        "exportedAt": "2026-07-17T05:56:37.378Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:6dbe37d6ed2335670c0ef2c93be8e4070711b0697e1773cbaa0e3cfd71f1bb0c",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/08-page-07.png",
+        "exportedAt": "2026-07-17T05:56:39.285Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/09-page-08": {
+      "print": {
+        "sourceChecksum": "sha256:2efe287e517928820466f6d866048bcc8b8832ea35ee4285f7a6b2b98c3f6588",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/09-page-08.png",
+        "exportedAt": "2026-07-17T05:05:48.053Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:2efe287e517928820466f6d866048bcc8b8832ea35ee4285f7a6b2b98c3f6588",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/09-page-08.png",
+        "exportedAt": "2026-07-17T05:05:49.546Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/04-page-03": {
+      "print": {
+        "sourceChecksum": "sha256:f779e788f3759970aca659513bc422cd5f7cdbb434d7df2013d9e8c8fa1486f1",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/04-page-03.png",
+        "exportedAt": "2026-07-17T04:59:31.244Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:f779e788f3759970aca659513bc422cd5f7cdbb434d7df2013d9e8c8fa1486f1",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/04-page-03.png",
+        "exportedAt": "2026-07-17T04:59:32.688Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/10-page-09": {
+      "print": {
+        "sourceChecksum": "sha256:b42074785ae5701555d66cbfec23c4de03c29a40fec4fcd237beb6b33e235fec",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/10-page-09.png",
+        "exportedAt": "2026-07-17T05:10:10.152Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:b42074785ae5701555d66cbfec23c4de03c29a40fec4fcd237beb6b33e235fec",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/10-page-09.png",
+        "exportedAt": "2026-07-17T05:10:11.811Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/11-page-10": {
+      "print": {
+        "sourceChecksum": "sha256:5f4ae7ba608affc67ae71d5cf74581feb0d70905fb59fe7718bed61b389f20a8",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/11-page-10.png",
+        "exportedAt": "2026-07-17T05:08:26.634Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:5f4ae7ba608affc67ae71d5cf74581feb0d70905fb59fe7718bed61b389f20a8",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/11-page-10.png",
+        "exportedAt": "2026-07-17T05:08:28.115Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/12-page-11": {
+      "print": {
+        "sourceChecksum": "sha256:b01eac2eae50d0b94855cec12abcf8971ea96f309b34dfe44a84a99d669a8083",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/12-page-11.png",
+        "exportedAt": "2026-07-17T05:54:41.966Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:b01eac2eae50d0b94855cec12abcf8971ea96f309b34dfe44a84a99d669a8083",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/12-page-11.png",
+        "exportedAt": "2026-07-17T05:54:43.878Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/14-page-13": {
+      "print": {
+        "sourceChecksum": "sha256:91e445a246d80cd2569d5346c662c05d0b1d224daaec1015e178d0c0b0221067",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/14-page-13.png",
+        "exportedAt": "2026-07-17T05:56:16.317Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:91e445a246d80cd2569d5346c662c05d0b1d224daaec1015e178d0c0b0221067",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/14-page-13.png",
+        "exportedAt": "2026-07-17T05:56:17.790Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/13-page-12": {
+      "print": {
+        "sourceChecksum": "sha256:42d7772c8edd5360def4dfcedb86fbe8c8316222227152c9efa179426f57eda9",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/13-page-12.png",
+        "exportedAt": "2026-07-17T06:05:34.128Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:42d7772c8edd5360def4dfcedb86fbe8c8316222227152c9efa179426f57eda9",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/13-page-12.png",
+        "exportedAt": "2026-07-17T06:05:35.904Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/19-back-cover": {
+      "print": {
+        "sourceChecksum": "sha256:6fcaefee9a118429e1ab52e328af849a052020c01357566ef4af11cdc3e52768",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/19-back-cover.png",
+        "exportedAt": "2026-07-17T13:46:19.444Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:6fcaefee9a118429e1ab52e328af849a052020c01357566ef4af11cdc3e52768",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/19-back-cover.png",
+        "exportedAt": "2026-07-17T13:46:22.897Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/18-page-17": {
+      "print": {
+        "sourceChecksum": "sha256:7ee328b4df4e33b81b1a0f835c747d9436a5df70294325ef99266ceb19f14416",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/18-page-17.png",
+        "exportedAt": "2026-07-17T05:53:41.010Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:7ee328b4df4e33b81b1a0f835c747d9436a5df70294325ef99266ceb19f14416",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/18-page-17.png",
+        "exportedAt": "2026-07-17T05:53:42.481Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/16-page-15": {
+      "print": {
+        "sourceChecksum": "sha256:1ef3525d1e075bb1f55ff5ea9b8807edaaeffbcbf1677c2251cd11b7be3ef6d7",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/16-page-15.png",
+        "exportedAt": "2026-07-17T05:29:59.348Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:1ef3525d1e075bb1f55ff5ea9b8807edaaeffbcbf1677c2251cd11b7be3ef6d7",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/16-page-15.png",
+        "exportedAt": "2026-07-17T05:30:01.301Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/17-page-16": {
+      "print": {
+        "sourceChecksum": "sha256:fe85d76031e060cd28419bf9881774a0b4aca28fef6325cad5a94ad3ba8670ef",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/17-page-16.png",
+        "exportedAt": "2026-07-17T05:23:11.857Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:fe85d76031e060cd28419bf9881774a0b4aca28fef6325cad5a94ad3ba8670ef",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/17-page-16.png",
+        "exportedAt": "2026-07-17T05:23:13.358Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "pages/15-page-14": {
+      "print": {
+        "sourceChecksum": "sha256:cadfdd8f9b009bf4b6166ae27dda8593cf184232d471aea3dae1e6f2e0257110",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/15-page-14.png",
+        "exportedAt": "2026-07-17T05:54:13.870Z",
+        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
+      },
+      "web": {
+        "sourceChecksum": "sha256:cadfdd8f9b009bf4b6166ae27dda8593cf184232d471aea3dae1e6f2e0257110",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/15-page-14.png",
+        "exportedAt": "2026-07-17T05:54:15.777Z",
+        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
+      }
+    },
+    "banner/banner": {
+      "readme": {
+        "sourceChecksum": "sha256:4d60415768247a257662aa8c9a38fa5562331e8d1bde585bfc32f6bfa14b0cd1",
+        "outputPath": "/Users/ianmaccallum/Desktop/florabama/public/banner/banner.png",
+        "exportedAt": "2026-07-17T19:55:42.540Z",
+        "exportChecksum": "sha256:6e7801ccf1b21f254ac3b25a58e3f339077de2abdaad3dd022b14351f5ca4909"
       }
     }
   }

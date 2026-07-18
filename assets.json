@@ -88,6 +88,19 @@
         { "name": "review", "label": "Review 2088", "size": { "width": 2088, "height": 389 }, "outFile": "exports/lineup/{template}.png" }
       ],
       "customExport": { "defaultWidth": 2900, "defaultHeight": 540 }
+    },
+    {
+      "id": "banner",
+      "label": "README Banner",
+      "sourceSize": { "width": 1280, "height": 640 },
+      "borderRadius": 0,
+      "templates": [
+        { "src": "assets/banner/banner.html", "name": "banner", "label": "Home Page Banner" }
+      ],
+      "export": [
+        { "name": "readme", "label": "README 2x", "size": { "width": 2560, "height": 1280 }, "outFile": "public/banner/banner.png" }
+      ],
+      "customExport": { "defaultWidth": 1280, "defaultHeight": 640 }
     }
   ]
 }
