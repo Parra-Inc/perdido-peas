@@ -90,6 +90,28 @@
       "customExport": { "defaultWidth": 2900, "defaultHeight": 540 }
     },
     {
+      "id": "stickers",
+      "label": "Stickers",
+      "sourceSize": { "width": 1200, "height": 1200 },
+      "borderRadius": 0,
+      "templates": [
+        { "src": "assets/stickers/01-eric-hero.html", "name": "01-eric-hero", "label": "Eric Hero" },
+        { "src": "assets/stickers/02-pea-pod.html", "name": "02-pea-pod", "label": "Pea Pod Crew" },
+        { "src": "assets/stickers/03-crab-beach-mode.html", "name": "03-crab-beach-mode", "label": "Crab Beach Mode" },
+        { "src": "assets/stickers/04-flora-bama-badge.html", "name": "04-flora-bama-badge", "label": "Flora-Bama Badge" },
+        { "src": "assets/stickers/05-crew-lineup.html", "name": "05-crew-lineup", "label": "Find Your Peas" },
+        { "src": "assets/stickers/06-bushwhacker.html", "name": "06-bushwhacker", "label": "Bushwhacker O'Clock" },
+        { "src": "assets/stickers/07-turtle-take-it-slow.html", "name": "07-turtle-take-it-slow", "label": "Take It Slow" },
+        { "src": "assets/stickers/08-seagull-where.html", "name": "08-seagull-where", "label": "Where Is Everybody" },
+        { "src": "assets/stickers/09-pelican-wing-it.html", "name": "09-pelican-wing-it", "label": "Just Wing It" },
+        { "src": "assets/stickers/10-sunset-circle.html", "name": "10-sunset-circle", "label": "Sunset Circle" }
+      ],
+      "export": [
+        { "name": "print", "label": "Print 1200", "size": { "width": 1200, "height": 1200 }, "outFile": "exports/stickers/{template}.png" }
+      ],
+      "customExport": { "defaultWidth": 1200, "defaultHeight": 1200 }
+    },
+    {
       "id": "banner",
       "label": "README Banner",
       "sourceSize": { "width": 1280, "height": 640 },

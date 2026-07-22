@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: transparent; }
+    body {
+      width: 1200px; height: 1200px; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .diecut {
+      filter:
+        drop-shadow(14px 0 0 #fff) drop-shadow(-14px 0 0 #fff)
+        drop-shadow(0 14px 0 #fff) drop-shadow(0 -14px 0 #fff)
+        drop-shadow(0 14px 22px rgba(29,53,87,0.30));
+    }
+    .stack { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+    .crew { display: flex; align-items: flex-end; gap: 2px; }
+    .crew { margin-left: -8px; margin-right: -8px; }
+    .crew img { height: 190px; width: auto; margin: 0 -12px; }
+    /* heights are baked into the SVG canvases; nudge the row tighter for sticker scale */
+    .banner {
+      background: #1d3557; color: #fff;
+      font-weight: 800; font-size: 88px; letter-spacing: 4px;
+      padding: 6px 56px 18px; border-radius: 26px;
+      transform: rotate(-1.5deg);
+    }
+    .sub {
+      background: #2ec4b6; color: #fff;
+      font-weight: 800; font-size: 42px; letter-spacing: 8px;
+      padding: 4px 36px 10px; border-radius: 60px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="diecut stack">
+    <div class="crew">
+      <img src="../../public/characters/eric.svg" alt="Eric">
+      <img src="../../public/characters/ian.svg" alt="Ian">
+      <img src="../../public/characters/chris.svg" alt="Chris">
+      <img src="../../public/characters/ben.svg" alt="Ben">
+      <img src="../../public/characters/grace.svg" alt="Grace">
+      <img src="../../public/characters/sarah.svg" alt="Sarah">
+      <img src="../../public/characters/katie.svg" alt="Katie">
+    </div>
+    <div class="banner">FIND YOUR PEAS</div>
+    <div class="sub">PERDIDO KEY, FL</div>
+  </div>
+</body>
+</html>

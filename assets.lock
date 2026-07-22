@@ -536,6 +536,76 @@
         "exportedAt": "2026-07-17T19:55:42.540Z",
         "exportChecksum": "sha256:6e7801ccf1b21f254ac3b25a58e3f339077de2abdaad3dd022b14351f5ca4909"
       }
+    },
+    "stickers/01-eric-hero": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:278b9a3624e2fec5cb93d8a2377b91728cb859cac7292e16838710b75a32e170",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/01-eric-hero.png",
+        "exportedAt": "2026-07-19T20:11:47.334Z"
+      }
+    },
+    "stickers/02-pea-pod": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:7785a845930b55abb2a07a27cfcc674fa44a10c29d211ee08db9fb35264c3f6e",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/02-pea-pod.png",
+        "exportedAt": "2026-07-19T20:11:48.980Z"
+      }
+    },
+    "stickers/03-crab-beach-mode": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:d0633fc9b4c8cdbad8f69fd66883cafeae29d69adfb1452ea60e6c73762ccb26",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/03-crab-beach-mode.png",
+        "exportedAt": "2026-07-19T20:11:50.338Z"
+      }
+    },
+    "stickers/04-flora-bama-badge": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:870b49f78a0f1400fd1d0b8664d51582db6cf34a0d64ee392200af8d52472389",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/04-flora-bama-badge.png",
+        "exportedAt": "2026-07-19T20:13:19.100Z"
+      }
+    },
+    "stickers/05-crew-lineup": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:1ded1fc4a889a994cc0c2818b00b8ee0ec3a0bd0d2a4f58c21be59657591b5ed",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/05-crew-lineup.png",
+        "exportedAt": "2026-07-19T20:14:04.173Z"
+      }
+    },
+    "stickers/06-bushwhacker": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:e33bd8d0820da45d7ff16b9037833607559cd7aec823f2daae16148694b50099",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/06-bushwhacker.png",
+        "exportedAt": "2026-07-19T20:11:55.294Z"
+      }
+    },
+    "stickers/07-turtle-take-it-slow": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:2e4751e2dc45fa1025d66dc37dc01a2535bac132693a318226820f46dfe610a4",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/07-turtle-take-it-slow.png",
+        "exportedAt": "2026-07-19T20:11:56.527Z"
+      }
+    },
+    "stickers/08-seagull-where": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:ca578967974cad0b580dc3b38114557385edd5ebb1c2f0757984ae632a410160",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/08-seagull-where.png",
+        "exportedAt": "2026-07-19T20:11:57.811Z"
+      }
+    },
+    "stickers/09-pelican-wing-it": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:76ca9c8cfc41ebb9335a820e773e249c5314b0ec5afb2e910455f341bc3b75a6",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/09-pelican-wing-it.png",
+        "exportedAt": "2026-07-19T20:11:59.095Z"
+      }
+    },
+    "stickers/10-sunset-circle": {
+      "1200x1200": {
+        "sourceChecksum": "sha256:dce1f60cd73a9d0b6c01826c5e8b251cbbe075f83bac30fa4c2d1f2423cc2f7a",
+        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/10-sunset-circle.png",
+        "exportedAt": "2026-07-19T20:14:35.704Z"
+      }
     }
   }
 }

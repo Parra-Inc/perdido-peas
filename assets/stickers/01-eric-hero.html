@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: transparent; }
+    body {
+      width: 1200px; height: 1200px; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Baloo 2", sans-serif;
+    }
+    /* white die-cut border + soft drop shadow */
+    .diecut {
+      filter:
+        drop-shadow(16px 0 0 #fff) drop-shadow(-16px 0 0 #fff)
+        drop-shadow(0 16px 0 #fff) drop-shadow(0 -16px 0 #fff)
+        drop-shadow(0 14px 22px rgba(29,53,87,0.30));
+    }
+    .stack { display: flex; flex-direction: column; align-items: center; }
+    .arc { width: 980px; height: 300px; margin-bottom: -60px; }
+    .eric { height: 760px; width: auto; }
+  </style>
+</head>
+<body>
+  <div class="diecut stack">
+    <!-- arched title -->
+    <svg class="arc" viewBox="0 0 980 300">
+      <defs>
+        <path id="arcpath" d="M 70 270 Q 490 30 910 270" fill="none"/>
+      </defs>
+      <text font-family="Baloo 2, sans-serif" font-weight="800" font-size="120" fill="#1d3557" letter-spacing="4">
+        <textPath href="#arcpath" startOffset="50%" text-anchor="middle">PERDIDO PEAS!</textPath>
+      </text>
+    </svg>
+    <img class="eric" src="../../public/characters/eric.svg" alt="Eric">
+  </div>
+</body>
+</html>

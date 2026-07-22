@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: transparent; }
+    body {
+      width: 1200px; height: 1200px; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .badge { filter: drop-shadow(0 16px 26px rgba(29,53,87,0.30)); }
+  </style>
+</head>
+<body>
+  <!-- circular sunset badge, back-cover send-off -->
+  <svg class="badge" width="1000" height="1000" viewBox="0 0 1000 1000">
+    <defs>
+      <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffd166"/>
+        <stop offset="0.45" stop-color="#ff9e6d"/>
+        <stop offset="0.75" stop-color="#ff6b8a"/>
+      </linearGradient>
+      <clipPath id="circle"><circle cx="500" cy="500" r="420"/></clipPath>
+      <path id="arctop" d="M 500 500 m -330 0 a 330 330 0 1 1 660 0" fill="none"/>
+      <path id="arcbottom" d="M 500 500 m -330 0 a 330 330 0 0 0 660 0" fill="none"/>
+    </defs>
+    <!-- white sticker rim -->
+    <circle cx="500" cy="500" r="448" fill="#ffffff"/>
+    <g clip-path="url(#circle)">
+      <rect x="80" y="80" width="840" height="840" fill="url(#sunset)"/>
+      <!-- sun -->
+      <circle cx="500" cy="560" r="120" fill="#fff3c4"/>
+      <!-- gulf -->
+      <rect x="80" y="600" width="840" height="180" fill="#2ec4b6"/>
+      <path d="M 80 600 Q 220 585 360 600 T 640 600 T 920 600 V 640 H 80 Z" fill="#5fd6c9"/>
+      <!-- sand -->
+      <rect x="80" y="760" width="840" height="160" fill="#fdf6e3"/>
+      <!-- string light dots along the rim of the scene -->
+      <g fill="#fff3c4">
+        <circle cx="220" cy="290" r="12"/><circle cx="320" cy="240" r="12"/><circle cx="430" cy="212" r="12"/>
+        <circle cx="570" cy="212" r="12"/><circle cx="680" cy="240" r="12"/><circle cx="780" cy="290" r="12"/>
+      </g>
+      <path d="M 220 290 Q 500 160 780 290" fill="none" stroke="#1d3557" stroke-width="7" opacity="0.55"/>
+    </g>
+    <!-- inner navy ring -->
+    <circle cx="500" cy="500" r="420" fill="none" stroke="#1d3557" stroke-width="16"/>
+    <circle cx="500" cy="500" r="392" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.9"/>
+    <!-- arc text -->
+    <text font-family="Baloo 2, sans-serif" font-weight="800" font-size="86" fill="#1d3557" letter-spacing="6">
+      <textPath href="#arctop" startOffset="50%" text-anchor="middle">SEE YOU AT THE</textPath>
+    </text>
+    <!-- big center wordmark across the water -->
+    <text x="500" y="712" text-anchor="middle" font-family="Baloo 2, sans-serif" font-weight="800" font-size="116" fill="#ffffff" stroke="#1d3557" stroke-width="4" paint-order="stroke">FLORA-BAMA</text>
+    <!-- short bottom arc stays low on the sand -->
+    <text font-family="Baloo 2, sans-serif" font-weight="800" font-size="76" fill="#ff6b35" letter-spacing="8">
+      <textPath href="#arcbottom" startOffset="50%" text-anchor="middle">PEAS!</textPath>
+    </text>
+  </svg>
+</body>
+</html>

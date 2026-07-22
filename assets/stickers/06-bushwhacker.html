@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: transparent; }
+    body {
+      width: 1200px; height: 1200px; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .diecut {
+      filter:
+        drop-shadow(16px 0 0 #fff) drop-shadow(-16px 0 0 #fff)
+        drop-shadow(0 16px 0 #fff) drop-shadow(0 -16px 0 #fff)
+        drop-shadow(0 14px 22px rgba(29,53,87,0.30));
+    }
+  </style>
+</head>
+<body>
+  <div class="diecut">
+    <!-- frosty Reese's bushwhacker from page 13 -->
+    <svg width="900" height="1020" viewBox="0 0 900 1020" xmlns="http://www.w3.org/2000/svg">
+      <!-- straw -->
+      <g transform="rotate(14 560 220)">
+        <rect x="545" y="60" width="34" height="320" rx="17" fill="#ff6b8a" stroke="#1d3557" stroke-width="10"/>
+        <rect x="545" y="96" width="34" height="26" fill="#ffffff" opacity="0.5"/>
+        <rect x="545" y="150" width="34" height="26" fill="#ffffff" opacity="0.5"/>
+      </g>
+      <!-- tiny umbrella -->
+      <g transform="translate(280 150) rotate(-24)">
+        <path d="M 0 60 A 110 110 0 0 1 220 60 Z" fill="#ffd166" stroke="#1d3557" stroke-width="10"/>
+        <path d="M 55 60 A 55 110 0 0 1 165 60" fill="#ff6b35" stroke="#1d3557" stroke-width="8"/>
+        <rect x="104" y="60" width="12" height="200" rx="6" fill="#8d5a2b"/>
+      </g>
+      <!-- hurricane glass -->
+      <path d="M 300 300 Q 300 470 380 560 Q 430 620 430 720 L 470 720 Q 470 620 520 560 Q 600 470 600 300 Z"
+            fill="#f3e3cf" stroke="#1d3557" stroke-width="14" stroke-linejoin="round"/>
+      <!-- creamy chocolate drink -->
+      <path d="M 316 340 Q 322 470 392 548 Q 436 606 436 700 L 464 700 Q 464 606 508 548 Q 578 470 584 340 Z" fill="#8d5a2b"/>
+      <path d="M 316 340 Q 322 430 370 500 L 530 500 Q 578 430 584 340 Z" fill="#a5713c"/>
+      <!-- whipped cream swirl -->
+      <path d="M 290 320 Q 300 250 360 260 Q 360 200 450 210 Q 460 160 540 190 Q 610 200 600 260 Q 640 290 606 322 Q 560 350 450 344 Q 340 350 290 320 Z"
+            fill="#fff8ec" stroke="#1d3557" stroke-width="12" stroke-linejoin="round"/>
+      <!-- peanut butter cup garnish -->
+      <g transform="translate(586 250) rotate(18)">
+        <path d="M 0 30 L 130 30 L 112 110 L 18 110 Z" fill="#5c3a1e" stroke="#1d3557" stroke-width="10" stroke-linejoin="round"/>
+        <path d="M 14 30 L 116 30 L 106 76 L 24 76 Z" fill="#e8993f"/>
+        <path d="M 0 30 L 130 30 L 124 52 L 6 52 Z" fill="#4a2d15"/>
+      </g>
+      <!-- condensation sparkles -->
+      <g fill="#8fd3ef">
+        <circle cx="330" cy="420" r="12"/><circle cx="356" cy="480" r="9"/><circle cx="572" cy="430" r="11"/>
+      </g>
+      <!-- stem + foot -->
+      <rect x="428" y="700" width="44" height="40" fill="#f3e3cf" stroke="#1d3557" stroke-width="12"/>
+      <path d="M 340 780 Q 450 730 560 780 L 560 800 Q 450 770 340 800 Z" fill="#f3e3cf" stroke="#1d3557" stroke-width="12" stroke-linejoin="round"/>
+      <!-- wordmark -->
+      <text x="450" y="920" text-anchor="middle" font-family="Baloo 2, sans-serif" font-weight="800" font-size="96" fill="#1d3557">BUSHWHACKER</text>
+      <text x="450" y="1000" text-anchor="middle" font-family="Baloo 2, sans-serif" font-weight="700" font-size="58" fill="#ff6b35" letter-spacing="8">O'CLOCK</text>
+    </svg>
+  </div>
+</body>
+</html>

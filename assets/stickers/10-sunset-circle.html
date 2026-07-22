@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: transparent; }
+    body {
+      width: 1200px; height: 1200px; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Baloo 2", sans-serif;
+    }
+    .badge { filter: drop-shadow(0 16px 26px rgba(29,53,87,0.30)); }
+  </style>
+</head>
+<body>
+  <!-- page 16 sunset: seven friends + crab in a row watching the gold-pink Gulf -->
+  <svg class="badge" width="1000" height="1000" viewBox="0 0 1000 1000">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ff9e6d"/>
+        <stop offset="0.55" stop-color="#ffd166"/>
+        <stop offset="1" stop-color="#fff3c4"/>
+      </linearGradient>
+      <clipPath id="c"><circle cx="500" cy="500" r="420"/></clipPath>
+      <path id="arct" d="M 500 500 m -340 0 a 340 340 0 1 1 680 0" fill="none"/>
+    </defs>
+    <circle cx="500" cy="500" r="448" fill="#ffffff"/>
+    <g clip-path="url(#c)">
+      <rect x="80" y="80" width="840" height="840" fill="url(#sky)"/>
+      <!-- melting sun -->
+      <circle cx="500" cy="520" r="150" fill="#fff8ec"/>
+      <circle cx="500" cy="520" r="110" fill="#ffdf8e"/>
+      <!-- gulf with gold shimmer -->
+      <rect x="80" y="540" width="840" height="220" fill="#2ea8a8"/>
+      <path d="M 80 540 Q 250 526 420 540 T 760 540 T 1100 540 V 576 H 80 Z" fill="#57c4b8"/>
+      <g fill="#ffdf8e" opacity="0.85">
+        <rect x="430" y="576" width="140" height="12" rx="6"/>
+        <rect x="410" y="612" width="180" height="12" rx="6"/>
+        <rect x="440" y="650" width="120" height="12" rx="6"/>
+      </g>
+      <!-- sand -->
+      <rect x="80" y="740" width="840" height="180" fill="#fdf6e3"/>
+      <!-- seven friends in silhouette, shoulder to shoulder, backs to us, seated on the sand -->
+      <g fill="#1d3557" transform="translate(0,85)">
+        <!-- torsos as rounded bumps + heads, heights vary (Eric tallest, Katie smallest) -->
+        <g transform="translate(190,0)"><rect x="0" y="662" width="66" height="110" rx="30"/><circle cx="33" cy="640" r="30"/><rect x="12" y="612" width="42" height="14" rx="7"/></g><!-- Eric + backwards cap tab -->
+        <g transform="translate(276,0)"><rect x="0" y="676" width="62" height="96" rx="28"/><circle cx="31" cy="654" r="28"/></g>
+        <g transform="translate(358,0)"><rect x="0" y="680" width="62" height="92" rx="28"/><circle cx="31" cy="658" r="28"/></g>
+        <g transform="translate(440,0)"><rect x="0" y="682" width="60" height="90" rx="27"/><circle cx="30" cy="660" r="27"/><circle cx="30" cy="632" r="10"/></g><!-- Ben's man bun -->
+        <g transform="translate(520,0)"><rect x="0" y="688" width="58" height="84" rx="26"/><circle cx="29" cy="666" r="26"/></g>
+        <g transform="translate(598,0)"><rect x="0" y="690" width="56" height="82" rx="25"/><circle cx="28" cy="668" r="25"/></g>
+        <g transform="translate(674,0)"><rect x="0" y="700" width="52" height="72" rx="24"/><circle cx="26" cy="680" r="23"/></g><!-- Katie, smallest -->
+      </g>
+      <!-- crab at the end of the row, part of the crew -->
+      <g transform="translate(742,828)">
+        <ellipse cx="0" cy="20" rx="26" ry="18" fill="#ff6b35"/>
+        <circle cx="-10" cy="2" r="7" fill="#ff6b35"/><circle cx="10" cy="2" r="7" fill="#ff6b35"/>
+        <circle cx="-10" cy="1" r="3" fill="#1d3557"/><circle cx="10" cy="1" r="3" fill="#1d3557"/>
+        <path d="M -26 14 q -14 -10 -10 -22" fill="none" stroke="#ff6b35" stroke-width="7" stroke-linecap="round"/>
+        <path d="M 26 14 q 14 -10 10 -22" fill="none" stroke="#ff6b35" stroke-width="7" stroke-linecap="round"/>
+      </g>
+    </g>
+    <circle cx="500" cy="500" r="420" fill="none" stroke="#1d3557" stroke-width="16"/>
+    <!-- top arc text across the sky -->
+    <text font-family="Baloo 2, sans-serif" font-weight="800" font-size="58" fill="#1d3557" letter-spacing="4">
+      <textPath href="#arct" startOffset="50%" text-anchor="middle">RIGHT WHERE WE SHOULD BE</textPath>
+    </text>
+  </svg>
+</body>
+</html>
