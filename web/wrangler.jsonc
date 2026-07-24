@@ -1,0 +1,25 @@
+// Cloudflare Workers config for the Perdido Peas site (OpenNext).
+//
+// Single-page static site (perdido-peas-web). No queues, KV, Hyperdrive, cron,
+// or email, so there are no runtime secrets and wrangler serves the
+// OpenNext-generated worker directly. Deployed by .github/workflows/deploy.yml.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Resource naming convention: <project>-<app>-<environment>.
+  "name": "perdido-peas-web-production",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-12-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  // Serve on the *.workers.dev URL until the custom domain is cut over. To go
+  // live: delegate the zone to Cloudflare, add a { "pattern": "<domain>",
+  // "custom_domain": true } route, and flip "workers_dev" to false.
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
