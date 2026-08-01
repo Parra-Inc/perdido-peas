@@ -26,7 +26,7 @@ That's why this repo is open source. It's a **worked example of how to write a c
 - **Live reader:** https://perdido-peas-web-production.ian-b42.workers.dev
 - **Manuscript (text + per-page illustration briefs):** [book.md](book.md)
 - **Illustration engine:** [open-assets](https://www.npmjs.com/package/@open-assets/open-assets) (HTML/CSS/SVG rendered to PNG)
-- **Web reader:** Next.js 16 app in [web/](web/)
+- **Web reader:** Next.js 16 app in [web/](web/), on Cloudflare Workers via OpenNext
 
 ---
 
@@ -170,11 +170,12 @@ counter to the nav buttons.
 ### Step 7 - Ship it
 
 ```text
-Use the Vercel MCP to create a project for this repo and claim the [subdomain]
-subdomain if it's available.
+Deploy the web/ app to Cloudflare Workers with OpenNext. Add a wrangler.jsonc
+and a GitHub Actions workflow that builds and deploys on every push to main.
 
 Turn the cover into an OG image for the site. Clone the cover template first,
-don't modify the cover directly.
+don't modify the cover directly. Set metadataBase so the OG tags resolve to an
+absolute URL, since Workers has no VERCEL_URL to infer it from.
 ```
 
 That's the whole method. **Words first, reusable characters second, pages third, reader fourth, deploy last.**
