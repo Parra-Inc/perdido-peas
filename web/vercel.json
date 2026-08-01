@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://perdido-peas-web-production.ian-b42.workers.dev/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://perdido-peas-web-production.ian-b42.workers.dev/:path*",
+      "permanent": true
+    }
+  ]
+}
