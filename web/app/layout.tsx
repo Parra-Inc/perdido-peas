@@ -8,7 +8,11 @@ const baloo = Baloo_2({
   weight: ["400", "600", "700", "800"],
 });
 
+// Absolute base for og:image and friends. On Vercel, Next inferred this from
+// VERCEL_URL; Workers sets no such variable, so without it every social preview
+// resolves against http://localhost:3000 and the image 404s for everyone.
 export const metadata: Metadata = {
+  metadataBase: new URL("https://perdido-peas-web-production.ian-b42.workers.dev"),
   title: "Perdido Peas",
   description: "A children's book by Ian MacCallum and Katie Rivas. Tap the cover to read!",
   openGraph: {

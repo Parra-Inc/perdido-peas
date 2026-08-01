@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://perdido-peas.vercel.app">
+  <a href="https://perdido-peas-web-production.ian-b42.workers.dev">
     <img src="public/banner/banner.png" alt="Perdido Peas - a children's book written and illustrated with AI" width="100%" />
   </a>
 </p>
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://perdido-peas.vercel.app"><strong>📖 Read the finished book -&gt; perdido-peas.vercel.app</strong></a>
+  <a href="https://perdido-peas-web-production.ian-b42.workers.dev"><strong>📖 Read the finished book</strong></a>
 </p>
 
 ---
@@ -23,10 +23,10 @@ I had a beach trip coming up with a group of friends, so I spent about two hours
 
 That's why this repo is open source. It's a **worked example of how to write a children's book with AI**: a reusable, prompt-by-prompt process you can copy for your own picture book. If you searched for *how to make a children's book with AI*, *AI children's book generator*, *AI storybook illustrations*, or *self-publish a picture book*, start with [The reusable process](#the-reusable-process-how-to-write-a-childrens-book-with-ai) below.
 
-- **Live reader:** https://perdido-peas.vercel.app
+- **Live reader:** https://perdido-peas-web-production.ian-b42.workers.dev
 - **Manuscript (text + per-page illustration briefs):** [book.md](book.md)
 - **Illustration engine:** [open-assets](https://www.npmjs.com/package/@open-assets/open-assets) (HTML/CSS/SVG rendered to PNG)
-- **Web reader:** Next.js 16 app in [web/](web/)
+- **Web reader:** Next.js 16 app in [web/](web/), on Cloudflare Workers via OpenNext
 
 ---
 
@@ -170,11 +170,12 @@ counter to the nav buttons.
 ### Step 7 - Ship it
 
 ```text
-Use the Vercel MCP to create a project for this repo and claim the [subdomain]
-subdomain if it's available.
+Deploy the web/ app to Cloudflare Workers with OpenNext. Add a wrangler.jsonc
+and a GitHub Actions workflow that builds and deploys on every push to main.
 
 Turn the cover into an OG image for the site. Clone the cover template first,
-don't modify the cover directly.
+don't modify the cover directly. Set metadataBase so the OG tags resolve to an
+absolute URL, since Workers has no VERCEL_URL to infer it from.
 ```
 
 That's the whole method. **Words first, reusable characters second, pages third, reader fourth, deploy last.**
