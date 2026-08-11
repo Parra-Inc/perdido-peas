@@ -3,3 +3,7 @@ dist/
 .DS_Store
 .vercel
 .env*.local
+
+# Written by scripts/deploy.sh after a successful local deploy; the
+# IndexNow diff base for the next one. Machine-local.
+.last-deploy-sha
