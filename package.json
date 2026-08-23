@@ -4,6 +4,7 @@
   "private": true,
   "description": "Perdido Peas, a children's book by Ian MacCallum and Katie Rivas. Pages rendered with open-assets.",
   "scripts": {
+    "deploy": "bash scripts/deploy.sh",
     "dev": "concurrently \"npx @tailwindcss/cli -i src/styles.css -o dist/styles.css --watch\" \"npx open-assets dev\"",
     "build:css": "npx @tailwindcss/cli -i src/styles.css -o dist/styles.css",
     "render": "npm run build:css && npx open-assets render --force"
