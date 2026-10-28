@@ -1,0 +1,251 @@
+{
+  "schema": "grafana-audit/v1",
+  "grafana": "https://parra.grafana.net",
+  "window": {
+    "from": "2026-10-23T15:26:30Z",
+    "to": "2026-10-27T15:26:30Z",
+    "seconds": 345600
+  },
+  "scope": {
+    "services": [
+      "perdido-peas-web-production"
+    ],
+    "repos": [
+      "/Users/ianmaccallum/Developer/Repos/perdido-peas"
+    ]
+  },
+  "datasources": {
+    "ok": true,
+    "uids": {
+      "loki": "grafanacloud-logs",
+      "prom": "grafanacloud-prom",
+      "tempo": "grafanacloud-traces"
+    }
+  },
+  "alerts": {
+    "ok": true,
+    "folders": {
+      "AI Drops": {
+        "total": 14,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Better Header": {
+        "total": 19,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Blueprint": {
+        "total": 26,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Car Notes": {
+        "total": 8,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Docker": {
+        "total": 10,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Encore": {
+        "total": 17,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Fleet": {
+        "total": 15,
+        "firing": 1,
+        "pending": 1,
+        "unhealthy": 0
+      },
+      "Football Arrests": {
+        "total": 8,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Girl Math": {
+        "total": 8,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Grafana Synthetic Monitoring": {
+        "total": 2,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "HostBird": {
+        "total": 32,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "IndexNow Sync": {
+        "total": 12,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Livestock Tracker": {
+        "total": 10,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "No Context": {
+        "total": 20,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "NotiFi": {
+        "total": 42,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Only Recipes": {
+        "total": 38,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Open Animal Shelter": {
+        "total": 4,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "ReadPR": {
+        "total": 12,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "RevenueHog": {
+        "total": 25,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Skimmer": {
+        "total": 4,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Tailgator": {
+        "total": 17,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "Thoughtful": {
+        "total": 17,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "cf-error-watch": {
+        "total": 13,
+        "firing": 0,
+        "pending": 0,
+        "unhealthy": 0
+      },
+      "knowledge-graph": {
+        "total": 612,
+        "firing": 2,
+        "pending": 2,
+        "unhealthy": 0
+      }
+    },
+    "rules": []
+  },
+  "logs": {
+    "ok": true,
+    "groupLimit": 300,
+    "notes": [],
+    "services": {
+      "perdido-peas-web-production": {
+        "lines": 14,
+        "levels": {
+          "info": 14
+        },
+        "requests": 14,
+        "fivexx": 0,
+        "firstSeen": "2026-10-24T01:00:00Z",
+        "lastSeen": "2026-10-27T02:00:00Z"
+      }
+    },
+    "errorGroups": [],
+    "fivexx": []
+  },
+  "traces": {
+    "ok": true,
+    "spanmetrics": [
+      {
+        "service": "perdido-peas-web-production",
+        "kind": "server",
+        "span": "GET",
+        "calls": 14,
+        "errors": 0,
+        "rate": 0
+      }
+    ],
+    "errorSpans": [],
+    "slices": [
+      {
+        "from": "2026-10-23T15:00:00Z",
+        "to": "2026-10-24T15:00:00Z",
+        "ok": true
+      },
+      {
+        "from": "2026-10-24T15:00:00Z",
+        "to": "2026-10-25T15:00:00Z",
+        "ok": true
+      },
+      {
+        "from": "2026-10-25T15:00:00Z",
+        "to": "2026-10-26T15:00:00Z",
+        "ok": true
+      },
+      {
+        "from": "2026-10-26T15:00:00Z",
+        "to": "2026-10-27T15:00:00Z",
+        "ok": true
+      },
+      {
+        "from": "2026-10-27T15:00:00Z",
+        "to": "2026-10-27T16:00:00Z",
+        "ok": true
+      }
+    ]
+  },
+  "coverage": {
+    "ok": true,
+    "exporting": [
+      "perdido-peas-web-production"
+    ],
+    "notExported": [],
+    "services": {
+      "perdido-peas-web-production": {
+        "firstSeen": "2026-10-24T01:00:00Z",
+        "lastSeen": "2026-10-27T02:00:00Z"
+      }
+    }
+  },
+  "warnings": [
+    "Grafana history starts mid-window, so earlier is unknown, not clean: perdido-peas-web-production (2026-10-24T01:00:00Z)"
+  ]
+}
