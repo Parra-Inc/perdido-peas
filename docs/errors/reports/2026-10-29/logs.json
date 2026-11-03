@@ -1,0 +1,37 @@
+{
+  "schema": "error-audit/v2",
+  "layer": "logs",
+  "account": "b428f294c89acfbe189aa1556f15cc07",
+  "window": {
+    "from": "2026-10-22T04:08:53Z",
+    "to": "2026-10-29T04:08:53Z",
+    "days": 7
+  },
+  "capturedAt": "2026-10-29T04:08:53Z",
+  "scope": [
+    "perdido-peas-web-production"
+  ],
+  "ok": true,
+  "groups": [],
+  "byWorker": {},
+  "errorEventsEstimate": {},
+  "blind": [],
+  "truncated": true,
+  "effectiveFrom": "2026-10-22T04:08:59Z",
+  "exact": true,
+  "slices": {
+    "kept": 2,
+    "steps": [
+      "window",
+      "360m",
+      "60m",
+      "15m"
+    ],
+    "querySampled": 0,
+    "storedSampled": 0,
+    "sampledWindows": []
+  },
+  "scoped": true,
+  "groupCapped": false,
+  "warnings": []
+}
