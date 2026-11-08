@@ -10,3 +10,6 @@ dist/
 # Git worktrees (Claude Code)
 .worktrees/
 .claude/worktrees/
+
+# open-assets local file-hash cache
+.open-assets/

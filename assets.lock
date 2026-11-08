@@ -1,611 +1,1225 @@
 {
-  "version": 1,
-  "assets": {
-    "characters/eric": {
-      "full": {
-        "sourceChecksum": "sha256:cee5b6cec7c5a8a92721e24764d855326294534a415f98da79954ff8e3c56397",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/eric.png",
-        "exportedAt": "2026-07-17T04:03:01.383Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:cee5b6cec7c5a8a92721e24764d855326294534a415f98da79954ff8e3c56397",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/eric.png",
-        "exportedAt": "2026-07-17T04:03:16.690Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:cda0a5a8ccfa855370d8682419cad60f8af69c93fa0ff9106352937720215c20",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/eric.png",
-        "exportedAt": "2026-07-17T03:16:57.356Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+  "lockfileVersion": 2,
+  "renderer": 1,
+  "tool": "0.6.3",
+  "fingerprint": "sha256:3cf2ce8564099dd2b09eefff7f8e0523a6e39b352e1d4c5b0bb790b406f0fd8a",
+  "files": {
+    "assets/banner/banner.html": "sha256:19c368b1d9aa9cf6de55f3bdf8b3c5f10b98102dede472d4bd52083c955509f7",
+    "assets/characters/ben.html": "sha256:87a7428e2849bd27057bbd1ebc2c7ce3a2a5e8b98f479170e25db65969c27523",
+    "assets/characters/chris.html": "sha256:20cffc6b59072628e8319ff4e252d8d906c6c614cae3561987952b763ce34c33",
+    "assets/characters/crab.html": "sha256:1984309776a7548a6b73ddd097dbd96d48bc1bee24158dd2a712546b8d6dc700",
+    "assets/characters/eric.html": "sha256:83d9c8ceb06cb1ec9c960992faf82c35ee6dc62d4b784fa1f96bcd176ae45548",
+    "assets/characters/fish.html": "sha256:df65b408637b24095eba10439f2f21cae07a2514d709182d48c2f4c731ee2c04",
+    "assets/characters/grace.html": "sha256:bb4c32d118c2778a603c74e0a2144fc3e17bd7380f6ae1101de7f5f9dae8cdef",
+    "assets/characters/ian.html": "sha256:8358ec30672db969bdef4f845fb5ef6ec5c5f9b7648b9c058f697c6d62b3fdb8",
+    "assets/characters/katie.html": "sha256:79eb0c90086877cacbde9a449d9891b9d59bb229408e42957ad907d13f77649c",
+    "assets/characters/lineup.html": "sha256:8fa462171916060baecf8ca7d7a2fe14921b0826c1f919d4d145001c70131b47",
+    "assets/characters/pelican.html": "sha256:22b74aabb9fe64a7308eb4447000ed2629673a1d59c642e3c8bcaee2e2ae1dee",
+    "assets/characters/sarah.html": "sha256:aeb7eaf14191ae195f4b4ddcd3971aafb21f070d1d6e745aa0c36a4b90ec1f04",
+    "assets/characters/seagull.html": "sha256:f2a97bd2bd65a8f7990ac9c987d34ac205bb7bc509f86d52787dc2d05337ec1a",
+    "assets/characters/turtle.html": "sha256:d0a43694c15fdf3c1efbda4bdc0be648292e0183cf2c18b7b1924294e90002e3",
+    "assets/og/og-cover.html": "sha256:4887d997698005374d46c6ec24a1ccca59b6b8732e07ab6f43ae27968aa07269",
+    "assets/pages/00-cover.html": "sha256:869108ad8c721e58c01bc6c24909bf975efeaafa36584a9224905b26486cf008",
+    "assets/pages/01-dedication.html": "sha256:38ade6a21089b89f7184f4ee5152952f00aec22301fc2a96aecdd7a9dfc56aaa",
+    "assets/pages/02-page-01.html": "sha256:10c9b5f2c3250ef8f45defeec1a439aa976f403f46762a936b5ddc3d9e5313d6",
+    "assets/pages/03-page-02.html": "sha256:f937e0e0d768dfb04ddbe1a07e1a3d90915c4d74e614484380daaed800d729b7",
+    "assets/pages/04-page-03.html": "sha256:7c1ddfe3e5d30a057aa6e2d2eea9fa6c8e16fbef2cb98d2fdf721edabd8faaf1",
+    "assets/pages/05-page-04.html": "sha256:152c57ba97c1fc4bcd9487d2db6938e259b512add2dadea870560f37d754e70b",
+    "assets/pages/06-page-05.html": "sha256:4f8efa48c4c0338d7b40dbff08d10db7f85fc1c8ab40c65955bf77309386988c",
+    "assets/pages/07-page-06.html": "sha256:d9ed792e912b1fc96fca3bc1aeaa09d4dee42d843d9e3d228ae010a894761428",
+    "assets/pages/08-page-07.html": "sha256:57b8abc260e3d7f909bc6d60d1ed7aef13b11882e0374c36297c6a37e6bc5200",
+    "assets/pages/09-page-08.html": "sha256:00ad30ef27cf26827662132c0ed8a861c4131224d695215b378607b00607762e",
+    "assets/pages/10-page-09.html": "sha256:d2a5d915b31a780bec559b7250b720a4af7ac6f56c41dff5616b3b3e54098a05",
+    "assets/pages/11-page-10.html": "sha256:b52b9966703b73f952fb99a77dfd62b1e8911ae8f2eae04942b18b2c32e08460",
+    "assets/pages/12-page-11.html": "sha256:c86a203c28b72ae79469f133119d0f1fbe9881cb75007d14716f1ca843633a14",
+    "assets/pages/13-page-12.html": "sha256:815d9e100cdff4f568d2747b8d0e74f9c4a4d786a1c7d4373c7982f987d1bdf5",
+    "assets/pages/14-page-13.html": "sha256:0c0bc5d583d7bbadd3354ea64fb79ae6a9041808e7b0d9f3864877d044949f4c",
+    "assets/pages/15-page-14.html": "sha256:8364a99690fc0fa6bc3c0f5572a2aa60008210e37315872e5e100a81b4f7dd0a",
+    "assets/pages/16-page-15.html": "sha256:132fc5aea8c9a97d4444bc5e4976037c6da5307d0cb7a40fbf4b799b0278761c",
+    "assets/pages/17-page-16.html": "sha256:9361f6ac22858c7e7481a038bccb41bc2d595c3a2c20d969802f8338df2a7fe2",
+    "assets/pages/18-page-17.html": "sha256:25566272e473d838ca353cd3997a0dd7bab9cb74300f889f064ac0b8550e587f",
+    "assets/pages/19-back-cover.html": "sha256:55a12ab63625fe2ebf659402534297239d3ca7e42cc4a9b7907a8a1fcc7f9090",
+    "assets/stickers/01-eric-hero.html": "sha256:278b9a3624e2fec5cb93d8a2377b91728cb859cac7292e16838710b75a32e170",
+    "assets/stickers/02-pea-pod.html": "sha256:7785a845930b55abb2a07a27cfcc674fa44a10c29d211ee08db9fb35264c3f6e",
+    "assets/stickers/03-crab-beach-mode.html": "sha256:d0633fc9b4c8cdbad8f69fd66883cafeae29d69adfb1452ea60e6c73762ccb26",
+    "assets/stickers/04-flora-bama-badge.html": "sha256:870b49f78a0f1400fd1d0b8664d51582db6cf34a0d64ee392200af8d52472389",
+    "assets/stickers/05-crew-lineup.html": "sha256:1ded1fc4a889a994cc0c2818b00b8ee0ec3a0bd0d2a4f58c21be59657591b5ed",
+    "assets/stickers/06-bushwhacker.html": "sha256:e33bd8d0820da45d7ff16b9037833607559cd7aec823f2daae16148694b50099",
+    "assets/stickers/07-turtle-take-it-slow.html": "sha256:2e4751e2dc45fa1025d66dc37dc01a2535bac132693a318226820f46dfe610a4",
+    "assets/stickers/08-seagull-where.html": "sha256:ca578967974cad0b580dc3b38114557385edd5ebb1c2f0757984ae632a410160",
+    "assets/stickers/09-pelican-wing-it.html": "sha256:76ca9c8cfc41ebb9335a820e773e249c5314b0ec5afb2e910455f341bc3b75a6",
+    "assets/stickers/10-sunset-circle.html": "sha256:dce1f60cd73a9d0b6c01826c5e8b251cbbe075f83bac30fa4c2d1f2423cc2f7a",
+    "public/characters/ben.svg": "sha256:23b45f24bc6ae10c068e43c193adf5a7e0f3a9c52de79bf108c5e2560240d533",
+    "public/characters/chris.svg": "sha256:3fdadbce2ef490cf9b547d024888199af4c8c789ee6764dfdaf888fde0ece831",
+    "public/characters/crab.svg": "sha256:62d08a174a228f4227c73e7225d013fccd7892c0999f6d71a2ca3d6cfbd44908",
+    "public/characters/eric.svg": "sha256:dbe021e30a8ba1e6b920c562eeb67f85d56ae4a78cd1994ed6644e9275311c06",
+    "public/characters/fish.svg": "sha256:98a11a51904807b685c229fb0853a179c1ce822e200401c998d70d57b8740512",
+    "public/characters/grace.svg": "sha256:6b28ed31d9e2f09d9a0385edeab215adfe8cda75bf590b85fcbaf6ad002f2777",
+    "public/characters/holding/ben.svg": "sha256:282c43420f01cc3abcc6a947868a335dd7156ea4a3470447d3dfbe392322e631",
+    "public/characters/holding/chris.svg": "sha256:ce16481ac02e9f38ae087a83cccafed17d79b3d7455b484de75caa31cbecd45b",
+    "public/characters/holding/eric.svg": "sha256:ba5884a83d404c42d24de77731154e2e8a6ed633bebb12adb1bd891c346994ac",
+    "public/characters/holding/grace.svg": "sha256:b9535be241eff633b685b41c0ba3f04e73d94bcd9886c9794a54a2580d3816d2",
+    "public/characters/holding/ian.svg": "sha256:7fc22620fc1a6fcf28abe11daa252f43552d486146d850264a281c2c4df097ca",
+    "public/characters/holding/katie.svg": "sha256:a6ae5b94226e343e277bfb68a6b6c74fd2ca6a756ad1683c260158b9c1125ab0",
+    "public/characters/holding/sarah.svg": "sha256:d0b8843c450ad94e7a0c8021f5d4122d1d31b757bcabb4349c31ebc520ea13e4",
+    "public/characters/ian.svg": "sha256:acbaa0a4cc11e368887394caf6022bf5802f3ba03b72cc43ec083e3cf35019ba",
+    "public/characters/katie.svg": "sha256:580f1ca97da0497ce22ea5f546a38b61f783e29791c9fc75eae15f53849f3ce5",
+    "public/characters/pages/02-page-01/eric-dreaming.svg": "sha256:d4d9dbdacde28c4901438a4f137b6473cb433555d06a0697e0eb07899b31ffdb",
+    "public/characters/pages/03-page-02/eric-dreaming.svg": "sha256:7ec865e522a2973d32ef91e297a7882e8b5478c6719bbcb68fb614abe9550b79",
+    "public/characters/pages/04-page-03/eric-leaping.svg": "sha256:2721519c9e071e98b78967e78e63ed955cba425adfcbd3a5faf947eb2b3dc991",
+    "public/characters/pages/05-page-04/eric-calling.svg": "sha256:e55b5615453f9126c724084b8bfc4c041acd35ea11a3c3d5672a5983f92245a1",
+    "public/characters/pages/07-page-06/eric.svg": "sha256:9a22949a048e93d9cb6cd0dd9deb499100dd830f5dd37428f50fa704b2fd0374",
+    "public/characters/pages/07-page-06/fish.svg": "sha256:afdffdbcc8af8b0a0fe136ca4cf3680c306599b7f52651ed98e92efd8627db7f",
+    "public/characters/pages/08-page-07/crab.svg": "sha256:f844ca78f16d323f76a4cbc43ac105ec8a56ba19ff0e628eb6a11f38924c5584",
+    "public/characters/pages/08-page-07/eric.svg": "sha256:4da404a729c3a7b9a599b5956feb5baf149cb324e286a1c7ae5352767cab7366",
+    "public/characters/pages/09-page-08/eric-walking.svg": "sha256:ea0dd8c24a4385347023ae01c00db19dffdc6e1d45d88e213c5c7677656eaf6b",
+    "public/characters/pages/10-page-09/eric-walking.svg": "sha256:580c8d73dd811d104f2ab44f01c1708d62e8e760db3d86a4499289cb8cbdebcc",
+    "public/characters/pages/11-page-10/crab-cheer.svg": "sha256:bc66003d1c3e16ec19ec3f1e610977cb91c4c9efa655fb5b5aac2782d46c4ea4",
+    "public/characters/pages/11-page-10/eric-triumph.svg": "sha256:da474da08998752c40aee649489cdbef40bcb04ab14bd8489bd430162a32a9ff",
+    "public/characters/pages/12-page-11/ben-cheering.svg": "sha256:4ea64719ba1552df6118681e04f6626c6b5524bc65da0fdc3e6e0dba988ef57b",
+    "public/characters/pages/12-page-11/chris-waving.svg": "sha256:8e4a0b7bc062d24d1d051bef5323dc25a66c4daeb91de0aef6cf034c71adedf2",
+    "public/characters/pages/12-page-11/eric-running.svg": "sha256:5b430b51187c1d8560dc7b7b5bacfd10973d2fb6609efd5ef97da8a469afa11a",
+    "public/characters/pages/12-page-11/grace-cheering.svg": "sha256:1d1a192ab2b61327032be05d68a60d8d73e67bc153a12f92d1d9cdc47de2cf61",
+    "public/characters/pages/12-page-11/ian-waving.svg": "sha256:81d2a444e82fbcc35f5ac5b7c81d241f0526b8b67ce2c272af1c4c620bf6055e",
+    "public/characters/pages/12-page-11/katie-cheering.svg": "sha256:8b42735a22769aec266458758f9ec02c888548c7720721aa11ac64f32144a8ad",
+    "public/characters/pages/12-page-11/sarah-cheering.svg": "sha256:c1affefaa60ca7f69458c52fc2efab5900c6070c3bbdd7acfff55d49d2df2f21",
+    "public/characters/pages/13-page-12/chris-patting.svg": "sha256:d08c266a4689d537205f2ed78be75384d16dd30750c2bf859e46c8ee51a15aa3",
+    "public/characters/pages/13-page-12/eric-sliding.svg": "sha256:b497affb5b9f3747a130cc77ba5b9c6bcc977b73c4b6b4b52eece1e06136184d",
+    "public/characters/pages/13-page-12/ian-patting.svg": "sha256:36fc894cdd4e1aa95612232ae60b6e89dc58224fc7ea8b3c90f4df2f41d28990",
+    "public/characters/pages/13-page-12/katie-cheering.svg": "sha256:e6fa85585a54112227cee77dda048030cd3e0deb7ff237dba4ac7fabd450098a",
+    "public/characters/pages/13-page-12/sarah-cheering.svg": "sha256:4dac126c0bb8942802e6fa6aa69c02b7f38cf08e1f0ccb48ee720dba34a819c2",
+    "public/characters/pages/14-page-13/ben-toast.svg": "sha256:b58eb3ba02eabde95d678e636d79c2906a9b10e6c30ae2f6cda4330b6965232e",
+    "public/characters/pages/14-page-13/chris-toast.svg": "sha256:ccd0f6aba2c17a4dfd47c61f75ec874b7fc4b6a33c1b4d50892b478d87a318e6",
+    "public/characters/pages/14-page-13/eric-laughing-toast.svg": "sha256:5394f77f89c3067b0cce8da7680a81edb1cd48f36afb866c384ce0f92a432606",
+    "public/characters/pages/14-page-13/grace-toast.svg": "sha256:a74947b3a5e94d1ca6c253eb6ee3bf3da88159b7a93f2595b9bbd756290d9b78",
+    "public/characters/pages/14-page-13/ian-toast.svg": "sha256:6d81dd4b14dcd37095aaa477d9dbcfe3e87f2fe5a54ed132f781735a69db9033",
+    "public/characters/pages/14-page-13/katie-toast.svg": "sha256:f2b26b5257383da6354c490098e53004ffc10e671764b2add1e2254ff0931dd4",
+    "public/characters/pages/14-page-13/sarah-toast.svg": "sha256:92c3151cb5b1212dcee43757837eede41ba4533169ce4702fcb5863ff4ca90d3",
+    "public/characters/pages/15-page-14/ben.svg": "sha256:9214d71341f7e53bf897d8ddcf0e48defe35bcdcc423b3a065d17a15dbf1cbd2",
+    "public/characters/pages/15-page-14/chris.svg": "sha256:9616925a9be7ca1d8d49aa7548f55b1cc5e8566c0809389025cfefea12ab0457",
+    "public/characters/pages/15-page-14/eric.svg": "sha256:4eecec05aba5ff465e7d62273104008e5836ed88e3ce564162f895adf1ec990b",
+    "public/characters/pages/15-page-14/grace.svg": "sha256:632d560b7765e3a63f0b68ff769cc88b0f1651335f2469b80d080a4669a9a640",
+    "public/characters/pages/15-page-14/ian.svg": "sha256:3579fb36e54066cf29bf33f3fb1f9446c7543c33d4f449d0904c6c5d73302e0e",
+    "public/characters/pages/15-page-14/katie.svg": "sha256:380daa9c1611de8fe08ce811ac1d63ff5fb5bc05021f18921964f43ecb3b71c6",
+    "public/characters/pages/15-page-14/sarah.svg": "sha256:d3d3b509f3ff6204a580694c071352b1ccf3c79f1f0a36ede0f11597cc6a1bf0",
+    "public/characters/pages/16-page-15/ben-dance.svg": "sha256:938b41433347dcc186393ee74fec23d1ccca15fc76570bb25c50063efa29950c",
+    "public/characters/pages/16-page-15/ben-toss.svg": "sha256:b62ea4d5bd9c227133d0a97b66ff87b3b7b85a57f8cf58eb2520c351908faa7c",
+    "public/characters/pages/16-page-15/chris-dance.svg": "sha256:b4cabe168ff197454d83e6904000e9e404e56faf1a0296f989c017dfb8490cb6",
+    "public/characters/pages/16-page-15/eric-cheer.svg": "sha256:5dd7c7bfc607e19772871c6fd890f56364b9817b70757822a81474f447a7d781",
+    "public/characters/pages/16-page-15/eric-dance.svg": "sha256:4897c2fcf233c5a0165c26f137d7511d4293593f1407bde2ebee1f9b86a7a87c",
+    "public/characters/pages/16-page-15/grace-cheer.svg": "sha256:3e9ed7e6fc96a5d980eff536c66e42b6da72224f95b35101b06d89657081db02",
+    "public/characters/pages/16-page-15/grace-dance.svg": "sha256:d0e9ced97b5c118911eb0f849e219d2d773f17c36c72e387df752ce8fce046b1",
+    "public/characters/pages/16-page-15/ian-dance.svg": "sha256:cc52c48ac1d9694444ae91466e6893f3fcfee9933f8e7d305667cb63362c93b2",
+    "public/characters/pages/16-page-15/katie-dance.svg": "sha256:d6e7dcf03b42f8091edd3cf0db38c34e21cbe3ed262387921439c4a66ed6b29c",
+    "public/characters/pages/16-page-15/katie-toss.svg": "sha256:89e96ab348f76e1b038ac950c6a01ccd6fc029c39eb5de629654f1255113b1df",
+    "public/characters/pages/16-page-15/sarah-dance.svg": "sha256:42cd0ab65217282c2a034c8e13f162809eec6c215dd329b6d97d20003bdfd0ea",
+    "public/characters/pages/17-page-16/ben-seated-back.svg": "sha256:8f5f0f02ef37a5a2b991613069152ce5b4fa64870245709ec2f37db3f89549b6",
+    "public/characters/pages/17-page-16/chris-seated-back.svg": "sha256:9389762b0a3a79051faeed12ac1a7f8af8ee0583a91368dd6dcad68ab2fe1719",
+    "public/characters/pages/17-page-16/eric-seated-back.svg": "sha256:0b8007edee2fb92169caea396d52d7d4cd01017ac760eaca2b1fd70f29924298",
+    "public/characters/pages/17-page-16/grace-seated-back.svg": "sha256:51db103b0d113311f13e1fccef6339196276f0c7018a3e656bc0c448d30dfa22",
+    "public/characters/pages/17-page-16/ian-seated-back.svg": "sha256:5219ad8130d56cbcaa2dc0238f7f723d66ab738d6e276eb800e1c9725975a515",
+    "public/characters/pages/17-page-16/katie-seated-back.svg": "sha256:6f3a7bf8ea18adc2ceaa5bf23158df1c4a8be55811e6e3fc1a63e261f5bb4c4c",
+    "public/characters/pages/17-page-16/sarah-seated-back.svg": "sha256:5fcc39b0705450d346e7879ee776572a9ac6af205e869bd3ca83f04c9c7e6344",
+    "public/characters/pages/18-page-17/crab-partyhat.svg": "sha256:b95e6a390d2f92df9e828219b49c836983bdbf237bc22b75c1ec1d795a3f7144",
+    "public/characters/pages/18-page-17/eric-grinning.svg": "sha256:453c1fdaeb1c21402d6a67c9e1d73bba153a7b87738684bd4d5ea0ee1875c379",
+    "public/characters/pages/19-back-cover/crab-waving.svg": "sha256:66a4f55778b0558691e76fbb46b6222cd62db5a0048f4e3f400e67521d4484b9",
+    "public/characters/pelican.svg": "sha256:07df7319eb98fa4c25e10b8adf243ad33c58bff1fe7dbfbf45fd6ae41a15e795",
+    "public/characters/sarah.svg": "sha256:b00b9a235c9fbb1f1b75feaec07e5eaba61f38d72beb1520b186131fe2bc33bb",
+    "public/characters/seagull.svg": "sha256:17ad88f1b8304b981fec4729358443c4d681da3a3cdc7579a5b22a060dc3cf03",
+    "public/characters/turtle.svg": "sha256:c1ead4c4f306b2c32dae4203e8695b2838e63c772d6cbf17ed09f182c37970f2"
+  },
+  "templates": {
+    "assets/banner/banner.html": [
+      "public/characters/crab.svg",
+      "public/characters/holding/ben.svg",
+      "public/characters/holding/chris.svg",
+      "public/characters/holding/eric.svg",
+      "public/characters/holding/grace.svg",
+      "public/characters/holding/ian.svg",
+      "public/characters/holding/katie.svg",
+      "public/characters/holding/sarah.svg"
+    ],
+    "assets/characters/ben.html": [
+      "public/characters/ben.svg"
+    ],
+    "assets/characters/chris.html": [
+      "public/characters/chris.svg"
+    ],
+    "assets/characters/crab.html": [
+      "public/characters/crab.svg"
+    ],
+    "assets/characters/eric.html": [
+      "public/characters/eric.svg"
+    ],
+    "assets/characters/fish.html": [
+      "public/characters/fish.svg"
+    ],
+    "assets/characters/grace.html": [
+      "public/characters/grace.svg"
+    ],
+    "assets/characters/ian.html": [
+      "public/characters/ian.svg"
+    ],
+    "assets/characters/katie.html": [
+      "public/characters/katie.svg"
+    ],
+    "assets/characters/lineup.html": [
+      "public/characters/ben.svg",
+      "public/characters/chris.svg",
+      "public/characters/eric.svg",
+      "public/characters/grace.svg",
+      "public/characters/ian.svg",
+      "public/characters/katie.svg",
+      "public/characters/sarah.svg"
+    ],
+    "assets/characters/pelican.html": [
+      "public/characters/pelican.svg"
+    ],
+    "assets/characters/sarah.html": [
+      "public/characters/sarah.svg"
+    ],
+    "assets/characters/seagull.html": [
+      "public/characters/seagull.svg"
+    ],
+    "assets/characters/turtle.html": [
+      "public/characters/turtle.svg"
+    ],
+    "assets/og/og-cover.html": [
+      "public/characters/crab.svg",
+      "public/characters/holding/ben.svg",
+      "public/characters/holding/chris.svg",
+      "public/characters/holding/eric.svg",
+      "public/characters/holding/grace.svg",
+      "public/characters/holding/ian.svg",
+      "public/characters/holding/katie.svg",
+      "public/characters/holding/sarah.svg"
+    ],
+    "assets/pages/00-cover.html": [
+      "public/characters/crab.svg",
+      "public/characters/holding/ben.svg",
+      "public/characters/holding/chris.svg",
+      "public/characters/holding/eric.svg",
+      "public/characters/holding/grace.svg",
+      "public/characters/holding/ian.svg",
+      "public/characters/holding/katie.svg",
+      "public/characters/holding/sarah.svg"
+    ],
+    "assets/pages/01-dedication.html": [
+      "public/characters/crab.svg"
+    ],
+    "assets/pages/02-page-01.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/02-page-01/eric-dreaming.svg"
+    ],
+    "assets/pages/03-page-02.html": [
+      "public/characters/ben.svg",
+      "public/characters/chris.svg",
+      "public/characters/crab.svg",
+      "public/characters/grace.svg",
+      "public/characters/ian.svg",
+      "public/characters/katie.svg",
+      "public/characters/pages/03-page-02/eric-dreaming.svg",
+      "public/characters/sarah.svg"
+    ],
+    "assets/pages/04-page-03.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/04-page-03/eric-leaping.svg"
+    ],
+    "assets/pages/05-page-04.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/05-page-04/eric-calling.svg",
+      "public/characters/seagull.svg"
+    ],
+    "assets/pages/06-page-05.html": [
+      "public/characters/crab.svg",
+      "public/characters/eric.svg"
+    ],
+    "assets/pages/07-page-06.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/07-page-06/eric.svg",
+      "public/characters/pages/07-page-06/fish.svg"
+    ],
+    "assets/pages/08-page-07.html": [
+      "public/characters/pages/08-page-07/crab.svg",
+      "public/characters/pages/08-page-07/eric.svg"
+    ],
+    "assets/pages/09-page-08.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/09-page-08/eric-walking.svg",
+      "public/characters/pelican.svg"
+    ],
+    "assets/pages/10-page-09.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/10-page-09/eric-walking.svg"
+    ],
+    "assets/pages/11-page-10.html": [
+      "public/characters/pages/11-page-10/crab-cheer.svg",
+      "public/characters/pages/11-page-10/eric-triumph.svg"
+    ],
+    "assets/pages/12-page-11.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/12-page-11/ben-cheering.svg",
+      "public/characters/pages/12-page-11/chris-waving.svg",
+      "public/characters/pages/12-page-11/eric-running.svg",
+      "public/characters/pages/12-page-11/grace-cheering.svg",
+      "public/characters/pages/12-page-11/ian-waving.svg",
+      "public/characters/pages/12-page-11/katie-cheering.svg",
+      "public/characters/pages/12-page-11/sarah-cheering.svg"
+    ],
+    "assets/pages/13-page-12.html": [
+      "public/characters/ben.svg",
+      "public/characters/crab.svg",
+      "public/characters/grace.svg",
+      "public/characters/pages/13-page-12/chris-patting.svg",
+      "public/characters/pages/13-page-12/eric-sliding.svg",
+      "public/characters/pages/13-page-12/ian-patting.svg",
+      "public/characters/pages/13-page-12/katie-cheering.svg",
+      "public/characters/pages/13-page-12/sarah-cheering.svg"
+    ],
+    "assets/pages/14-page-13.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/14-page-13/ben-toast.svg",
+      "public/characters/pages/14-page-13/chris-toast.svg",
+      "public/characters/pages/14-page-13/eric-laughing-toast.svg",
+      "public/characters/pages/14-page-13/grace-toast.svg",
+      "public/characters/pages/14-page-13/ian-toast.svg",
+      "public/characters/pages/14-page-13/katie-toast.svg",
+      "public/characters/pages/14-page-13/sarah-toast.svg"
+    ],
+    "assets/pages/15-page-14.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/15-page-14/ben.svg",
+      "public/characters/pages/15-page-14/chris.svg",
+      "public/characters/pages/15-page-14/eric.svg",
+      "public/characters/pages/15-page-14/grace.svg",
+      "public/characters/pages/15-page-14/ian.svg",
+      "public/characters/pages/15-page-14/katie.svg",
+      "public/characters/pages/15-page-14/sarah.svg"
+    ],
+    "assets/pages/16-page-15.html": [
+      "public/characters/chris.svg",
+      "public/characters/crab.svg",
+      "public/characters/eric.svg",
+      "public/characters/grace.svg",
+      "public/characters/ian.svg",
+      "public/characters/pages/16-page-15/ben-dance.svg",
+      "public/characters/pages/16-page-15/ben-toss.svg",
+      "public/characters/pages/16-page-15/chris-dance.svg",
+      "public/characters/pages/16-page-15/eric-cheer.svg",
+      "public/characters/pages/16-page-15/eric-dance.svg",
+      "public/characters/pages/16-page-15/grace-cheer.svg",
+      "public/characters/pages/16-page-15/grace-dance.svg",
+      "public/characters/pages/16-page-15/ian-dance.svg",
+      "public/characters/pages/16-page-15/katie-dance.svg",
+      "public/characters/pages/16-page-15/katie-toss.svg",
+      "public/characters/pages/16-page-15/sarah-dance.svg",
+      "public/characters/sarah.svg"
+    ],
+    "assets/pages/17-page-16.html": [
+      "public/characters/crab.svg",
+      "public/characters/pages/17-page-16/ben-seated-back.svg",
+      "public/characters/pages/17-page-16/chris-seated-back.svg",
+      "public/characters/pages/17-page-16/eric-seated-back.svg",
+      "public/characters/pages/17-page-16/grace-seated-back.svg",
+      "public/characters/pages/17-page-16/ian-seated-back.svg",
+      "public/characters/pages/17-page-16/katie-seated-back.svg",
+      "public/characters/pages/17-page-16/sarah-seated-back.svg"
+    ],
+    "assets/pages/18-page-17.html": [
+      "public/characters/pages/18-page-17/crab-partyhat.svg",
+      "public/characters/pages/18-page-17/eric-grinning.svg"
+    ],
+    "assets/pages/19-back-cover.html": [
+      "public/characters/pages/19-back-cover/crab-waving.svg"
+    ],
+    "assets/stickers/01-eric-hero.html": [
+      "public/characters/eric.svg"
+    ],
+    "assets/stickers/02-pea-pod.html": [],
+    "assets/stickers/03-crab-beach-mode.html": [
+      "public/characters/crab.svg"
+    ],
+    "assets/stickers/04-flora-bama-badge.html": [],
+    "assets/stickers/05-crew-lineup.html": [
+      "public/characters/ben.svg",
+      "public/characters/chris.svg",
+      "public/characters/eric.svg",
+      "public/characters/grace.svg",
+      "public/characters/ian.svg",
+      "public/characters/katie.svg",
+      "public/characters/sarah.svg"
+    ],
+    "assets/stickers/06-bushwhacker.html": [],
+    "assets/stickers/07-turtle-take-it-slow.html": [
+      "public/characters/turtle.svg"
+    ],
+    "assets/stickers/08-seagull-where.html": [
+      "public/characters/seagull.svg"
+    ],
+    "assets/stickers/09-pelican-wing-it.html": [
+      "public/characters/pelican.svg"
+    ],
+    "assets/stickers/10-sunset-circle.html": []
+  },
+  "strings": {},
+  "outputs": {
+    "exports/characters/full/ben.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:ce7a580d8ce867aa4a81ad81831ece16c96a85e4e6b9d32c89b22ef8376237c0",
+      "png": "sha256:86c2a90fac00236a3f96c0f05d96aac203a53731c6d244fa0e87408d6c330634",
+      "renderer": 1,
+      "source": "sha256:a412f86385d72f2d638f8c13cd934837c0861dcf84c0a30a4ab312430b4a3f77",
+      "strings": null,
+      "template": "ben"
     },
-    "characters/crab": {
-      "full": {
-        "sourceChecksum": "sha256:2763f2ccccbb2e12f711c0464c4ef0613fe22efae2f8f6606102a24f8ca8a9cc",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/crab.png",
-        "exportedAt": "2026-07-17T04:03:10.239Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:2763f2ccccbb2e12f711c0464c4ef0613fe22efae2f8f6606102a24f8ca8a9cc",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/crab.png",
-        "exportedAt": "2026-07-17T04:03:26.808Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:11e19fd10aa93def62301f85c5d3530ffd5c84b90879e5378e73db0ea0979df6",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/crab.png",
-        "exportedAt": "2026-07-17T03:17:06.481Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+    "exports/characters/full/chris.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:393d6157e48c5d6180a258d1d59f335eb854a4240ef01b8ffc33919014201f12",
+      "png": "sha256:adbc7c6a485a0bd3bfedb96b592442875d8465a947da5778c2cbfc1ae002164b",
+      "renderer": 1,
+      "source": "sha256:b13d9f3efa37d3be3e48bfbe175b46da48644117494698eb58801c78a8aa49eb",
+      "strings": null,
+      "template": "chris"
     },
-    "characters/ian": {
-      "full": {
-        "sourceChecksum": "sha256:f4430aaafd7e4ac82b3ddefa9ac846bbc9681ec8fa6315b20cc5e96d50f6a7b1",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/ian.png",
-        "exportedAt": "2026-07-17T04:03:02.619Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:f4430aaafd7e4ac82b3ddefa9ac846bbc9681ec8fa6315b20cc5e96d50f6a7b1",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/ian.png",
-        "exportedAt": "2026-07-17T04:03:18.105Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:bde5882d68c8055c0fcbf6696fdda7f82eda4e4c69fba41a670c088d9f177e5a",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/ian.png",
-        "exportedAt": "2026-07-17T03:16:58.660Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+    "exports/characters/full/crab.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:b650495803be25ed13b7ee8a1ebbcab03141300129bcaa9bfbd78272c74b0614",
+      "png": "sha256:9a6c3111e43d101b8cc9a0d09e2e4688d1cad77a03244d31d0f577e43bd00bcd",
+      "renderer": 1,
+      "source": "sha256:c3b345ee8070a6804d48a462c79355df0a41a33764b2bcc0590417abf86b7326",
+      "strings": null,
+      "template": "crab"
     },
-    "characters/chris": {
-      "full": {
-        "sourceChecksum": "sha256:1f9caaeb640c4f2026f1e1ee137f2568e8f1d64e55da5933ddc879bf2d2a9fc3",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/chris.png",
-        "exportedAt": "2026-07-17T04:03:03.863Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:1f9caaeb640c4f2026f1e1ee137f2568e8f1d64e55da5933ddc879bf2d2a9fc3",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/chris.png",
-        "exportedAt": "2026-07-17T04:03:19.577Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:7b9691a454ed27119f2ed932a5dc7a0aaa565692e775c56035de588650b18006",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/chris.png",
-        "exportedAt": "2026-07-17T03:16:59.984Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+    "exports/characters/full/eric.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:419aa188855b014053c689d4458600ab15a91d5b61380b3441e60726f72caddf",
+      "png": "sha256:ea4e469a8c8a011311ebada260c9015767f39c5065b0ac44f9ba36635ae1c80f",
+      "renderer": 1,
+      "source": "sha256:8efa63e339a33d9be6f1da51f25cddaed9be294e7b9c6f305a55bab472d5ce01",
+      "strings": null,
+      "template": "eric"
     },
-    "characters/katie": {
-      "full": {
-        "sourceChecksum": "sha256:740dfcc4b31e1b8a3550c4925c94aa2ce69d3fb63556eefdcd7a3633d992e630",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/katie.png",
-        "exportedAt": "2026-07-17T04:03:05.114Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:740dfcc4b31e1b8a3550c4925c94aa2ce69d3fb63556eefdcd7a3633d992e630",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/katie.png",
-        "exportedAt": "2026-07-17T04:03:21.013Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:14dc143d1f633b3177643ef4dcd8852bb79dbb41f001ac11c0300945d07404c8",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/katie.png",
-        "exportedAt": "2026-07-17T03:17:01.470Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+    "exports/characters/full/fish.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:724fba5f0616a55cd09296894465d1342acbe23575579b0d8a3adc1b0f714bb5",
+      "png": "sha256:b3a26dfd5f804f9f5878bb146003b80f268c508cc17c0f4c56b3888b4cbddc7d",
+      "renderer": 1,
+      "source": "sha256:981d1e6f4699aac29b7a278ae7134ef206a428f8d5c4bac12306357018af9274",
+      "strings": null,
+      "template": "fish"
     },
-    "characters/grace": {
-      "full": {
-        "sourceChecksum": "sha256:d807175314a7ba52f96a7298a7062e2739c724033c8a6df54513233db6d445c1",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/grace.png",
-        "exportedAt": "2026-07-17T04:07:55.609Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:d807175314a7ba52f96a7298a7062e2739c724033c8a6df54513233db6d445c1",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/grace.png",
-        "exportedAt": "2026-07-17T04:07:57.047Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:e5f1f34bb965b667f29dc417af9bb65decc6c1e83bfd073f5f9df9d12dcee1b6",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/grace.png",
-        "exportedAt": "2026-07-17T03:17:02.659Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+    "exports/characters/full/grace.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:23be340d4315d75dddb9d9001033c14a69ddccc96cd577bf1c88a30cd7523393",
+      "png": "sha256:9f73bae0a122a02e026d3030d81ee1f8a93f543bd272b569a4fd0c48ec595b57",
+      "renderer": 1,
+      "source": "sha256:6b3a46f6a5202f9af6cbf2687fac364c1ef0bb49d15cc659e2959e9c48aaf7cb",
+      "strings": null,
+      "template": "grace"
     },
-    "characters/ben": {
-      "full": {
-        "sourceChecksum": "sha256:05ca71b276577e05055d096f58192f273c5feb36d9864cd997535c3abcabb590",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/ben.png",
-        "exportedAt": "2026-07-17T04:03:07.738Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:05ca71b276577e05055d096f58192f273c5feb36d9864cd997535c3abcabb590",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/ben.png",
-        "exportedAt": "2026-07-17T04:03:23.881Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:8da58727d096737f30d434e54c875f1115c58bcc4b3748fc6d99476df0ac25f3",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/ben.png",
-        "exportedAt": "2026-07-17T03:17:03.933Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+    "exports/characters/full/ian.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:daebe12a3bfb45442d0420671f7ea8d420621a38c4cf1a8739f57c21fb7fe75b",
+      "png": "sha256:2fbe6fadde4b1c97e3ff0f75ff0dc0b1703260170ab4908e92feef5488d906a4",
+      "renderer": 1,
+      "source": "sha256:adac2b8aa54a80f65697923299cb1d631fe57753df56012e4a08212f84a51406",
+      "strings": null,
+      "template": "ian"
     },
-    "characters/sarah": {
-      "full": {
-        "sourceChecksum": "sha256:a91cb4c5692cc892757d9f556eb74aa6f1181032ce464cefe19dd922156218cc",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/sarah.png",
-        "exportedAt": "2026-07-17T04:03:08.982Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:a91cb4c5692cc892757d9f556eb74aa6f1181032ce464cefe19dd922156218cc",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/sarah.png",
-        "exportedAt": "2026-07-17T04:03:25.339Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      },
-      "1200x1200": {
-        "sourceChecksum": "sha256:40fe3dc9021b84f659f603f28fafe90a3399a3374386cc93661be0bbee085d16",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/sarah.png",
-        "exportedAt": "2026-07-17T03:17:05.214Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      }
+    "exports/characters/full/katie.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:9445c0912abe96f06b063bfb1cd10e5649df6881d0125bdddc2031b4e84d6ea5",
+      "png": "sha256:b251366405e336a1b96a60cfd704a1fa3923b440cbbc88d5c44077743abdd633",
+      "renderer": 1,
+      "source": "sha256:f377f21aedda1403f4231f82ce0e5ecb71f658012f001002cb4ce343a9e33865",
+      "strings": null,
+      "template": "katie"
     },
-    "lineup/lineup": {
-      "review": {
-        "sourceChecksum": "sha256:105a51b51f829530d881b7f6f5b5b44eb53346fe18b7697d2f8c8c8d10b2c0e3",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/lineup/lineup.png",
-        "exportedAt": "2026-07-17T04:08:17.533Z",
-        "exportChecksum": "sha256:18c13a61a7be0b995e6f62bb97e9e6326dcaf64903695b3bf671c0cc65432f29"
-      }
+    "exports/characters/full/pelican.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:e97372a3b931ea49a89fa2efad27e5588b650b7bbf2e631c515e29dacce00843",
+      "png": "sha256:17776ef1204cac30604799201d4136893e5a6b782cadfe1f888637671c3909aa",
+      "renderer": 1,
+      "source": "sha256:da64160cd0f8739c790e319a69a481f9230fb7c2f5b183f70a5517d457de2dac",
+      "strings": null,
+      "template": "pelican"
     },
-    "characters/seagull": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:0e54e6b438f1ea6a57d917f042d6ec6c31b2c3ddaa2ed1adb9bf62594be9f516",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/seagull.png",
-        "exportedAt": "2026-07-17T03:17:07.768Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      },
-      "full": {
-        "sourceChecksum": "sha256:d7e4266925553b63b2257c2a72cbb01229e0d36b52ed6cd7f2e3095db598a886",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/seagull.png",
-        "exportedAt": "2026-07-17T04:03:11.483Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:d7e4266925553b63b2257c2a72cbb01229e0d36b52ed6cd7f2e3095db598a886",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/seagull.png",
-        "exportedAt": "2026-07-17T04:03:28.244Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      }
+    "exports/characters/full/sarah.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:34680d5b0e52b445674bd9586ad0e34c4801769fd4757abf6838aeaae2f3a52f",
+      "png": "sha256:1680b78f582d475f8ec97f82759c9b320f74856ebced6375e06ceaf8b7e3f0b1",
+      "renderer": 1,
+      "source": "sha256:b2a7cd290c2bb184001c1677dfcead49eabd868bbe5e2ddfa19143d738d5c1d2",
+      "strings": null,
+      "template": "sarah"
     },
-    "characters/turtle": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:571f3ee0a6f859aeaf2e0b9079c62263aa50d697c5aab7acdd8f4857d67be693",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/turtle.png",
-        "exportedAt": "2026-07-17T03:17:08.955Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      },
-      "full": {
-        "sourceChecksum": "sha256:29ada60d9accedd2f4f507564e96d48431c0d080427d9ebf6041d2462bb58373",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/turtle.png",
-        "exportedAt": "2026-07-17T04:03:12.726Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:29ada60d9accedd2f4f507564e96d48431c0d080427d9ebf6041d2462bb58373",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/turtle.png",
-        "exportedAt": "2026-07-17T04:03:29.676Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      }
+    "exports/characters/full/seagull.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:aceb241a193b52d2021b627ec9ebce3dda93a8450e09fc6b5ff67735cce6a0c5",
+      "png": "sha256:ba8019c6639af2d46e7db2b5f33b14ea92f9bcf1506e2d436122ff89f40fe185",
+      "renderer": 1,
+      "source": "sha256:79f613fc69f483b1b3ce02620b5c84ef2be4cb3681d1994ca63c5a2f2525c875",
+      "strings": null,
+      "template": "seagull"
     },
-    "characters/pelican": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:5260ab84e47850255f65b9ab654072a404405081328166239660059fec3ec2d4",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/pelican.png",
-        "exportedAt": "2026-07-17T03:17:10.205Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      },
-      "full": {
-        "sourceChecksum": "sha256:76be3ae4bf1a7e8dae4095e5c505a37aa143e463ac39ce0839933178633cee4b",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/pelican.png",
-        "exportedAt": "2026-07-17T04:03:13.984Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:76be3ae4bf1a7e8dae4095e5c505a37aa143e463ac39ce0839933178633cee4b",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/pelican.png",
-        "exportedAt": "2026-07-17T04:03:31.128Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      }
+    "exports/characters/full/turtle.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:e5ac0b5152143d6db9b75356788474d10fc5d4bc3774be1b25a798615afd83bb",
+      "png": "sha256:e6f728a047549d40757c358b057d697be5960ff933b3ec208cff0f28b9764c1e",
+      "renderer": 1,
+      "source": "sha256:d0e41c33a427f22e02de520cdd2e4b2b47681375c6f1d8120890274a4adc03d5",
+      "strings": null,
+      "template": "turtle"
     },
-    "characters/fish": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:ae81d7acf44a1a3ecbbae6a5388565109db4d5b6f6fc75c5a256229f7e3a292a",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/fish.png",
-        "exportedAt": "2026-07-17T03:17:11.372Z",
-        "exportChecksum": "sha256:61d5e3c0dcec0cd47a8fa29e5f55173fa67299585dde17136a54e5a15bc24adb"
-      },
-      "full": {
-        "sourceChecksum": "sha256:ee586ae6d8593451272e573ddc0f13d10b358528d3ce4c3838101ac8cd516259",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/full/fish.png",
-        "exportedAt": "2026-07-17T04:03:15.228Z",
-        "exportChecksum": "sha256:05c9748679983ce3e4ce1b629cef9a988290ee6e2f697717b8893dde2402f9c3"
-      },
-      "thumb": {
-        "sourceChecksum": "sha256:ee586ae6d8593451272e573ddc0f13d10b358528d3ce4c3838101ac8cd516259",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/characters/thumb/fish.png",
-        "exportedAt": "2026-07-17T04:03:32.565Z",
-        "exportChecksum": "sha256:a8bc34c60a67955fab97e02b18d6407f1f24ed8e991c22e83859553c8ae9ecb4"
-      }
+    "exports/characters/thumb/ben.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:b20eda91e068ca6b9587ff3fdd0047afbaa9ab7e8972f9c7724da415a8a0fc54",
+      "png": "sha256:ea16e600b99299107900a09971c9b0c2aa6e68069549cbb16c3c9b1d09839d9d",
+      "renderer": 1,
+      "source": "sha256:a412f86385d72f2d638f8c13cd934837c0861dcf84c0a30a4ab312430b4a3f77",
+      "strings": null,
+      "template": "ben"
     },
-    "pages/00-cover": {
-      "print": {
-        "sourceChecksum": "sha256:6e518b3af8b6742e6de38b95f16fbfffcbfd5a43d5b96dbab1e3e2717f5f9e79",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/00-cover.png",
-        "exportedAt": "2026-07-17T04:41:32.069Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:6e518b3af8b6742e6de38b95f16fbfffcbfd5a43d5b96dbab1e3e2717f5f9e79",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/00-cover.png",
-        "exportedAt": "2026-07-17T04:41:33.927Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/chris.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:6d019ce88d66a7d95d686f5af33311b5a74f684b2c33bcfa7c6962a8df1e6fe3",
+      "png": "sha256:79251fa426372bad01077e4e5005a01f0806592e7c6d3cc82bdfdff7d9272e56",
+      "renderer": 1,
+      "source": "sha256:b13d9f3efa37d3be3e48bfbe175b46da48644117494698eb58801c78a8aa49eb",
+      "strings": null,
+      "template": "chris"
     },
-    "pages/01-dedication": {
-      "print": {
-        "sourceChecksum": "sha256:9c78fae9278aeb1998eff34d5bb7b4d4ef15f9ea700d62f65aed07474e471d35",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/01-dedication.png",
-        "exportedAt": "2026-07-17T04:45:00.088Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:9c78fae9278aeb1998eff34d5bb7b4d4ef15f9ea700d62f65aed07474e471d35",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/01-dedication.png",
-        "exportedAt": "2026-07-17T04:45:02.061Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/crab.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:c65fd6b508ac623f0850000a3cdddab29191dd086a29563d8f0de095d7d83a75",
+      "png": "sha256:4262d8cff5ef02e50b1d0165cab5dd422db7836e03be19142f87662f5032c94f",
+      "renderer": 1,
+      "source": "sha256:c3b345ee8070a6804d48a462c79355df0a41a33764b2bcc0590417abf86b7326",
+      "strings": null,
+      "template": "crab"
     },
-    "pages/05-page-04": {
-      "print": {
-        "sourceChecksum": "sha256:84b12c99d3d6ea7305438bef269678fd54cc153c63fa06381e87637f4bc7ad53",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/05-page-04.png",
-        "exportedAt": "2026-07-17T04:48:24.153Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:84b12c99d3d6ea7305438bef269678fd54cc153c63fa06381e87637f4bc7ad53",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/05-page-04.png",
-        "exportedAt": "2026-07-17T04:48:25.631Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/eric.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:9b8bdde06d03983a67a7a20eb83e9d4a67ebae8759b192febebc43dff9f2caf6",
+      "png": "sha256:a14832c2f3a36430672b5f562a479ed76bd4523528c255dccf1e5065b3793b1c",
+      "renderer": 1,
+      "source": "sha256:8efa63e339a33d9be6f1da51f25cddaed9be294e7b9c6f305a55bab472d5ce01",
+      "strings": null,
+      "template": "eric"
     },
-    "pages/06-page-05": {
-      "print": {
-        "sourceChecksum": "sha256:8bfe8279a872fdcf3611f91d25ef8e8eee780ad2bd741206d57010df926f88f3",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/06-page-05.png",
-        "exportedAt": "2026-07-17T04:49:49.663Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:8bfe8279a872fdcf3611f91d25ef8e8eee780ad2bd741206d57010df926f88f3",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/06-page-05.png",
-        "exportedAt": "2026-07-17T04:49:51.097Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/fish.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:70aed4034d285020b2c2507ef10dc53d1da95f014454bb146a49ee8957515f1e",
+      "png": "sha256:849392b7fb98c93bd403d85f6732b68b140428c6702e988e8e70b8ed6de17042",
+      "renderer": 1,
+      "source": "sha256:981d1e6f4699aac29b7a278ae7134ef206a428f8d5c4bac12306357018af9274",
+      "strings": null,
+      "template": "fish"
     },
-    "pages/02-page-01": {
-      "print": {
-        "sourceChecksum": "sha256:ee2de1c1ad3ef6a088c09b7108ecbf66aa9f27df8d8090039c5ff1214192a436",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/02-page-01.png",
-        "exportedAt": "2026-07-17T04:49:23.293Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:ee2de1c1ad3ef6a088c09b7108ecbf66aa9f27df8d8090039c5ff1214192a436",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/02-page-01.png",
-        "exportedAt": "2026-07-17T04:49:24.726Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/grace.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:cdfea4bcf7847ccb1eea327cf61a2851d4da301e1e588c2fa9f546393516e346",
+      "png": "sha256:69aecd59f2ff9e39f40b537f14625f67ec8dcf78091efb10a28c2df3cbc49cc5",
+      "renderer": 1,
+      "source": "sha256:6b3a46f6a5202f9af6cbf2687fac364c1ef0bb49d15cc659e2959e9c48aaf7cb",
+      "strings": null,
+      "template": "grace"
     },
-    "pages/03-page-02": {
-      "print": {
-        "sourceChecksum": "sha256:3eafe8e99dff96ee2d9aa872291c6549968c5866b189d6704df6bd9e058b00da",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/03-page-02.png",
-        "exportedAt": "2026-07-17T04:54:21.459Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:3eafe8e99dff96ee2d9aa872291c6549968c5866b189d6704df6bd9e058b00da",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/03-page-02.png",
-        "exportedAt": "2026-07-17T04:54:22.881Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/ian.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:4d2d0c4ce9443569a27abf62e0fe51f9cdedd8d8880da32bff1eab92f7f0f674",
+      "png": "sha256:dca01c46b011d83bd11ac9b2de0ff38466f064950d639266903ec440d5b09cee",
+      "renderer": 1,
+      "source": "sha256:adac2b8aa54a80f65697923299cb1d631fe57753df56012e4a08212f84a51406",
+      "strings": null,
+      "template": "ian"
     },
-    "pages/07-page-06": {
-      "print": {
-        "sourceChecksum": "sha256:0f98c68faebdcd900d82f756dbc546ce382edf77738ed79965aa123ceff06d46",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/07-page-06.png",
-        "exportedAt": "2026-07-17T04:51:07.418Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:0f98c68faebdcd900d82f756dbc546ce382edf77738ed79965aa123ceff06d46",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/07-page-06.png",
-        "exportedAt": "2026-07-17T04:51:08.880Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/katie.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:86989c417bef6c4f842cb3de5bc520ab0e8e2adadf4718f24680c6d15df0fb04",
+      "png": "sha256:ff90c9362092c3be8649e3b993bd2557d6a5a2c54f5509e00422ec754fa3835a",
+      "renderer": 1,
+      "source": "sha256:f377f21aedda1403f4231f82ce0e5ecb71f658012f001002cb4ce343a9e33865",
+      "strings": null,
+      "template": "katie"
     },
-    "pages/08-page-07": {
-      "print": {
-        "sourceChecksum": "sha256:6dbe37d6ed2335670c0ef2c93be8e4070711b0697e1773cbaa0e3cfd71f1bb0c",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/08-page-07.png",
-        "exportedAt": "2026-07-17T05:56:37.378Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:6dbe37d6ed2335670c0ef2c93be8e4070711b0697e1773cbaa0e3cfd71f1bb0c",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/08-page-07.png",
-        "exportedAt": "2026-07-17T05:56:39.285Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/pelican.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:9528ea12a11bccba79b1e06ad0edff30507b3bb307690e630518380d09a98400",
+      "png": "sha256:e36068287b7ed3c139ed219915fdae31e1d3ac409f6fce54383c03f225390419",
+      "renderer": 1,
+      "source": "sha256:da64160cd0f8739c790e319a69a481f9230fb7c2f5b183f70a5517d457de2dac",
+      "strings": null,
+      "template": "pelican"
     },
-    "pages/09-page-08": {
-      "print": {
-        "sourceChecksum": "sha256:2efe287e517928820466f6d866048bcc8b8832ea35ee4285f7a6b2b98c3f6588",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/09-page-08.png",
-        "exportedAt": "2026-07-17T05:05:48.053Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:2efe287e517928820466f6d866048bcc8b8832ea35ee4285f7a6b2b98c3f6588",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/09-page-08.png",
-        "exportedAt": "2026-07-17T05:05:49.546Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/sarah.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:5ba5d68b552d1b9f141859b097b11543c0302da54617d2c1e06fa0988730fbf5",
+      "png": "sha256:02a67b286e45744fc8aa231ed35825868c0fed59e02daa2c9ef3af44dd468987",
+      "renderer": 1,
+      "source": "sha256:b2a7cd290c2bb184001c1677dfcead49eabd868bbe5e2ddfa19143d738d5c1d2",
+      "strings": null,
+      "template": "sarah"
     },
-    "pages/04-page-03": {
-      "print": {
-        "sourceChecksum": "sha256:f779e788f3759970aca659513bc422cd5f7cdbb434d7df2013d9e8c8fa1486f1",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/04-page-03.png",
-        "exportedAt": "2026-07-17T04:59:31.244Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:f779e788f3759970aca659513bc422cd5f7cdbb434d7df2013d9e8c8fa1486f1",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/04-page-03.png",
-        "exportedAt": "2026-07-17T04:59:32.688Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/seagull.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:3d33276f22a6f44639074ce11bdaa820e2056c9ebf4256b44c08e426f9d115ef",
+      "png": "sha256:da9d2db838aca3cae36cc715fb154ad9fbef46a0a7374db18fb980f28e2a0069",
+      "renderer": 1,
+      "source": "sha256:79f613fc69f483b1b3ce02620b5c84ef2be4cb3681d1994ca63c5a2f2525c875",
+      "strings": null,
+      "template": "seagull"
     },
-    "pages/10-page-09": {
-      "print": {
-        "sourceChecksum": "sha256:b42074785ae5701555d66cbfec23c4de03c29a40fec4fcd237beb6b33e235fec",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/10-page-09.png",
-        "exportedAt": "2026-07-17T05:10:10.152Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:b42074785ae5701555d66cbfec23c4de03c29a40fec4fcd237beb6b33e235fec",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/10-page-09.png",
-        "exportedAt": "2026-07-17T05:10:11.811Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/characters/thumb/turtle.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "characters",
+      "config": "sha256:86b42a07af5f6db24c761185407241959fa8ca973b450138f340d087aef7d2b0",
+      "key": "sha256:537d14797e5ca2c051e7377253801ac8eae7b357f8e4b51db78d8c9b493b7922",
+      "png": "sha256:4995c1a0aa049f2a8bff6802ac6dbaa1f13b5fcae4f8d58d8ac514f190f54421",
+      "renderer": 1,
+      "source": "sha256:d0e41c33a427f22e02de520cdd2e4b2b47681375c6f1d8120890274a4adc03d5",
+      "strings": null,
+      "template": "turtle"
     },
-    "pages/11-page-10": {
-      "print": {
-        "sourceChecksum": "sha256:5f4ae7ba608affc67ae71d5cf74581feb0d70905fb59fe7718bed61b389f20a8",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/11-page-10.png",
-        "exportedAt": "2026-07-17T05:08:26.634Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:5f4ae7ba608affc67ae71d5cf74581feb0d70905fb59fe7718bed61b389f20a8",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/11-page-10.png",
-        "exportedAt": "2026-07-17T05:08:28.115Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/lineup/lineup.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "lineup",
+      "config": "sha256:b7f7da78a8bdd6d2f2e9a35cef6cf98f0547c307cf28232c33299ba6d3178ca7",
+      "key": "sha256:4906c8d2307a519cefe3f178a1831f8bc6cd1fca6b0f33931e26a2169a68f5aa",
+      "png": "sha256:e81c09773ee9a92dad9e62f4ec1b9cf47409ae25a3e468c6a12ca298b02a2af5",
+      "renderer": 1,
+      "source": "sha256:cb5b1a3bb2d5ff4b4e91d0a01325d2c7b87f42c2d6cab47e75977f061cf9eacf",
+      "strings": null,
+      "template": "lineup"
     },
-    "pages/12-page-11": {
-      "print": {
-        "sourceChecksum": "sha256:b01eac2eae50d0b94855cec12abcf8971ea96f309b34dfe44a84a99d669a8083",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/12-page-11.png",
-        "exportedAt": "2026-07-17T05:54:41.966Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:b01eac2eae50d0b94855cec12abcf8971ea96f309b34dfe44a84a99d669a8083",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/12-page-11.png",
-        "exportedAt": "2026-07-17T05:54:43.878Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/og/og-cover.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "og",
+      "config": "sha256:fd5896c591f37caf3e53963f07dd90e72daf32cb40dccab3a669b3b474389281",
+      "key": "sha256:a81b8bd693af8e17fa8538e0f5dbb7bb48af4f8c07da16f6606d92e71d5bd2ee",
+      "png": "sha256:0c537a3dfa336fcd58dfed955e6442f5e51556b53d6d53279b14892296b3cb2f",
+      "renderer": 1,
+      "source": "sha256:5a904d1d35e63f4960b3a3a2bb6511f061ba68266838c07b923694df0a4d7cfb",
+      "strings": null,
+      "template": "og-cover"
     },
-    "pages/14-page-13": {
-      "print": {
-        "sourceChecksum": "sha256:91e445a246d80cd2569d5346c662c05d0b1d224daaec1015e178d0c0b0221067",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/14-page-13.png",
-        "exportedAt": "2026-07-17T05:56:16.317Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:91e445a246d80cd2569d5346c662c05d0b1d224daaec1015e178d0c0b0221067",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/14-page-13.png",
-        "exportedAt": "2026-07-17T05:56:17.790Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/pages/00-cover.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:3378ce63ff000ab1fbd9395ecf8efcca9dc747d91189436ed81a07e3a59f5544",
+      "png": "sha256:4e03d269c9dc2a79fca34f7820fd8156585cf2b14e2f09a4969fce5c0578e052",
+      "renderer": 1,
+      "source": "sha256:fe1c4a31e047cb6211bc34bd503b4b58dfd7b67ffa4a9c6f639cdb9f1ae7447e",
+      "strings": null,
+      "template": "00-cover"
     },
-    "pages/13-page-12": {
-      "print": {
-        "sourceChecksum": "sha256:42d7772c8edd5360def4dfcedb86fbe8c8316222227152c9efa179426f57eda9",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/13-page-12.png",
-        "exportedAt": "2026-07-17T06:05:34.128Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:42d7772c8edd5360def4dfcedb86fbe8c8316222227152c9efa179426f57eda9",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/13-page-12.png",
-        "exportedAt": "2026-07-17T06:05:35.904Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/pages/01-dedication.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:053d837c69caa1843dcb583070adadaa32bae396c13222617fc62802b1d08207",
+      "png": "sha256:3e955c8bd19720a72da2121d284216963dbd23f122865c5f50bb592981a5aa1d",
+      "renderer": 1,
+      "source": "sha256:a40e9de26fbc29239184c7724b8af6cd0c7a334da155dca1d328c6554d70f0f5",
+      "strings": null,
+      "template": "01-dedication"
     },
-    "pages/19-back-cover": {
-      "print": {
-        "sourceChecksum": "sha256:6fcaefee9a118429e1ab52e328af849a052020c01357566ef4af11cdc3e52768",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/19-back-cover.png",
-        "exportedAt": "2026-07-17T13:46:19.444Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:6fcaefee9a118429e1ab52e328af849a052020c01357566ef4af11cdc3e52768",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/19-back-cover.png",
-        "exportedAt": "2026-07-17T13:46:22.897Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/pages/02-page-01.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:f37cef51ef49bd77b0db3946bd0f621061df599984ee809aebb6254407985f7b",
+      "png": "sha256:22ad324225fbe30e9fe277e882efc6b263c486047b369279b730605d3cc54685",
+      "renderer": 1,
+      "source": "sha256:770b1d557d1c322938c0ec6ff30f733f2f9d12ad47f018b9cfdb58b8a6141cdc",
+      "strings": null,
+      "template": "02-page-01"
     },
-    "pages/18-page-17": {
-      "print": {
-        "sourceChecksum": "sha256:7ee328b4df4e33b81b1a0f835c747d9436a5df70294325ef99266ceb19f14416",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/18-page-17.png",
-        "exportedAt": "2026-07-17T05:53:41.010Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:7ee328b4df4e33b81b1a0f835c747d9436a5df70294325ef99266ceb19f14416",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/18-page-17.png",
-        "exportedAt": "2026-07-17T05:53:42.481Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/pages/03-page-02.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:67c138937f1b30d7395d7c72c1657edff1a3d82530e9a694c4d3db489207c95a",
+      "png": "sha256:1bc7b5aeb5f3c5af3c2b8035fa07daef9f8fe8e4df89f49ad86a259836ae187b",
+      "renderer": 1,
+      "source": "sha256:64cb199f8afd52791ab9477f229024ad6abb6cb638025e55978986d34a28f61b",
+      "strings": null,
+      "template": "03-page-02"
     },
-    "pages/16-page-15": {
-      "print": {
-        "sourceChecksum": "sha256:1ef3525d1e075bb1f55ff5ea9b8807edaaeffbcbf1677c2251cd11b7be3ef6d7",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/16-page-15.png",
-        "exportedAt": "2026-07-17T05:29:59.348Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:1ef3525d1e075bb1f55ff5ea9b8807edaaeffbcbf1677c2251cd11b7be3ef6d7",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/16-page-15.png",
-        "exportedAt": "2026-07-17T05:30:01.301Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/pages/04-page-03.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:108a5a04f86a1108d3e2a795afddf4c3fc3d7fd191ddd59e11d1d3ac96d9f448",
+      "png": "sha256:ae690877d5b1662159e1a232a26d320d1fee70ff780aeca23014b8a014c298cf",
+      "renderer": 1,
+      "source": "sha256:a80ca12438a7618955b964a95eb851edc08831d48fdc743de58baa35c39f36e8",
+      "strings": null,
+      "template": "04-page-03"
     },
-    "pages/17-page-16": {
-      "print": {
-        "sourceChecksum": "sha256:fe85d76031e060cd28419bf9881774a0b4aca28fef6325cad5a94ad3ba8670ef",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/17-page-16.png",
-        "exportedAt": "2026-07-17T05:23:11.857Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:fe85d76031e060cd28419bf9881774a0b4aca28fef6325cad5a94ad3ba8670ef",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/17-page-16.png",
-        "exportedAt": "2026-07-17T05:23:13.358Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/pages/05-page-04.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:7c8ad0c8f7fe45150fc528b75bc68c12a0ebfb181f10da9aebbf3ea1fcba108a",
+      "png": "sha256:e58d554af1c594d59f49f3b0863b0d28d39be256f94585aa0979edb82ea01430",
+      "renderer": 1,
+      "source": "sha256:66027c294cf3feda4ca37a7d36fa9063cec6cf63c4a7831f9d48e1a57b3166e8",
+      "strings": null,
+      "template": "05-page-04"
     },
-    "pages/15-page-14": {
-      "print": {
-        "sourceChecksum": "sha256:cadfdd8f9b009bf4b6166ae27dda8593cf184232d471aea3dae1e6f2e0257110",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/exports/pages/15-page-14.png",
-        "exportedAt": "2026-07-17T05:54:13.870Z",
-        "exportChecksum": "sha256:0bc0cb6f8f8c063d800960518bfa627b827b23cc40a90b206b0ebcf9b7e462ea"
-      },
-      "web": {
-        "sourceChecksum": "sha256:cadfdd8f9b009bf4b6166ae27dda8593cf184232d471aea3dae1e6f2e0257110",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/web/public/pages/15-page-14.png",
-        "exportedAt": "2026-07-17T05:54:15.777Z",
-        "exportChecksum": "sha256:a7be589253765bfce4855481c99e96a37f9e05bc2bd2c91ce624275979e4dfa2"
-      }
+    "exports/pages/06-page-05.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:e3c4c7f2ba8233353f84d98345c1dad3e71a5c0babbbb96ef12fedd8149f685f",
+      "png": "sha256:25160c1988f2c759d785d758ea86d8b8041b10b321cb96af20be56cfe01a7ae3",
+      "renderer": 1,
+      "source": "sha256:b50fd74979083919048c471515f298d2e8e5a06081db7d3d543d2aaab0703db7",
+      "strings": null,
+      "template": "06-page-05"
     },
-    "banner/banner": {
-      "readme": {
-        "sourceChecksum": "sha256:4d60415768247a257662aa8c9a38fa5562331e8d1bde585bfc32f6bfa14b0cd1",
-        "outputPath": "/Users/ianmaccallum/Desktop/florabama/public/banner/banner.png",
-        "exportedAt": "2026-07-17T19:55:42.540Z",
-        "exportChecksum": "sha256:6e7801ccf1b21f254ac3b25a58e3f339077de2abdaad3dd022b14351f5ca4909"
-      }
+    "exports/pages/07-page-06.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:170ee6915b115028969a50011d6aca083b2d82ca4461cb832c1d230b327eef3a",
+      "png": "sha256:faec070db33caad92e2df2da192c207b35cfbcd15f835fca98f5ceb5c66aee17",
+      "renderer": 1,
+      "source": "sha256:1cf398fdb23e918bd8e4498c8ebd3cae0d93a0f934ccb53bf959c9c52acc6e8d",
+      "strings": null,
+      "template": "07-page-06"
     },
-    "stickers/01-eric-hero": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:278b9a3624e2fec5cb93d8a2377b91728cb859cac7292e16838710b75a32e170",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/01-eric-hero.png",
-        "exportedAt": "2026-07-19T20:11:47.334Z"
-      }
+    "exports/pages/08-page-07.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:774f5790ed5ef66ca5c43f11e454280bd65900176f9fd0fc423780f02f974f93",
+      "png": "sha256:80c62538f8224851a10602d844b622a5f9232d18da5046d3bac9f4c8491c6675",
+      "renderer": 1,
+      "source": "sha256:c37c47d1c2899468b992e3483173653e12f6e71ce961e795266ff6591a9c5236",
+      "strings": null,
+      "template": "08-page-07"
     },
-    "stickers/02-pea-pod": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:7785a845930b55abb2a07a27cfcc674fa44a10c29d211ee08db9fb35264c3f6e",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/02-pea-pod.png",
-        "exportedAt": "2026-07-19T20:11:48.980Z"
-      }
+    "exports/pages/09-page-08.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:f782c74107633839a4575184477af8a67471567c82bb089d6884dcd62df087ff",
+      "png": "sha256:e0244aa605f3c97ce166db9b093baff5aece62a4db531ccfe7686dbb7199e77a",
+      "renderer": 1,
+      "source": "sha256:94505a6824fcc139df41aff96c8d65c0317bafe68a8f8f3b1120580a3377e2bb",
+      "strings": null,
+      "template": "09-page-08"
     },
-    "stickers/03-crab-beach-mode": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:d0633fc9b4c8cdbad8f69fd66883cafeae29d69adfb1452ea60e6c73762ccb26",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/03-crab-beach-mode.png",
-        "exportedAt": "2026-07-19T20:11:50.338Z"
-      }
+    "exports/pages/10-page-09.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:fd793f3b6215a9fdaeee821f21052d275a63901c33b1b514c190c99157f9c230",
+      "png": "sha256:2c891db27fe7d1d3ea88fa28d39f70a0261cf09558f46e9916f3038b55809ce2",
+      "renderer": 1,
+      "source": "sha256:de3903e8278dfc9aad4798d32bcf54625f9076e05c8ca751ff6e5a133a43de55",
+      "strings": null,
+      "template": "10-page-09"
     },
-    "stickers/04-flora-bama-badge": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:870b49f78a0f1400fd1d0b8664d51582db6cf34a0d64ee392200af8d52472389",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/04-flora-bama-badge.png",
-        "exportedAt": "2026-07-19T20:13:19.100Z"
-      }
+    "exports/pages/11-page-10.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:b69c1ee49fb4609719bfa75ebc26cb318554075996325361c1579bbc7f1db450",
+      "png": "sha256:c203931060a9d6eb1015e3b2bdee909c2cded248d5c75174cb677133556bd20b",
+      "renderer": 1,
+      "source": "sha256:402d440bf1914d813bb274d6e795c69893cb42648e16397974fb4e1ca8fa5070",
+      "strings": null,
+      "template": "11-page-10"
     },
-    "stickers/05-crew-lineup": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:1ded1fc4a889a994cc0c2818b00b8ee0ec3a0bd0d2a4f58c21be59657591b5ed",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/05-crew-lineup.png",
-        "exportedAt": "2026-07-19T20:14:04.173Z"
-      }
+    "exports/pages/12-page-11.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:497a59a28c8c785242777477de11a127dae946d081931f6837841b6583f8e325",
+      "png": "sha256:94053383176b39cb8ae796fb7598e57a6cef7618e16bd14807f2a68cde3bb28d",
+      "renderer": 1,
+      "source": "sha256:2b70c099b6a7b20f389b5354e075c0729f37c7b49dc786f0553649791cbfee8f",
+      "strings": null,
+      "template": "12-page-11"
     },
-    "stickers/06-bushwhacker": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:e33bd8d0820da45d7ff16b9037833607559cd7aec823f2daae16148694b50099",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/06-bushwhacker.png",
-        "exportedAt": "2026-07-19T20:11:55.294Z"
-      }
+    "exports/pages/13-page-12.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:3b046ca25c37284fdcd6aa0047d9b905ed3a20782578674634c66ac829282448",
+      "png": "sha256:47561da53161adf0b7f95ff22cbeece9918b608983cefb24d22795fa285c4b3d",
+      "renderer": 1,
+      "source": "sha256:20a03b7c9a97cbf680229eac08e730fecad67fa202f6c1a38469e6f25c5a263c",
+      "strings": null,
+      "template": "13-page-12"
     },
-    "stickers/07-turtle-take-it-slow": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:2e4751e2dc45fa1025d66dc37dc01a2535bac132693a318226820f46dfe610a4",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/07-turtle-take-it-slow.png",
-        "exportedAt": "2026-07-19T20:11:56.527Z"
-      }
+    "exports/pages/14-page-13.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:c8a30ad838fff5763c48ebd1f459293920f858053b5e5284e77aff5e8376fbed",
+      "png": "sha256:fc1d0a7434080905e51445fbe1286760e28cab4b506f63a6f047c0479a64496f",
+      "renderer": 1,
+      "source": "sha256:d9078202cae5a120f56cdeb266326b04379a749fe28109a42f2dea67b2cf0ec7",
+      "strings": null,
+      "template": "14-page-13"
     },
-    "stickers/08-seagull-where": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:ca578967974cad0b580dc3b38114557385edd5ebb1c2f0757984ae632a410160",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/08-seagull-where.png",
-        "exportedAt": "2026-07-19T20:11:57.811Z"
-      }
+    "exports/pages/15-page-14.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:6e0ea2596d47639a4b82d28451cf3f2182fe49f2e5994e7cf8930ece021ba0ca",
+      "png": "sha256:2affb6b210bebc6e2a1e39199d3a62e55de91bf4a6014f1d7630042a949b976d",
+      "renderer": 1,
+      "source": "sha256:dbe242d6180570ff968c0b4417ca10cfb2a0dc17444439dc777a202ddf57c4cd",
+      "strings": null,
+      "template": "15-page-14"
     },
-    "stickers/09-pelican-wing-it": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:76ca9c8cfc41ebb9335a820e773e249c5314b0ec5afb2e910455f341bc3b75a6",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/09-pelican-wing-it.png",
-        "exportedAt": "2026-07-19T20:11:59.095Z"
-      }
+    "exports/pages/16-page-15.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:63e1e09f57f76b8cde908c1296885002ba4c352323184ca02c8085010a366bbb",
+      "png": "sha256:7624ceda9b9dc7d000ccc22e1766ecf66ad24c70a5d550ecf4aad2dc7304e5f7",
+      "renderer": 1,
+      "source": "sha256:f993d629b9718b297c963e3ac18ecd347e8b03c3fe7bb6ca6c0efaee4386336c",
+      "strings": null,
+      "template": "16-page-15"
     },
-    "stickers/10-sunset-circle": {
-      "1200x1200": {
-        "sourceChecksum": "sha256:dce1f60cd73a9d0b6c01826c5e8b251cbbe075f83bac30fa4c2d1f2423cc2f7a",
-        "outputPath": "/Users/ianmaccallum/Developer/Repos/perdido-peas/exports/stickers/10-sunset-circle.png",
-        "exportedAt": "2026-07-19T20:14:35.704Z"
-      }
+    "exports/pages/17-page-16.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:172e498ed4ece14fdb4395fbfc1e24294f15266719b20ad994a04d5752e1429a",
+      "png": "sha256:b8a69896c960fb62af56be65dae29211e009eb8a42d8f132f6ac1ae05dc1d17c",
+      "renderer": 1,
+      "source": "sha256:592af13b3b4386f9ca61945395fab6641d68ef76617b2c4c87d29c888a73886e",
+      "strings": null,
+      "template": "17-page-16"
+    },
+    "exports/pages/18-page-17.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:024a0457a06e8fe7703ffab7548607fc17d0753b27423a8150d75171ad4805aa",
+      "png": "sha256:b7cb5f4d14b37cbe175d74d921598d4644df78ce4c8b1f6d0e73784a8855cc1f",
+      "renderer": 1,
+      "source": "sha256:dab971f2c13fa6482a6cfef746ad270a6e497d1590e7c00491436b9670dfc4d2",
+      "strings": null,
+      "template": "18-page-17"
+    },
+    "exports/pages/19-back-cover.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:ed6b668ceb3bdac95d61d9fda724a6709935a333edcc0167c55f0adad3677582",
+      "key": "sha256:040091b9e06b5d1059c59d0e09e6a4700fac4a8f0cad2a37439642e435faf687",
+      "png": "sha256:4ab5d4a7ae7cb95cc91d401e7c5966aef97e3b7c84553e4095f4b23aa429cc3f",
+      "renderer": 1,
+      "source": "sha256:cbfe5c2018c9e320521e54b3b7a57bef118591e1cbc7cab3c27780604cd89063",
+      "strings": null,
+      "template": "19-back-cover"
+    },
+    "exports/stickers/01-eric-hero.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:1ff47c1b12deaa3368f6fef692ed3b6996c8e935b78f7edef4f48d23679e2db7",
+      "png": "sha256:58a8d4bfeccd2130477b1f107ebf4f2d86ee3b4d9f1a905fab18d6b17db6f240",
+      "renderer": 1,
+      "source": "sha256:acd829c8f529022f3e687ca904f42053f9eb1f8eccb587110f36031442454b3c",
+      "strings": null,
+      "template": "01-eric-hero"
+    },
+    "exports/stickers/02-pea-pod.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:8e329f79a0d498840c0fa38bb4faa35f4e8f9b44ad24a20057a35c20fc041c37",
+      "png": "sha256:974d2647e14aa053ee9a4ac6efdee4f483011a1a5f3635d226192c14bc3f5ce8",
+      "renderer": 1,
+      "source": "sha256:1d3e03480cc3616edaae1726aacbd82a66a918e4093d68abe235877e23a6337a",
+      "strings": null,
+      "template": "02-pea-pod"
+    },
+    "exports/stickers/03-crab-beach-mode.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:27c05e7d1ef21cd1486454f2dd6ffb43b8d2df6ba365ff206a7abc0feca2e109",
+      "png": "sha256:a7f9644ddffc7622cc2d482f5029c546ff5a682a4350ca4e6f2ad2b5a5f126b7",
+      "renderer": 1,
+      "source": "sha256:61b6fa4bfc65286c2fc85023e0d6f88c78a5f334032b8226b7828bda4c6be356",
+      "strings": null,
+      "template": "03-crab-beach-mode"
+    },
+    "exports/stickers/04-flora-bama-badge.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:f1c2e53915cba8e848e1f1caf1e839d231f5f8b2581d29c99898640fef09528c",
+      "png": "sha256:3bb540f466d11dc430578833d32ede44b0097ab47606257b2df8dd199a2a6114",
+      "renderer": 1,
+      "source": "sha256:80206afd8380f8c746647c0b0d133022570dfcf388bfcb33908824dffeed3ac6",
+      "strings": null,
+      "template": "04-flora-bama-badge"
+    },
+    "exports/stickers/05-crew-lineup.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:87816cfe34993211c98f4474e8e3e5735a8278df0d18d0b75cc209f93d9a9a82",
+      "png": "sha256:d08b22fb8684b230ba7ed511bd2433309ca04e34bd0e11f0fab0eafb567a15b5",
+      "renderer": 1,
+      "source": "sha256:7094aa0f929dbb1ffc2ba356d4603998a4d127f118bcacc340488168a27478e3",
+      "strings": null,
+      "template": "05-crew-lineup"
+    },
+    "exports/stickers/06-bushwhacker.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:31b440d4a1e24fbb454408c6635e923b897abbdbcdd6718d8be0138359f37fe8",
+      "png": "sha256:a191641c38421a0bb6d298710d176d731cf78423fcbcdf8bd038da08038692db",
+      "renderer": 1,
+      "source": "sha256:970c297980183542eea729a4e99366214a89e38844899490918be88e25c333f5",
+      "strings": null,
+      "template": "06-bushwhacker"
+    },
+    "exports/stickers/07-turtle-take-it-slow.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:c0332fd5e19c55d4311e0b6b66c30063adc3977b81365f440f56270c8573609a",
+      "png": "sha256:2f55f23f774940f4b93ac52778612b01b7d327af30e18adc2bfbea8eaa92abbb",
+      "renderer": 1,
+      "source": "sha256:74a5400d2b776addcf15b0dd533a9876d3044e810d8515a13024b36d060bd70a",
+      "strings": null,
+      "template": "07-turtle-take-it-slow"
+    },
+    "exports/stickers/08-seagull-where.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:3be212cd69b42984b547c7fb24f4b623d79b7aea1d49e0139959b4143dcdbd0e",
+      "png": "sha256:9a68e54db90f79a3f3e141f07f8300344248e1395371059dd517c334a1eb0461",
+      "renderer": 1,
+      "source": "sha256:36f6f4dedc0ddae2b9ccf5e4ea5f992278f8f0b1b53dbe856b70afd5b86ab12f",
+      "strings": null,
+      "template": "08-seagull-where"
+    },
+    "exports/stickers/09-pelican-wing-it.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:56a9afb284f59b62887ce832054297ae400ae8d0ba71bd435eb354e2380b19ad",
+      "png": "sha256:e03ad658013c920e4e8b339c88b7ada6470437be54fa2c7aed5058f07456aab1",
+      "renderer": 1,
+      "source": "sha256:62c179931543d75d4e77fc0aebf83a0249b73cf30174f0fd2bf029a929b81c36",
+      "strings": null,
+      "template": "09-pelican-wing-it"
+    },
+    "exports/stickers/10-sunset-circle.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "stickers",
+      "config": "sha256:6c4d56320d8d11d0d41f2fe1d8e3a4b21159ba832a2fa844d21c7bdfc1e4b87c",
+      "key": "sha256:6c0167c3e5f253948a00afae695881b56eab01f660bf11c85ffd9bb3522a22fe",
+      "png": "sha256:54fd512cf0bcbef8b964f9b3e5fab3c0c83dd38d56fd6b9e493017fa5995554d",
+      "renderer": 1,
+      "source": "sha256:bc5fb769736dccdbb749a4b4c07067344d35796dde015bb0fc0b48c49ce0f0cf",
+      "strings": null,
+      "template": "10-sunset-circle"
+    },
+    "public/banner/banner.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "banner",
+      "config": "sha256:f097b743647ad87be1c98ac63878a800bf259c1fec93ae61bf089983edd8971f",
+      "key": "sha256:a59fdb8fe1e4329fe1fb912c63df8ecfd1cf5f210534dc7628121638f126d0a2",
+      "png": "sha256:70d243d5eb829430fbaf35a24ece44cb4d8352f5087107b6ad98fe9aa7391f8d",
+      "renderer": 1,
+      "source": "sha256:cb5e08a40b012747027d3d7c770a3de3919b2772106c9d1abc8de6705858aff0",
+      "strings": null,
+      "template": "banner"
+    },
+    "web/app/opengraph-image.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "og",
+      "config": "sha256:fd5896c591f37caf3e53963f07dd90e72daf32cb40dccab3a669b3b474389281",
+      "key": "sha256:a81b8bd693af8e17fa8538e0f5dbb7bb48af4f8c07da16f6606d92e71d5bd2ee",
+      "png": "sha256:0c537a3dfa336fcd58dfed955e6442f5e51556b53d6d53279b14892296b3cb2f",
+      "renderer": 1,
+      "source": "sha256:5a904d1d35e63f4960b3a3a2bb6511f061ba68266838c07b923694df0a4d7cfb",
+      "strings": null,
+      "template": "og-cover"
+    },
+    "web/public/pages/00-cover.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:1a510603a698dc1cc348d4fb2b9722e625c22731ee40ed668611cd79e70a62be",
+      "png": "sha256:3fa7f86457fc5431c14ff27d05d45a2c6f24961b3450af89dfd33e4de65c1d6a",
+      "renderer": 1,
+      "source": "sha256:fe1c4a31e047cb6211bc34bd503b4b58dfd7b67ffa4a9c6f639cdb9f1ae7447e",
+      "strings": null,
+      "template": "00-cover"
+    },
+    "web/public/pages/01-dedication.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:54e04c96c7e693e5db0ccb0478f19079f508a885e09d1285bcf218cbb7309bfe",
+      "png": "sha256:9c44cc10283837b92a699860888685786ab3d014dcf1ce7df1a7ca238dbf4af4",
+      "renderer": 1,
+      "source": "sha256:a40e9de26fbc29239184c7724b8af6cd0c7a334da155dca1d328c6554d70f0f5",
+      "strings": null,
+      "template": "01-dedication"
+    },
+    "web/public/pages/02-page-01.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:94cfcc1a5a92967c35bcdb14d6619e96c805fb5e1bb1b4015966c8368c1c05fe",
+      "png": "sha256:66b18a9336ca8d463f7802095542c6f566ac76f63eebf771963bf0daae8cb950",
+      "renderer": 1,
+      "source": "sha256:770b1d557d1c322938c0ec6ff30f733f2f9d12ad47f018b9cfdb58b8a6141cdc",
+      "strings": null,
+      "template": "02-page-01"
+    },
+    "web/public/pages/03-page-02.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:24929ac18710fc07667723dcb150de8c29d660c1944eab9a7608a9f788899a17",
+      "png": "sha256:4c3e59dc099a133a6af756861c6e08744f202b91f7c34dadbdc65ec795613387",
+      "renderer": 1,
+      "source": "sha256:64cb199f8afd52791ab9477f229024ad6abb6cb638025e55978986d34a28f61b",
+      "strings": null,
+      "template": "03-page-02"
+    },
+    "web/public/pages/04-page-03.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:6d9a1d395843c93ead4267285e902c441dceb4e7bc311e8c51536a0e6a3d97f5",
+      "png": "sha256:7c8207c9882070c166569a0377d83665578894150983b64c0f62c6e76f1c219c",
+      "renderer": 1,
+      "source": "sha256:a80ca12438a7618955b964a95eb851edc08831d48fdc743de58baa35c39f36e8",
+      "strings": null,
+      "template": "04-page-03"
+    },
+    "web/public/pages/05-page-04.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:c3f65b72a180e19891b73a5e73f68ecf789dc0e25178e51f28d6ade45bf39365",
+      "png": "sha256:5637e65219b07a59ab1cdcb5bc7f7548f8dc67fa02f8a8b7aee3357d7472f79a",
+      "renderer": 1,
+      "source": "sha256:66027c294cf3feda4ca37a7d36fa9063cec6cf63c4a7831f9d48e1a57b3166e8",
+      "strings": null,
+      "template": "05-page-04"
+    },
+    "web/public/pages/06-page-05.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:0b8163bcb18576d0cb5c760ada9cfb06a33a76dfef94fb01d98dab978ff173c2",
+      "png": "sha256:c844b4af981555dffdbcfd5098ab154645e68c08e41b9335b142a3745540e425",
+      "renderer": 1,
+      "source": "sha256:b50fd74979083919048c471515f298d2e8e5a06081db7d3d543d2aaab0703db7",
+      "strings": null,
+      "template": "06-page-05"
+    },
+    "web/public/pages/07-page-06.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:0e3cbe018f7baf21297341199088e77a98e0b7a1f27a053d2dc9c2c9baa385f8",
+      "png": "sha256:e559253f6b509df3ae5b22f672b1ccb0e4215289ec1a6faad50710ddac34318d",
+      "renderer": 1,
+      "source": "sha256:1cf398fdb23e918bd8e4498c8ebd3cae0d93a0f934ccb53bf959c9c52acc6e8d",
+      "strings": null,
+      "template": "07-page-06"
+    },
+    "web/public/pages/08-page-07.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:90925ff55b69ea1de459dd95025e5af95e66894ed5aeccb6830b5d9dfff4dc5f",
+      "png": "sha256:ad1c5ee04244421be53b7448d0ca93caf55ef92e2e0b99c12407b05429a50155",
+      "renderer": 1,
+      "source": "sha256:c37c47d1c2899468b992e3483173653e12f6e71ce961e795266ff6591a9c5236",
+      "strings": null,
+      "template": "08-page-07"
+    },
+    "web/public/pages/09-page-08.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:f8cba5c969ac8d66844c483c6cb329abfe021793d25b8d617e1b50f0c025f2a7",
+      "png": "sha256:692e3f25410bec8ab9ffa013be308bd07d847568c0b6519dd45352a84c10c18d",
+      "renderer": 1,
+      "source": "sha256:94505a6824fcc139df41aff96c8d65c0317bafe68a8f8f3b1120580a3377e2bb",
+      "strings": null,
+      "template": "09-page-08"
+    },
+    "web/public/pages/10-page-09.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:013b8c8ed8a1a326ef399c866304dc031e4d2ae72c588f9370699db912e77dec",
+      "png": "sha256:9d95b8f379d3172db16e8df8b16c8d5087101d56abea74efcb02b12b9366fd1c",
+      "renderer": 1,
+      "source": "sha256:de3903e8278dfc9aad4798d32bcf54625f9076e05c8ca751ff6e5a133a43de55",
+      "strings": null,
+      "template": "10-page-09"
+    },
+    "web/public/pages/11-page-10.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:0f1f901b1cb867c29df03c42d5545db5f594612595e73bc434a3f41569c89a51",
+      "png": "sha256:35c19ef3ebad080f56eb7c3df7375e0ae0adac71f1d63ff926252b0b35b983f7",
+      "renderer": 1,
+      "source": "sha256:402d440bf1914d813bb274d6e795c69893cb42648e16397974fb4e1ca8fa5070",
+      "strings": null,
+      "template": "11-page-10"
+    },
+    "web/public/pages/12-page-11.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:cc5d51ba76ad1e9b65814e720bfde19081abb4bfcb6ce5acf5baef291741593a",
+      "png": "sha256:b7928952eb656a8236e62e3dc11c7867dcf4b665e808d6c67ced2348f7f384ff",
+      "renderer": 1,
+      "source": "sha256:2b70c099b6a7b20f389b5354e075c0729f37c7b49dc786f0553649791cbfee8f",
+      "strings": null,
+      "template": "12-page-11"
+    },
+    "web/public/pages/13-page-12.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:ace27cc9fd48da4c75a5dee4c4c0b4a321e54b1e7b95952f110870553cb3126f",
+      "png": "sha256:d078b9f80c5115f0ef2852e91cf131f3ed30d21b22489747416e2de83a88ce5a",
+      "renderer": 1,
+      "source": "sha256:20a03b7c9a97cbf680229eac08e730fecad67fa202f6c1a38469e6f25c5a263c",
+      "strings": null,
+      "template": "13-page-12"
+    },
+    "web/public/pages/14-page-13.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:28ba05e5da9ace4d068ae543c40684578fa77f5a677b1e621902615817c5231d",
+      "png": "sha256:66616fe19f36d9ca42bf48ff2c5218b64bea5a63e0f48e6571339b104216f1da",
+      "renderer": 1,
+      "source": "sha256:d9078202cae5a120f56cdeb266326b04379a749fe28109a42f2dea67b2cf0ec7",
+      "strings": null,
+      "template": "14-page-13"
+    },
+    "web/public/pages/15-page-14.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:e9e88cec584ae43b53db059f9682fc647e9e4cf70e3fdf8fe4c879e2b0b9160c",
+      "png": "sha256:857fc0b77e5d056c5f20cffdf5d8da6602519eb7cf09654a8a624bcdc11b77be",
+      "renderer": 1,
+      "source": "sha256:dbe242d6180570ff968c0b4417ca10cfb2a0dc17444439dc777a202ddf57c4cd",
+      "strings": null,
+      "template": "15-page-14"
+    },
+    "web/public/pages/16-page-15.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:21e50735774448641a2b3e79053919127ec8101f4f5859b2f617dfb9639af2c0",
+      "png": "sha256:431c904ac53666c48f99492e1bf9fa57adcb12a159910deb820f89bc4ad7bfe9",
+      "renderer": 1,
+      "source": "sha256:f993d629b9718b297c963e3ac18ecd347e8b03c3fe7bb6ca6c0efaee4386336c",
+      "strings": null,
+      "template": "16-page-15"
+    },
+    "web/public/pages/17-page-16.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:268c9448ebafeea74f1876d90c354e11132644a52cbb7853e3d98dd9c686344e",
+      "png": "sha256:13c683f1ff6666b9e9129f65c794299c98b230dac085aa2fb08bdc7404d5c994",
+      "renderer": 1,
+      "source": "sha256:592af13b3b4386f9ca61945395fab6641d68ef76617b2c4c87d29c888a73886e",
+      "strings": null,
+      "template": "17-page-16"
+    },
+    "web/public/pages/18-page-17.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:5fb23ac6b9719c5dfe5f86ae3619292ef5225158f11815ddefb09e4bccf84193",
+      "png": "sha256:237c03b9dc87899aece8bac14d5af27bca83b45f8540858169b9b2067ea0c70d",
+      "renderer": 1,
+      "source": "sha256:dab971f2c13fa6482a6cfef746ad270a6e497d1590e7c00491436b9670dfc4d2",
+      "strings": null,
+      "template": "18-page-17"
+    },
+    "web/public/pages/19-back-cover.png": {
+      "assets": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "collection": "pages",
+      "config": "sha256:6a54d373cc83ddfeeb8ad968f2be7147360e1c737d2998d8f2d1400f1f0918c8",
+      "key": "sha256:294d2c2b262ce4bf0d2a43b5f66d561f21476794b73ef252bfb8bfb7669eda52",
+      "png": "sha256:91700d51bc684b9fe3d3e371359048bdcd23a4f0ba723cf66266688c994af59a",
+      "renderer": 1,
+      "source": "sha256:cbfe5c2018c9e320521e54b3b7a57bef118591e1cbc7cab3c27780604cd89063",
+      "strings": null,
+      "template": "19-back-cover"
     }
   }
 }
