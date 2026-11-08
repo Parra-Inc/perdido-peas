@@ -1,0 +1,15 @@
+name: Assets drift
+
+# Fails PRs that change asset inputs (templates, CSS, fonts, captures,
+# localized strings) without re-rendering and committing assets.lock.
+# Shared job: https://github.com/Parra-Inc/open-assets/blob/main/.github/workflows/drift.yml
+on:
+  pull_request:
+    paths:
+      - "./**"
+
+jobs:
+  drift:
+    uses: Parra-Inc/open-assets/.github/workflows/drift.yml@v1
+    with:
+      working-directory: .
